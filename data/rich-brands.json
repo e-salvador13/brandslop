@@ -1,0 +1,276 @@
+{
+  "brands": [
+    {
+      "id": "apple",
+      "name": "Apple",
+      "category": "Technology",
+      "public": true,
+      "stockSymbol": "AAPL",
+      "colors": {
+        "primary": [
+          { "name": "Apple Black", "hex": "#000000", "usage": "Text, icons, hero backgrounds" },
+          { "name": "Apple White", "hex": "#FFFFFF", "usage": "Backgrounds, reverse text" }
+        ],
+        "neutral": [
+          { "name": "Gray 1", "hex": "#F5F5F7", "usage": "Page backgrounds" },
+          { "name": "Gray 2", "hex": "#86868B", "usage": "Secondary text" },
+          { "name": "Gray 3", "hex": "#1D1D1F", "usage": "Body text" }
+        ],
+        "secondary": [
+          { "name": "Link Blue", "hex": "#0071E3", "usage": "CTAs, links, interactive elements" },
+          { "name": "Green", "hex": "#34C759", "usage": "Success, environmental" },
+          { "name": "Red", "hex": "#FF3B30", "usage": "Alerts, warnings" }
+        ]
+      },
+      "colorUsage": "Black/white foundation. Blue ONLY for interactive elements (links, buttons). Never use blue for decorative purposes. Product images are the color — UI stays neutral. Dark mode inverts but maintains the same restraint.",
+      "typography": {
+        "headings": "SF Pro Display Bold",
+        "body": "SF Pro Text Regular",
+        "mono": "SF Mono",
+        "fallback": "-apple-system, BlinkMacSystemFont, sans-serif"
+      },
+      "typographyScale": "Hero: 96px/1.0/−0.003em • H1: 64px/1.05/−0.002em • H2: 48px/1.08/−0.002em • H3: 28px/1.14 • Body: 17px/1.47 • Caption: 12px/1.33. Headlines get tighter tracking, body gets looser.",
+      "spacing": "Base unit: 8px. Section padding: 100px desktop, 60px mobile. Component gaps: 16-24px. Generous whitespace is signature — when in doubt, add more space. Content max-width: 980px for text, full-bleed for product shots.",
+      "components": "• Cards: Minimal borders, subtle shadows (0 2px 8px rgba(0,0,0,0.04))\n• Buttons: Pill-shaped (border-radius: 980px), 44px height minimum\n• Product tiles: Full-bleed images, text below\n• Navigation: Clean horizontal nav, no hamburger on desktop\n• Hero: Single product, massive scale, minimal text",
+      "motion": "Smooth and elegant, never bouncy. Ease curves: cubic-bezier(0.25, 0.1, 0.25, 1). Duration: 300-500ms for page transitions, 200ms for micro-interactions. Scroll-triggered reveals with subtle parallax. Product photos often have Ken Burns-style slow zoom.",
+      "layout": "Max-width: 980px for content, 1200px for product grids. Single column emphasis. Asymmetric hero layouts with product offset. Grid: 12-column, but often using 6-8 columns centered. Mobile: Full-width edge-to-edge.",
+      "iconStyle": "SF Symbols — consistent optical weight, multiple sizes (16/20/24/28), both outline and filled variants. Icons align to 1px grid. Never decorative, always functional.",
+      "interactiveStates": "• Hover: Subtle color shift (blue → darker blue), no scale\n• Focus: Blue outline ring (3px, offset 2px)\n• Active: Slight darken\n• Disabled: 50% opacity\n• Links: No underline default, underline on hover",
+      "copyVoice": "Minimal, declarative statements. No exclamation points. Product names are proper nouns. Focus on what it does for you, not specs. 'The best iPhone ever.' not 'The iPhone with the most features!'",
+      "designPrinciples": [
+        "Remove until you can't remove anymore",
+        "Product is the hero, UI disappears",
+        "Precision in every pixel",
+        "Consistency across all platforms",
+        "Accessibility is non-negotiable"
+      ],
+      "mood": ["minimal", "premium", "clean", "sophisticated", "simple"]
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "category": "Fintech",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Stripe Purple", "hex": "#635BFF", "usage": "Primary brand, CTAs" },
+          { "name": "Stripe Blue", "hex": "#00D4FF", "usage": "Gradient accent, highlights" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Light Gray", "hex": "#F6F9FC", "usage": "Subtle backgrounds, cards" },
+          { "name": "Slate", "hex": "#425466", "usage": "Body text" },
+          { "name": "Dark", "hex": "#0A2540", "usage": "Headlines, dark sections" }
+        ],
+        "secondary": [
+          { "name": "Cyan", "hex": "#80E9FF", "usage": "Gradient, illustration" },
+          { "name": "Pink", "hex": "#FF80B5", "usage": "Gradient, illustration" },
+          { "name": "Green", "hex": "#00D924", "usage": "Success states" }
+        ]
+      },
+      "colorUsage": "Purple for primary actions. Dark navy (#0A2540) for hero sections and headlines. Gradients (purple→cyan→pink) for illustration and visual interest, NEVER for UI components. Green only for success/positive states. Light gray for card backgrounds.",
+      "typography": {
+        "headings": "Sohne Bold",
+        "body": "Sohne Regular",
+        "mono": "Sohne Mono",
+        "fallback": "system-ui, -apple-system, sans-serif"
+      },
+      "typographyScale": "Hero: 72px/1.1/−0.02em • H1: 56px/1.15/−0.02em • H2: 40px/1.2/−0.01em • H3: 24px/1.3 • Body: 18px/1.6 • Code: 14px/1.7 monospace. Headlines are tighter, body is open for readability.",
+      "spacing": "Base: 8px. Section: 120px vertical. Cards: 32px padding. Button: 12px 24px. Generous breathing room everywhere. Grid gap: 24-32px.",
+      "components": "• Cards: Rounded corners (12px), subtle shadow, white background\n• Buttons: Pill-shaped (9999px radius), purple fill, 48px height\n• Code blocks: Dark background, syntax highlighted, copy button\n• Tabs: Underline style, not pills\n• Pricing tables: Clean grids, checkmarks for features",
+      "motion": "Smooth, professional. Spring animations for playful elements (illustrations). Staggered fade-ins for lists. Parallax on scroll for depth. Duration: 300-600ms. Ease: cubic-bezier(0.4, 0, 0.2, 1).",
+      "layout": "Max-width: 1080px content, 1440px page. 12-column grid. Hero: Often asymmetric with illustration right. Feature sections: 2-3 column grids. Mobile: Stack with full-width cards.",
+      "iconStyle": "Custom line icons, 24px default, 2px stroke, rounded caps. Consistent visual weight. Icons often have subtle gradient fills on hover.",
+      "interactiveStates": "• Hover: Scale 1.02 for cards, color darken for buttons\n• Focus: Purple ring (2px)\n• Active: Scale 0.98\n• Code blocks: Hover reveals copy button\n• Links: Purple, underline on hover",
+      "copyVoice": "Technical but accessible. Developer-focused but not exclusionary. Confident without being arrogant. Uses 'you' frequently. Clear value props. 'Payments infrastructure for the internet.'",
+      "designPrinciples": [
+        "Technical credibility through design quality",
+        "Gradients for visual interest, not UI",
+        "Dark heroes, light content",
+        "Code is a first-class citizen",
+        "Every pixel matters"
+      ],
+      "mood": ["premium", "technical", "modern", "trustworthy", "clean"]
+    },
+    {
+      "id": "twitch",
+      "name": "Twitch",
+      "category": "Entertainment",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Twitch Purple", "hex": "#9146FF", "usage": "Primary brand, accents, CTAs" }
+        ],
+        "neutral": [
+          { "name": "Background", "hex": "#0E0E10", "usage": "Main background" },
+          { "name": "Surface", "hex": "#18181B", "usage": "Cards, sidebars" },
+          { "name": "Elevated", "hex": "#1F1F23", "usage": "Hover states, elevated elements" },
+          { "name": "Border", "hex": "#2F2F35", "usage": "Dividers" },
+          { "name": "Text", "hex": "#EFEFF1", "usage": "Primary text" },
+          { "name": "Text Muted", "hex": "#ADADB8", "usage": "Secondary text" }
+        ],
+        "secondary": [
+          { "name": "Live Red", "hex": "#EB0400", "usage": "Live indicators only" },
+          { "name": "Ice", "hex": "#00C8AF", "usage": "Success, follows" },
+          { "name": "Warn Orange", "hex": "#FF7B00", "usage": "Warnings" }
+        ]
+      },
+      "colorUsage": "Purple is THE brand — use it for primary actions, glows, and accents. Red is ONLY for live indicators. Background is always dark. Cards are slightly lighter. Purple glow effects (box-shadow: 0 0 20px rgba(145,70,255,0.3)) for emphasis. Never use purple backgrounds for large areas.",
+      "typography": {
+        "headings": "Roobert Bold",
+        "body": "Roobert Regular",
+        "fallback": "Inter, system-ui, sans-serif"
+      },
+      "typographyScale": "H1: 48px/1.2 • H2: 32px/1.25 • H3: 20px/1.3 • Body: 14px/1.5 • Small: 12px/1.4. Generally more compact than other brands — screens are info-dense.",
+      "spacing": "Base: 4px (tighter than most). Card padding: 12-16px. Section gaps: 24px. Sidebar width: 240px collapsed, 50px expanded. Content density is HIGH — lots of info on screen.",
+      "components": "• Cards: Rounded (8px), dark surface, hover lightens\n• Live badge: Red pill, white text, pulsing dot\n• Avatar: Rounded square (8px radius), purple ring for live\n• Chat: Dense message list, username colors, emote support\n• Thumbnails: 16:9, rounded corners, live badge overlay\n• Pills/tags: Small, rounded, category colors",
+      "motion": "Bouncy and energetic. Hover scales (1.05). Purple glow pulses. Transitions: 150-200ms. Ease: cubic-bezier(0.175, 0.885, 0.32, 1.275) for bounce. Loading: Skeleton shimmer.",
+      "layout": "Dense 3-panel layout: Left nav (icons), Content (flexible), Right sidebar (chat). Grid of 4-6 stream thumbnails. Full-width video player. Mobile: Tabs for navigation, full-width player.",
+      "iconStyle": "Rounded, friendly. 20px default. 2px stroke. Filled on active state. Custom streaming icons (go live, raid, etc).",
+      "interactiveStates": "• Hover: Scale 1.05, purple glow, lighter background\n• Focus: Purple outline ring\n• Active: Scale 0.95\n• Live: Pulsing red dot\n• Following: Purple checkmark\n• Buttons: Hover lightens, active darkens",
+      "copyVoice": "Casual, hyped, streamer culture. Uses slang (POG, hype, etc). Second person ('Start your stream'). Short, punchy. Exclamation points okay here! Community-focused.",
+      "designPrinciples": [
+        "Dark mode only, no light mode",
+        "Purple glow is signature",
+        "Live content is king",
+        "Dense but not cluttered",
+        "Chat is social proof",
+        "Streamers are the stars"
+      ],
+      "mood": ["live", "energetic", "community", "gaming", "creator"]
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "category": "SaaS",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Linear Purple", "hex": "#5E6AD2", "usage": "Primary brand, accents" },
+          { "name": "Periwinkle", "hex": "#839BFC", "usage": "Light accent, hover states" }
+        ],
+        "neutral": [
+          { "name": "Background", "hex": "#000000", "usage": "Page background" },
+          { "name": "Surface", "hex": "#1C1C1C", "usage": "Cards, sidebars" },
+          { "name": "Surface 2", "hex": "#252525", "usage": "Elevated surfaces" },
+          { "name": "Border", "hex": "#2E2E2E", "usage": "Subtle dividers" },
+          { "name": "Text", "hex": "#EDEDED", "usage": "Primary text" },
+          { "name": "Text Muted", "hex": "#858585", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Purple for interactive elements and accents only. Pure black background. Surface colors create elevation hierarchy. High contrast text. Status colors (green/yellow/red) for issue states. No gradients in UI.",
+      "typography": {
+        "headings": "Inter Bold",
+        "body": "Inter Regular",
+        "mono": "JetBrains Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "H1: 32px/1.2/−0.02em • H2: 24px/1.25 • H3: 18px/1.3 • Body: 14px/1.5 • Small: 12px/1.4 • Mono: 13px/1.5. Compact scale for dense product UI.",
+      "spacing": "Base: 4px. Very tight spacing throughout. Sidebar: 12px padding. Cards: 12px padding. List items: 8px vertical. The product is DENSE but precisely spaced.",
+      "components": "• Issues: Single-line items, status dot left, assignee right\n• Sidebar: Collapsible, icon-only when collapsed\n• Command bar (⌘K): Centered modal, fuzzy search\n• Kanban: Tight columns, drag shadows\n• Buttons: Small (28-32px height), rounded (6px)",
+      "motion": "Subtle and smooth. No bounce. 150-200ms duration. Ease: ease-out. Command bar: Scale + fade. Drag: Shadow appears. Transitions feel instant and responsive.",
+      "layout": "3-panel: Sidebar (200px), List (flexible), Detail (400px). Dense issue lists. Full keyboard navigation. No wasted space. Mobile: Single panel with gestures.",
+      "iconStyle": "Crisp line icons, 16px default, 1.5px stroke. Custom status icons. Consistent with Inter's geometric style.",
+      "interactiveStates": "• Hover: Background lightens (#252525 → #2a2a2a)\n• Focus: Purple border (1px)\n• Active: Slightly darker\n• Selected: Purple left border accent\n• Dragging: Elevated shadow, slight rotation",
+      "copyVoice": "Minimal, precise, developer-focused. No fluff. Feature names are verbs ('Track', 'Ship'). Confident but not arrogant. 'Built for the way you work.'",
+      "designPrinciples": [
+        "Speed is a feature",
+        "Keyboard-first",
+        "Dark mode only",
+        "Density without clutter",
+        "Every interaction is instant"
+      ],
+      "mood": ["dark", "minimal", "focused", "developer", "precise"]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "category": "SaaS",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Notion Black", "hex": "#000000", "usage": "Text, icons, logo" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Background" },
+          { "name": "Light Warm Gray", "hex": "#F7F6F3", "usage": "Page background" },
+          { "name": "Border", "hex": "#E9E9E7", "usage": "Dividers, borders" },
+          { "name": "Text Gray", "hex": "#787774", "usage": "Muted text, placeholders" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#2383E2", "usage": "Links, buttons" },
+          { "name": "Red", "hex": "#EB5757", "usage": "Destructive, accents" },
+          { "name": "Yellow", "hex": "#DFAB01", "usage": "Highlights, warnings" },
+          { "name": "Green", "hex": "#0F7B6C", "usage": "Success, accents" },
+          { "name": "Purple", "hex": "#9065B0", "usage": "Tags, accents" },
+          { "name": "Pink", "hex": "#D44C47", "usage": "Tags, accents" }
+        ]
+      },
+      "colorUsage": "Warm, off-white background is signature (NOT pure white). Black for text. Colors are for tags, highlights, and accents — not structural. Block backgrounds can be colored. Callout blocks have colored backgrounds.",
+      "typography": {
+        "headings": "Inter Bold",
+        "body": "Inter Regular",
+        "serif": "Lyon Display / Georgia",
+        "mono": "iA Writer Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "H1: 40px/1.2 • H2: 30px/1.3 • H3: 24px/1.3 • Body: 16px/1.5 • Small: 14px/1.5. User can change default font to serif or mono. Page titles can be huge (60px+).",
+      "spacing": "Base: 8px. Page padding: 96px sides on desktop. Block spacing: 4px between, 24px for headers. Generous margins. Content max-width: 708px centered (can be expanded).",
+      "components": "• Blocks: Content units with hover actions (+ and ⋮⋮ handles)\n• Callouts: Emoji + colored background box\n• Toggles: Expandable sections with arrow\n• Tables: Simple, Notion-style inline tables\n• Kanban: Colorful cards, drag-and-drop\n• Page icons: Emoji or uploaded image, 78px in page header",
+      "motion": "Subtle, content-focused. Block drag: Shadow + scale. Page transition: Slide. Toggles: Smooth expand (200ms). Everything feels lightweight and paper-like.",
+      "layout": "Content-first. Single column default. Sidebar (240px) collapsible. Pages can have cover images (full-width). 3-column layouts possible. Very flexible grid system for databases.",
+      "iconStyle": "Simple duotone icons, or emoji. Icons are 18-20px. Notion's custom icons are rounded, friendly. Heavy use of emoji as icons.",
+      "interactiveStates": "• Hover: Show block handles, light background\n• Focus: Blue outline for inputs\n• Drag: Shadow + slight rotation\n• Selected: Light blue highlight\n• Editable: Blinking cursor",
+      "copyVoice": "Warm, friendly, creative. 'Write, plan, organize.' Uses second person. Encouraging but not pushy. Celebrates creativity and flexibility.",
+      "designPrinciples": [
+        "Everything is a block",
+        "Content first, chrome disappears",
+        "Warm, not sterile",
+        "Flexible — let users customize",
+        "Playful illustrations soften the product"
+      ],
+      "mood": ["warm", "friendly", "clean", "creative", "productive"]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "category": "Entertainment",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Spotify Green", "hex": "#1DB954", "usage": "Brand, play buttons, CTAs" },
+          { "name": "Spotify Black", "hex": "#191414", "usage": "Primary background" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Light Gray", "hex": "#B3B3B3", "usage": "Secondary text" },
+          { "name": "Dark Gray", "hex": "#282828", "usage": "Card backgrounds" },
+          { "name": "Elevated", "hex": "#3E3E3E", "usage": "Hover states" }
+        ]
+      },
+      "colorUsage": "Green for PLAY and primary actions only. Black background always. Album art provides color. Duotone overlays on playlists (gradient from album colors). Never green backgrounds. White text on dark.",
+      "typography": {
+        "headings": "Spotify Circular Bold",
+        "body": "Spotify Circular Regular",
+        "fallback": "Montserrat, system-ui, sans-serif",
+        "googleFonts": "Montserrat:wght@400;500;600;700"
+      },
+      "typographyScale": "Hero: 96px/1.0/−0.04em • H1: 48px/1.1 • H2: 24px/1.25 • Body: 14px/1.5 • Small: 11px/1.4. Big and bold for content, small for metadata.",
+      "spacing": "Base: 8px. Card gaps: 24px. Playlist grid: 16px gap. Navigation: 16px padding. Album art: various sizes (48px in lists, 232px in player).",
+      "components": "• Cards: Album art dominant, text below, rounded corners (4-8px)\n• Play button: Green circle with black triangle\n• Progress bar: Thin, green fill\n• Playlist headers: Dynamic gradient from album art\n• Player bar: Fixed bottom, full-width",
+      "motion": "Smooth, music-responsive. Album reveals: Fade + scale. Play button: Bounce on click. Equalizer bars animate. Now Playing: Album art glow. Duration: 200-300ms.",
+      "layout": "Grid-based music library. Sidebar (left nav), Content (flexible), Now Playing (bottom bar). Responsive grid: 2-6 columns based on width. Full-screen Now Playing mode.",
+      "iconStyle": "Simple, rounded icons. 24px default. Music-specific (play, shuffle, repeat). Consistent stroke weight. Filled when active.",
+      "interactiveStates": "• Hover: Play button appears over album, card scales 1.04\n• Focus: White outline ring\n• Active: Scale 0.97\n• Playing: Green bars animation\n• Liked: Green heart fill",
+      "copyVoice": "Casual, music-focused. Playlist names can be playful. 'Made For You.' 'Your Daily Mix.' Genre-specific tone. Celebratory ('You're in!')",
+      "designPrinciples": [
+        "Album art is the UI",
+        "Dark mode always",
+        "Green = Play",
+        "Music genres have visual identities",
+        "Duotone gradients from album colors"
+      ],
+      "mood": ["vibrant", "musical", "expressive", "dark", "energetic"]
+    }
+  ]
+}

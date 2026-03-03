@@ -1,0 +1,372 @@
+{
+  "brands": [
+    {
+      "id": "coca-cola",
+      "name": "Coca-Cola",
+      "category": "Consumer",
+      "public": true,
+      "stockSymbol": "KO",
+      "colors": {
+        "primary": [
+          { "name": "Coca-Cola Red", "hex": "#F40009", "usage": "Primary brand, CTAs, headers, iconic moments" },
+          { "name": "White", "hex": "#FFFFFF", "usage": "Text on red, backgrounds, wave device" }
+        ],
+        "neutral": [
+          { "name": "Pure White", "hex": "#FFFFFF", "usage": "Backgrounds, clean layouts" },
+          { "name": "Light Gray", "hex": "#F5F5F5", "usage": "Section backgrounds" },
+          { "name": "Medium Gray", "hex": "#6B6B6B", "usage": "Body text, secondary content" },
+          { "name": "Charcoal", "hex": "#1E1E1E", "usage": "Headlines on white" }
+        ],
+        "secondary": [
+          { "name": "Black", "hex": "#000000", "usage": "Coke Zero branding, text emphasis" },
+          { "name": "Silver", "hex": "#C4C4C4", "usage": "Diet Coke branding" },
+          { "name": "Gold", "hex": "#C6A86C", "usage": "Premium/heritage moments" },
+          { "name": "Green", "hex": "#007A33", "usage": "Coke Life, sustainability" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1A1A1A", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#2D2D2D", "usage": "Card backgrounds" },
+          { "name": "Dark Elevated", "hex": "#3D3D3D", "usage": "Hover states" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Dark Red", "hex": "#CC0007", "usage": "Primary red adjusted for dark mode" },
+          { "name": "Dark Muted", "hex": "#A0A0A0", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Red is DOMINANT — use boldly for heroes, headers, and primary CTAs. White on red is the signature look. Red:White ratio should be 60:40 minimum on hero sections. Never use red as small accent — go big or skip it. Black reserved for Coke Zero variants. Silver for Diet Coke. On dark backgrounds, red remains vibrant. The iconic Dynamic Ribbon/Wave device is ALWAYS white.",
+      "typography": {
+        "headings": "TCCC Unity Headline Bold / Lato Bold",
+        "body": "TCCC Unity Text / Lato Regular",
+        "accent": "Spencerian Script (logo only)",
+        "fallback": "Helvetica Neue, Arial, sans-serif",
+        "googleFonts": "Lato:wght@400;700;900"
+      },
+      "typographyScale": "Hero: 72px/1.1/−0.02em • H1: 56px/1.15 • H2: 40px/1.2 • H3: 28px/1.3 • Body: 16px/1.6 • Caption: 14px/1.5. Headlines tight, bold, impactful. Body generous spacing for readability.",
+      "spacing": "Base: 8px. Hero padding: 80-120px. Section gaps: 64px. Cards: 24px padding. Button padding: 16px 32px. Max-width: 1200px content. Generous whitespace around the bottle/can — product needs breathing room.",
+      "components": "• Buttons: Rounded (24px radius), red fill, white text, 48-56px height, bold uppercase\n• Cards: White bg, subtle shadow, rounded-lg (12px), product image dominant\n• Product shots: Full-bleed or on red background, always with condensation/refreshment cues\n• Navigation: White/transparent with red logo, minimal links\n• Hero: Full-screen red with floating white text and product shot\n• Wave device: White SVG wave at section transitions, always flowing left-to-right",
+      "elevation": "• Level 0: No shadow (inline content)\n• Level 1: 0 2px 8px rgba(0,0,0,0.08) — Cards, product tiles\n• Level 2: 0 8px 24px rgba(0,0,0,0.12) — Modals, popovers\n• Level 3: 0 16px 48px rgba(0,0,0,0.16) — Hero product shots (floating bottle effect)\n• Product glow: 0 0 60px rgba(244,0,9,0.3) — Red glow behind products on dark",
+      "motion": "Smooth, refreshing, effervescent. Duration: 300-500ms. Ease: cubic-bezier(0.4, 0, 0.2, 1). Bubbles: Rising particle animation. Wave: Gentle undulation. Product entrance: Scale 0.9→1 with fade. Scroll-triggered reveals. Signature 'pop' on button hover (scale 1.02).",
+      "layout": "Full-width heroes. Product-centered compositions. 2-3 column grids for content. Single-column for storytelling. Max-width: 1200px. Red sections alternate with white. Always center the bottle/can in hero shots.",
+      "responsive": "• Desktop (>1200px): Full heroes, 3-column features, floating product shots\n• Laptop (900-1200px): Scaled heroes, 2-column grids\n• Tablet (600-900px): Stacked heroes (product on top), single column below\n• Mobile (<600px): Full-width cards, 24px margins, bottom-fixed CTA, hamburger nav",
+      "iconStyle": "Simple line icons, 2px stroke, rounded caps, 24px default. Red fill for active states. Minimal iconography — prefer text labels. Custom icons for share, locate, nutrition.",
+      "interactiveStates": "• Hover: Darken red (#D40007), slight scale (1.02) for buttons\n• Focus: White ring (3px) on red elements, red ring on white\n• Active: Scale 0.98, darker fill\n• Disabled: 50% opacity\n• Links: Red, underline on hover\n• Cards: Lift shadow + translate-y -4px on hover",
+      "mediaPatterns": "• Product photography: Hero shots with condensation, ice, splash effects. Always on solid color bg (red or white)\n• Lifestyle: Real moments of enjoyment, diverse groups, summer/refreshment themes\n• Video: 16:9 or vertical 9:16 for social, autoplay muted, bright saturated color grading\n• Heritage: Sepia/vintage filter for throwback content\n• Aspect ratios: 16:9 hero, 1:1 social tiles, 4:5 Instagram\n• Bottle/can: Always at slight angle (15-30°), never flat-on",
+      "copyVoice": "Optimistic, refreshing, universal. Short punchy headlines. 'Open Happiness.' 'Taste the Feeling.' Inclusive, celebratory. No negativity. Focus on moments of connection and refreshment. Exclamation points okay. Warm, not corporate.",
+      "designPrinciples": [
+        "Red is the hero — use it boldly",
+        "Product is always the star",
+        "Refreshment cues everywhere (bubbles, condensation, ice)",
+        "The wave connects everything",
+        "Optimism in every pixel",
+        "Simple, iconic, unforgettable"
+      ],
+      "mood": ["refreshing", "iconic", "optimistic", "bold", "universal", "joyful"]
+    },
+    {
+      "id": "mcdonalds",
+      "name": "McDonald's",
+      "category": "Consumer",
+      "public": true,
+      "stockSymbol": "MCD",
+      "colors": {
+        "primary": [
+          { "name": "McDonald's Red", "hex": "#DA291C", "usage": "Primary brand, backgrounds, CTAs" },
+          { "name": "Golden Arches Yellow", "hex": "#FFC72C", "usage": "Iconic arches, accents, highlights" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, text on red" },
+          { "name": "Light Gray", "hex": "#F5F5F5", "usage": "Section backgrounds" },
+          { "name": "Medium Gray", "hex": "#6D6E71", "usage": "Body text" },
+          { "name": "Charcoal", "hex": "#292929", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "McCafé Brown", "hex": "#653819", "usage": "Coffee/McCafé branding" },
+          { "name": "Fresh Green", "hex": "#264F36", "usage": "Salads, fresh items, sustainability" },
+          { "name": "Cream", "hex": "#FFF4CC", "usage": "Warm backgrounds" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1A1A1A", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#2B2B2B", "usage": "Card backgrounds" },
+          { "name": "Dark Elevated", "hex": "#3C3C3C", "usage": "Hover states" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Dark Yellow", "hex": "#FFB700", "usage": "Golden arches adjusted" },
+          { "name": "Dark Red", "hex": "#C4241A", "usage": "Red adjusted for dark" }
+        ]
+      },
+      "colorUsage": "Red for backgrounds and primary actions. Yellow ONLY for the Golden Arches and strategic accent moments — never overuse. Yellow on red is the signature combination. Red:Yellow ratio approximately 70:30. Brown for McCafé contexts. Green for fresh/healthy messaging only. White cards on red sections.",
+      "typography": {
+        "headings": "Speedee Bold / Lovin Sans Bold",
+        "body": "Speedee Regular / Open Sans",
+        "fallback": "Helvetica Neue, Arial, sans-serif",
+        "googleFonts": "Open+Sans:wght@400;600;700"
+      },
+      "typographyScale": "Hero: 64px/1.1 • H1: 48px/1.15 • H2: 36px/1.2 • H3: 24px/1.3 • Body: 16px/1.5 • Small: 14px/1.4 • Price: 24px/1.2 bold. Headlines playful, rounded feel. Body clear and readable.",
+      "spacing": "Base: 8px. Hero padding: 60-80px. Menu card padding: 16px. Section gaps: 48px. Button padding: 12px 24px. Max-width: 1140px. Compact for menu layouts, generous for marketing.",
+      "components": "• Buttons: Rounded-full (9999px), yellow bg with red text or red bg with white text, 44px height\n• Menu cards: White bg, rounded (16px), food image top, name/price/calories below\n• Food photography: Full-bleed, hero styling, steam/fresh cues\n• Golden Arches: Always yellow (#FFC72C), clearspace = 1x arch height\n• Price tags: Yellow pill with red text\n• Location cards: Map, address, hours, order button",
+      "elevation": "• Level 0: No shadow (menu items)\n• Level 1: 0 2px 8px rgba(0,0,0,0.1) — Cards, tiles\n• Level 2: 0 4px 16px rgba(0,0,0,0.15) — Popovers, dropdowns\n• Level 3: 0 8px 32px rgba(0,0,0,0.2) — Modals\n• Food hero: 0 16px 48px rgba(0,0,0,0.25) — Floating food effect",
+      "motion": "Fun, snappy, appetizing. Duration: 200-400ms. Ease: cubic-bezier(0.34, 1.56, 0.64, 1) — bouncy. Menu items: Pop on hover. Add to cart: Bounce to cart icon. Page transitions: Quick fade. Food entrance: Subtle drop + shadow grow.",
+      "layout": "Menu-centric grids. 3-4 columns for menu items. Hero: Full-width food shot with floating text. Location finder: Map-centric. Order flow: Step-by-step linear. Max-width: 1140px content.",
+      "responsive": "• Desktop (>1024px): 4-column menu grid, full hero\n• Tablet (768-1024px): 3-column grid, scaled hero\n• Mobile (<768px): 2-column menu grid, sticky order button, bottom navigation\n• Kiosk mode: Large touch targets (min 64px), simplified flow",
+      "iconStyle": "Rounded, friendly icons. 24px default, 2px stroke. Custom icons for menu categories (burger, fries, drinks, desserts). Yellow fill on red backgrounds.",
+      "interactiveStates": "• Hover: Lift + shadow increase, slight scale (1.02)\n• Focus: Yellow ring (3px) on buttons\n• Active: Scale 0.96\n• Selected: Yellow background, checkmark\n• Disabled: 50% opacity\n• Add to cart: Green flash confirmation",
+      "mediaPatterns": "• Food photography: Hero shots, styled with steam/cheese pull/freshness. Top-down or 3/4 angle\n• Lifestyle: Families, friends, quick moments of happiness\n• Video: 16:9, bright lighting, food ASMR style (sizzle, crunch)\n• Menu items: 1:1 square on white/transparent for digital menu\n• App promo: Device mockups with app screens\n• Aspect ratios: 16:9 hero, 1:1 menu items, 4:5 social",
+      "copyVoice": "Friendly, fun, inviting. 'I'm Lovin' It.' Short, punchy. Playful but not childish. Focus on cravings and convenience. 'Get it delivered.' 'Order ahead.' Warm, welcoming tone. Exclamation points welcome!",
+      "designPrinciples": [
+        "Golden Arches are sacred",
+        "Food is the hero — make it irresistible",
+        "Red and yellow together = McDonald's",
+        "Speed and convenience in the UX",
+        "Fun and family-friendly always",
+        "Simple, craveable, familiar"
+      ],
+      "mood": ["fun", "friendly", "craveable", "convenient", "family", "iconic"]
+    },
+    {
+      "id": "nike",
+      "name": "Nike",
+      "category": "Consumer",
+      "public": true,
+      "stockSymbol": "NKE",
+      "colors": {
+        "primary": [
+          { "name": "Nike Black", "hex": "#111111", "usage": "Primary brand, text, backgrounds" },
+          { "name": "Nike White", "hex": "#FFFFFF", "usage": "Backgrounds, text on black" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Page backgrounds, cards" },
+          { "name": "Light Gray", "hex": "#F5F5F5", "usage": "Section backgrounds" },
+          { "name": "Medium Gray", "hex": "#757575", "usage": "Secondary text" },
+          { "name": "Dark Gray", "hex": "#111111", "usage": "Primary text, headlines" }
+        ],
+        "secondary": [
+          { "name": "Nike Orange", "hex": "#FA5400", "usage": "Energy accent, sale/promo" },
+          { "name": "Volt", "hex": "#CEFF00", "usage": "High-energy accent, training" },
+          { "name": "Sport Red", "hex": "#C41E3A", "usage": "Jordan brand, intensity" },
+          { "name": "University Blue", "hex": "#5B9BD5", "usage": "Classic colorway" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#0A0A0A", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#1A1A1A", "usage": "Card backgrounds" },
+          { "name": "Dark Elevated", "hex": "#2A2A2A", "usage": "Hover states, inputs" },
+          { "name": "Dark Border", "hex": "#333333", "usage": "Borders, dividers" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Dark Text Muted", "hex": "#999999", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Black and white dominate — Nike is about stark contrast and bold simplicity. Accent colors used sparingly for energy (Volt for training, Orange for promos). Product colorways provide variety — UI stays neutral. The Swoosh is ALWAYS solid (black on white, white on black). Never gradient the Swoosh.",
+      "typography": {
+        "headings": "Futura Condensed Extra Bold / Nike Futura ND",
+        "body": "Helvetica Neue Medium",
+        "accent": "Nike Trade Gothic Bold Condensed",
+        "fallback": "Helvetica, Arial, sans-serif",
+        "googleFonts": "Oswald:wght@700"
+      },
+      "typographyScale": "Hero: 96px/0.95/−0.02em (ALL CAPS) • H1: 64px/1.0 • H2: 48px/1.05 • H3: 24px/1.15 • Body: 16px/1.5 • Price: 18px/1.2 • Caption: 14px/1.4. Headlines always uppercase, condensed, tight tracking. Body regular weight, readable.",
+      "spacing": "Base: 8px. Hero padding: 80-120px. Product grid gap: 16px. Card padding: 24px. Section margins: 64px. Button padding: 16px 32px. Max-width: 1440px. Tight, athletic feel — no wasted space.",
+      "components": "• Buttons: Rounded (30px radius), black fill, white text, 50px height, uppercase\n• Product cards: Minimal — image dominant (85%), hover shows quick-add. No borders\n• Swoosh: Clearspace = Swoosh height. Never rotate, stretch, or outline\n• Hero: Full-bleed athlete/product shot, overlaid text, minimal navigation\n• Size selector: Grid of circular buttons, black border, filled when selected\n• Carousel: Edge-to-edge, peek next item, swipe-enabled",
+      "elevation": "• Level 0: No shadow (flat design preference)\n• Level 1: 0 2px 6px rgba(0,0,0,0.08) — Cards on hover\n• Level 2: 0 8px 24px rgba(0,0,0,0.12) — Modals, overlays\n• Level 3: 0 16px 48px rgba(0,0,0,0.2) — Hero product shots\n• Shoe float: 0 30px 60px rgba(0,0,0,0.3) — Dramatic floating shoe effect",
+      "motion": "Athletic, powerful, precise. Duration: 200-400ms. Ease: cubic-bezier(0.16, 1, 0.3, 1) — sharp snap. Product hover: Scale 1.05, shadow increase. Page transitions: Horizontal wipe. Video: Slow-mo athletics, high frame rate. Scroll-triggered reveals with momentum.",
+      "layout": "Grid-based, product-centric. 4-column product grids. Full-bleed heroes. Asymmetric editorial layouts. Single column for storytelling. Max-width: 1440px. Athlete/product is ALWAYS the focus.",
+      "responsive": "• Desktop (>1200px): 4-column product grid, full hero, large type\n• Laptop (900-1200px): 3-column grid, scaled type\n• Tablet (600-900px): 2-column grid, stacked heroes\n• Mobile (<600px): 2-column tight grid, sticky 'Add to Bag' button, bottom nav, 16px margins",
+      "iconStyle": "Minimal, functional. 24px, 1.5px stroke, sharp corners (not rounded). Black default. Custom icons for categories (Running, Training, Basketball, Lifestyle). No decorative icons.",
+      "interactiveStates": "• Hover: Underline for links, scale + shadow for cards\n• Focus: Black ring (2px, offset 2px)\n• Active: Invert colors (black→white)\n• Selected: Solid black fill\n• Disabled: 40% opacity\n• Quick-add: Fade-in on hover with translate-y",
+      "mediaPatterns": "• Product shots: Clean white/gray background, 45° angle, dramatic lighting and shadows\n• Athlete photography: High-contrast, motion blur, peak action moments\n• Video: 16:9 or 9:16 vertical, cinematic grade, slow-motion for impact\n• Editorial: Full-bleed, lifestyle context, athlete focus\n• Shoe details: Macro shots of tech features (Air unit, Flyknit)\n• Aspect ratios: 3:4 product cards, 16:9 hero video, 1:1 social grid",
+      "copyVoice": "Motivational, direct, powerful. 'Just Do It.' Short declarative sentences. Second person ('You'). No fluff. Action verbs. Athlete-focused. Bold, confident, sometimes defiant. ALL CAPS for headlines.",
+      "designPrinciples": [
+        "Just Do It — bold, decisive, no hesitation",
+        "Athlete is the hero",
+        "Product innovation speaks for itself",
+        "Black and white foundation",
+        "Less is more — remove until essential",
+        "Speed in everything"
+      ],
+      "mood": ["athletic", "bold", "powerful", "minimal", "motivational", "premium"]
+    },
+    {
+      "id": "adidas",
+      "name": "Adidas",
+      "category": "Consumer",
+      "public": true,
+      "stockSymbol": "ADS.DE",
+      "colors": {
+        "primary": [
+          { "name": "Adidas Black", "hex": "#000000", "usage": "Primary brand, text, Three Stripes" },
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, text on black" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Page backgrounds" },
+          { "name": "Light Gray", "hex": "#ECEFF1", "usage": "Section backgrounds, inputs" },
+          { "name": "Medium Gray", "hex": "#767677", "usage": "Secondary text" },
+          { "name": "Charcoal", "hex": "#1F1F1F", "usage": "Body text" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#005BBB", "usage": "Originals heritage" },
+          { "name": "Red", "hex": "#E63329", "usage": "Performance, energy" },
+          { "name": "Yellow", "hex": "#EAC300", "usage": "Accent energy" },
+          { "name": "Green", "hex": "#00A651", "usage": "Sustainability" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#000000", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#1A1A1A", "usage": "Card backgrounds" },
+          { "name": "Dark Elevated", "hex": "#2D2D2D", "usage": "Hover states" },
+          { "name": "Dark Border", "hex": "#404040", "usage": "Borders, dividers" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Dark Text Muted", "hex": "#A0A0A0", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Pure black and white foundation — more stark than competitors. Three Stripes ALWAYS black or white, never colored. Accent colors (blue, red, yellow) used sparingly for sub-brand identity (Originals = blue, Performance = red). Product colorways add variety. Sustainability content uses green. Never mix multiple accent colors.",
+      "typography": {
+        "headings": "AdihausDIN Bold / Bebas Neue Bold",
+        "body": "AdihausDIN Regular / Roboto",
+        "fallback": "Helvetica Neue, Arial, sans-serif",
+        "googleFonts": "Bebas+Neue&family=Roboto:wght@400;500;700"
+      },
+      "typographyScale": "Hero: 80px/0.95 (uppercase) • H1: 56px/1.0 • H2: 40px/1.1 • H3: 24px/1.2 • Body: 15px/1.6 • Small: 13px/1.5 • Price: 18px/1.2 bold. Headlines uppercase, tight. German precision in typography.",
+      "spacing": "Base: 8px. Hero padding: 64-96px. Product grid gap: 8-16px tight. Card padding: 16px. Section margins: 48px. Button padding: 14px 28px. Max-width: 1280px. Tight, grid-aligned precision.",
+      "components": "• Buttons: Sharp corners (0 radius), black fill, uppercase, 48px height — signature Adidas style\n• Product cards: Tight grid, image 100% width, text below, minimal padding\n• Three Stripes: Sacred element — exact 3 stripes, equal width, equal gap\n• Hero: Full-width, athlete in motion, geometric overlay possible\n• Filter bar: Horizontal, pill toggles, sticky on scroll\n• Size grid: Rectangular buttons, black border, no radius",
+      "elevation": "• Level 0: No shadow (flat, graphic style)\n• Level 1: 0 2px 4px rgba(0,0,0,0.1) — Cards on hover\n• Level 2: 0 4px 12px rgba(0,0,0,0.15) — Dropdowns\n• Level 3: 0 8px 24px rgba(0,0,0,0.2) — Modals\n• Minimal shadows overall — prefer borders and contrast",
+      "motion": "Precise, athletic, European restraint. Duration: 200-300ms. Ease: cubic-bezier(0.4, 0, 0.2, 1). Product hover: Subtle scale (1.02), shadow appear. Page transitions: Quick fade. Three Stripes: Can animate sequentially. No bounce — crisp and controlled.",
+      "layout": "Grid-obsessed. 12-column system, strict alignment. 4-6 column product grids (tight). Full-width heroes with geometric crops. Modular sections. Max-width: 1280px. Everything aligned to baseline grid.",
+      "responsive": "• Desktop (>1280px): 4-5 column product grid, full layout\n• Laptop (900-1280px): 4 column grid\n• Tablet (600-900px): 3 column grid, reduced margins\n• Mobile (<600px): 2 column grid, 12px margins, bottom sticky CTA, hamburger nav with full-screen takeover",
+      "iconStyle": "Geometric, minimal. 24px, 2px stroke, square corners. Three Stripes motif can influence icon design. Functional icons only — no decorative illustration.",
+      "interactiveStates": "• Hover: Border thicken (1px→2px), subtle bg fill\n• Focus: Black ring (2px), sharp corners\n• Active: Invert (white text on black)\n• Selected: Solid black fill, white text\n• Disabled: 50% opacity, no interaction\n• Wishlist heart: Outline→filled black",
+      "mediaPatterns": "• Product shots: Clean studio, white/gray bg, 45° angle, sharp shadows\n• Athlete photography: Dynamic motion, peak performance, graphic crops\n• Video: 16:9 or 9:16, high production value, music-driven edits\n• Lifestyle: Street style, urban, diverse athletes\n• Tech callouts: Clean diagrams, Boost/Primeknit close-ups\n• Aspect ratios: 4:5 product cards, 16:9 video, 1:1 social",
+      "copyVoice": "Confident, athletic, global. 'Impossible Is Nothing.' Short, powerful statements. Bilingual vibe (German precision, global appeal). Creator-focused. Inclusive. No fluff. Action-oriented. Uppercase headlines.",
+      "designPrinciples": [
+        "Three Stripes are sacred",
+        "Precision over decoration",
+        "Sharp corners, tight grids",
+        "Black and white foundation",
+        "Creator and athlete first",
+        "German engineering aesthetic"
+      ],
+      "mood": ["athletic", "precise", "urban", "bold", "global", "innovative"]
+    },
+    {
+      "id": "starbucks",
+      "name": "Starbucks",
+      "category": "Consumer",
+      "public": true,
+      "stockSymbol": "SBUX",
+      "colors": {
+        "primary": [
+          { "name": "Starbucks Green", "hex": "#006241", "usage": "Primary brand, logo, CTAs" },
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, text on green" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Warm White", "hex": "#F9F9F9", "usage": "Section backgrounds" },
+          { "name": "Cool Gray", "hex": "#D4D4D4", "usage": "Borders, dividers" },
+          { "name": "Warm Gray", "hex": "#6B6B6B", "usage": "Body text" },
+          { "name": "Black", "hex": "#000000", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Accent Green", "hex": "#00A862", "usage": "Light green accent, rewards" },
+          { "name": "Espresso", "hex": "#1E3932", "usage": "Dark green, premium moments" },
+          { "name": "Light Green", "hex": "#D4E9E2", "usage": "Subtle backgrounds" },
+          { "name": "Rewards Gold", "hex": "#CBA258", "usage": "Rewards program, stars" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1E3932", "usage": "Page background (espresso green)" },
+          { "name": "Dark Surface", "hex": "#2A4A42", "usage": "Card backgrounds" },
+          { "name": "Dark Elevated", "hex": "#3A5A52", "usage": "Hover states" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Dark Accent", "hex": "#00A862", "usage": "Accent green on dark" },
+          { "name": "Dark Muted", "hex": "#B5C7C2", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Starbucks Green (#006241) is the signature — use for logo, primary buttons, and key moments. White is the primary background. Light green tints (#D4E9E2) for subtle section backgrounds. Gold exclusively for Rewards/Stars. Espresso green (#1E3932) for premium/dark sections. Green should feel lush and natural, never neon.",
+      "typography": {
+        "headings": "Sodo Sans Bold / Freight Sans Bold",
+        "body": "Sodo Sans Regular / Freight Sans",
+        "accent": "Pike (serif, for quotes)",
+        "fallback": "Helvetica Neue, Arial, sans-serif",
+        "googleFonts": "Source+Sans+3:wght@400;600;700"
+      },
+      "typographyScale": "Hero: 56px/1.15 • H1: 44px/1.2 • H2: 32px/1.25 • H3: 24px/1.3 • Body: 16px/1.6 • Small: 14px/1.5 • Price: 20px/1.2 bold. Friendly, warm typography. Not too tight. Generous line-height for readability.",
+      "spacing": "Base: 8px. Hero padding: 64-96px. Menu card padding: 20px. Section gaps: 48px. Button padding: 14px 28px. Max-width: 1200px. Warm, inviting spacing — not cramped, not sparse.",
+      "components": "• Buttons: Rounded (500px radius pill), green fill or green outline, 44px height\n• Menu cards: White bg, rounded (16px), drink image, name, customization options\n• Siren logo: Always green on white or white on green, minimum clearspace = 1/4 logo width\n• Rewards badge: Gold star, points display\n• Drink builder: Step-by-step customization flow, visual size comparison\n• Store card: Location, hours, amenities icons, order button",
+      "elevation": "• Level 0: No shadow (inline content)\n• Level 1: 0 1px 4px rgba(0,0,0,0.08) — Cards, menu items\n• Level 2: 0 4px 12px rgba(0,0,0,0.12) — Modals, popovers\n• Level 3: 0 8px 24px rgba(0,0,0,0.16) — Hero drink shots\n• Cup glow: 0 0 30px rgba(0,98,65,0.15) — Subtle green ambient glow",
+      "motion": "Smooth, warm, comforting. Duration: 300-500ms. Ease: cubic-bezier(0.4, 0, 0.2, 1). Drink customize: Smooth transitions between options. Pour/steam animations for drink images. Stars: Sparkle/float for rewards. Gentle fade-ins.",
+      "layout": "Menu-centric with storytelling. 3-column grids for drinks. Single column for featured items and stories. Full-width seasonal campaigns. Max-width: 1200px. Generous whitespace — coffee shop comfort.",
+      "responsive": "• Desktop (>1024px): 3-column menu, full hero, sidebar rewards\n• Tablet (768-1024px): 2-column menu, scaled hero\n• Mobile (<768px): Single column, sticky order button, bottom nav, 20px margins, prominent app download",
+      "iconStyle": "Rounded, friendly, hand-drawn feel. 24px, 2px stroke, rounded caps. Custom icons for drink categories (Hot, Cold, Frappuccino). Green accent for active. Amenity icons for stores (WiFi, Drive-thru, etc.).",
+      "interactiveStates": "• Hover: Darken green (#004F36), scale 1.02 for cards\n• Focus: Green ring (3px, offset 2px)\n• Active: Darker fill, slight scale down\n• Selected: Green fill with checkmark\n• Disabled: 50% opacity\n• Rewards: Gold highlight + sparkle",
+      "mediaPatterns": "• Drink photography: Hero shots with condensation, steam, ingredients visible. Lifestyle context (hand holding cup)\n• Store imagery: Warm, inviting, green accents, diverse customers\n• Seasonal: Cozy autumn, festive winter, fresh spring campaigns\n• Video: 16:9, warm color grading, coffee rituals, ASMR elements (pour, steam)\n• Ingredients: Ingredient close-ups, origin stories\n• Aspect ratios: 16:9 hero, 1:1 menu items, 4:5 social",
+      "copyVoice": "Warm, inviting, personal. 'To inspire and nurture the human spirit.' Second person ('Your perfect drink'). Sensory language (rich, smooth, bold). Community-focused. Sustainability mentions. Friendly barista tone.",
+      "designPrinciples": [
+        "Siren is sacred — always respected",
+        "Green is lush, natural, never artificial",
+        "Warmth and human connection",
+        "The drink is the hero",
+        "Coffee craft and quality",
+        "Third place experience"
+      ],
+      "mood": ["warm", "inviting", "premium", "natural", "community", "comforting"]
+    },
+    {
+      "id": "petscreening",
+      "name": "PetScreening",
+      "category": "SaaS",
+      "public": false,
+      "logo": "https://www.petscreening.com/wp-content/uploads/2021/04/petscreening-logo.png",
+      "colors": {
+        "primary": [
+          { "name": "Pack Blue", "hex": "#1F2257", "usage": "Logo, icons, rule lines — NOT large backgrounds" },
+          { "name": "Retriever Rust", "hex": "#B17455", "usage": "Warm accent, CTAs, highlights" },
+          { "name": "Tabby Yellow", "hex": "#E2AB58", "usage": "Highlight accent, stars, badges" },
+          { "name": "Sky Blue", "hex": "#DAEBF5", "usage": "Light background sections" },
+          { "name": "Succulent Green", "hex": "#8DAEA7", "usage": "Calm accent, success states" }
+        ],
+        "neutral": [
+          { "name": "Dog Bone White", "hex": "#F9F4E6", "usage": "Primary warm backgrounds" },
+          { "name": "Pure White", "hex": "#FFFFFF", "usage": "Cards, clean surfaces" },
+          { "name": "Whisker Beige", "hex": "#D3CEBD", "usage": "Subtle dividers, muted elements" },
+          { "name": "Greyhound Gray", "hex": "#AFB2B3", "usage": "Disabled states, placeholders" },
+          { "name": "Smokey Gray", "hex": "#636569", "usage": "Body text" }
+        ],
+        "secondary": [
+          { "name": "Cornflower Blue", "hex": "#7D9BC1", "usage": "Secondary accent, links" },
+          { "name": "Chew Toy Orange", "hex": "#DD7B45", "usage": "Energetic accent, warnings" },
+          { "name": "Fire Hydrant Red", "hex": "#CF5A3F", "usage": "Errors, destructive actions" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1A1D2E", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#252940", "usage": "Card backgrounds" },
+          { "name": "Dark Elevated", "hex": "#323752", "usage": "Hover states, inputs" },
+          { "name": "Dark Border", "hex": "#404563", "usage": "Borders, dividers" },
+          { "name": "Dark Text", "hex": "#F5F2EB", "usage": "Primary text" },
+          { "name": "Dark Text Muted", "hex": "#A8A5A0", "usage": "Secondary text" },
+          { "name": "Dark Rust", "hex": "#C98A6C", "usage": "Rust accent adjusted for dark" }
+        ]
+      },
+      "colorUsage": "Dog Bone White (#F9F4E6) is the signature warm background — NOT pure white. Pack Blue ONLY for small accents (icons, rules, logo) — never large backgrounds. Retriever Rust for primary CTAs and warm accents. Sky Blue for alternate sections. Max 3 colors per design. Earth-toned, muted palette throughout. Tabby Yellow for stars and achievement moments.",
+      "typography": {
+        "headings": "Poppins Medium/Bold",
+        "body": "Poppins Regular",
+        "accent": "Lora Bold (serif, for quotes and testimonials)",
+        "fallback": "system-ui, sans-serif",
+        "googleFonts": "Poppins:wght@400;500;600;700&family=Lora:wght@700"
+      },
+      "typographyScale": "H1: 40px/1.2/500 • H2: 32px/1.25/500 • H3: 24px/1.3/500 • Body: 16px/1.6 • Small: 14px/1.5 • Caption: 12px/1.4. Friendly weights, generous line-height. Lora for testimonial quotes and emotional moments.",
+      "spacing": "Base: 8px. Section padding: 64px vertical. Cards: 24px padding. Button padding: 12px 24px. Form fields: 16px gap. Max-width: 1140px. Comfortable, not cramped — friendly spacing.",
+      "components": "• Buttons: Rounded (12px radius), Rust fill primary, outlined secondary, 44px height\n• Pet cards: White bg, rounded (16px), pet photo circle, name/type/status\n• Profile badges: Rounded pills with status icons (verified, FIDO score)\n• Input fields: Rounded (8px), Dog Bone White bg, Pack Blue focus border\n• Progress steps: Circular numbered steps with connecting line\n• FIDO Score: Circular gauge with gradient fill, score number center",
+      "elevation": "• Level 0: No shadow (flat inline content)\n• Level 1: 0 2px 8px rgba(31,34,87,0.08) — Cards, inputs\n• Level 2: 0 4px 16px rgba(31,34,87,0.12) — Dropdowns, popovers\n• Level 3: 0 8px 32px rgba(31,34,87,0.16) — Modals\n• Warm glow: 0 0 20px rgba(177,116,85,0.15) — Pet profile highlights",
+      "motion": "Friendly, organic, never robotic. Duration: 250-400ms. Ease: cubic-bezier(0.4, 0, 0.2, 1). Form steps: Smooth slide transitions. Pet cards: Gentle float on hover. Progress: Animated fill. Subtle parallax on scroll. Paw print loading animation.",
+      "layout": "Friendly single-column flows for forms. 3-column grids for pet listings. Dashboard: Sidebar + main content. Max-width: 1140px. Generous whitespace. Organic shapes for section breaks (subtle curves).",
+      "responsive": "• Desktop (>1024px): Sidebar navigation, 3-column grids, full dashboard\n• Tablet (768-1024px): Collapsible sidebar, 2-column grids\n• Mobile (<768px): Bottom navigation, single column, full-width cards, 16px margins, step-by-step form flow",
+      "iconStyle": "Rounded line icons, 24px, 2px stroke, rounded caps. Friendly, approachable. Custom pet-themed icons (paw, bone, collar, house). Pack Blue stroke, filled on active.",
+      "interactiveStates": "• Hover: Subtle lift (translate-y -2px), shadow increase, Rust text for links\n• Focus: Pack Blue ring (2px, offset 2px)\n• Active: Scale 0.98\n• Selected: Rust fill or Rust border\n• Disabled: Greyhound Gray, 50% opacity\n• Success: Succulent Green check + subtle pulse",
+      "mediaPatterns": "• Pet photography: Warm, lifestyle shots, pets with owners, natural lighting\n• Profile photos: Circular crop, 80-120px, soft shadow\n• Icons/illustrations: Organic, hand-drawn feel, muted earth tones\n• Video: 16:9, warm color grading, happy pets and families\n• Testimonials: Quote with photo, Lora italic\n• Aspect ratios: 1:1 pet profiles, 16:9 hero, 4:3 property photos",
+      "copyVoice": "Warm, friendly, reassuring. Pet-owner focused. 'Welcoming pets and protecting properties.' Second person. Empathetic ('We know your pet is family'). Professional but approachable. Clear, helpful guidance. No jargon.",
+      "designPrinciples": [
+        "Contemporary, clean, warm — lifestyle brand feel",
+        "Use navy sparingly (small accents, not backgrounds)",
+        "Organic shapes and flowing lines over rigid geometry",
+        "Max 3 colors per piece",
+        "Earth-toned, warm, muted feel",
+        "Pets and people together"
+      ],
+      "mood": ["warm", "friendly", "organic", "lifestyle", "approachable", "trustworthy"]
+    }
+  ]
+}

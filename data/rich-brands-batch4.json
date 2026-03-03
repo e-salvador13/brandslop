@@ -1,0 +1,471 @@
+{
+  "brands": [
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "category": "Social",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "LinkedIn Blue", "hex": "#0A66C2", "usage": "Primary brand, CTAs, links" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Card backgrounds" },
+          { "name": "Cool Gray 10", "hex": "#F3F2EF", "usage": "Page background" },
+          { "name": "Cool Gray 20", "hex": "#E9E5DF", "usage": "Borders, dividers" },
+          { "name": "Cool Gray 40", "hex": "#B0ABA4", "usage": "Disabled states" },
+          { "name": "Warm Gray 60", "hex": "#86888A", "usage": "Secondary text" },
+          { "name": "Warm Gray 80", "hex": "#5E5E5E", "usage": "Body text" },
+          { "name": "Black", "hex": "#000000", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Success Green", "hex": "#057642", "usage": "Success, available" },
+          { "name": "Warning Yellow", "hex": "#C37D16", "usage": "Warnings" },
+          { "name": "Error Red", "hex": "#CC1016", "usage": "Errors, alerts" },
+          { "name": "Premium Gold", "hex": "#A67C00", "usage": "Premium features" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1D2226", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#38434F", "usage": "Cards" },
+          { "name": "Dark Border", "hex": "#464D53", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#B0B0B0", "usage": "Secondary" }
+        ]
+      },
+      "colorUsage": "LinkedIn Blue for ALL interactive elements. Warm beige background (#F3F2EF) is signature — never pure white page bg. Gold for Premium features. Green dot for 'available' status. Professional, muted palette throughout.",
+      "typography": {
+        "headings": "Source Sans 3 Bold",
+        "body": "Source Sans 3 Regular",
+        "mono": "Source Code Pro",
+        "googleFonts": "Source+Sans+3:wght@400;600;700"
+      },
+      "typographyScale": "H1: 32px/1.2 • H2: 24px/1.25 • H3: 18px/1.3 • Body: 14px/1.43 • Small: 12px/1.33 • Name (Card): 16px/1.25 Bold. Compact for information density.",
+      "spacing": "Base: 8px. Card padding: 16px. Feed gap: 8px. Section margins: 24px. Sidebar width: 225px left, 300px right. Feed max-width: 544px.",
+      "components": "• Cards: White bg, rounded (8px), subtle shadow\n• Post: Author header + content + engagement bar\n• Profile: Banner + avatar (overlay) + info sections\n• Avatar: Circle, 48px posts / 72px cards / 152px profile\n• Connection buttons: Blue outline or filled\n• Reactions: Like + Celebrate + Support + Love + Insightful + Funny",
+      "elevation": "• Level 0: No shadow (inline content)\n• Level 1: 0 0 0 1px rgba(0,0,0,0.08), 0 4px 4px rgba(0,0,0,0.06)\n• Level 2: 0 0 0 1px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1)\n• Cards always have subtle border + shadow",
+      "motion": "Professional, restrained. Duration: 150-200ms. Post reactions: Quick pop. Profile visits: Tab slide. Notifications: Slide in. Skeleton loading for content. No playful animations.",
+      "layout": "3-column: Left sidebar (225px), Feed (544px), Right sidebar (300px). Profile: Full-width header, sectioned content. Mobile: Single column, bottom tabs.",
+      "responsive": "• Desktop (>1128px): Full 3-column, sidebars visible\n• Laptop (992-1128px): Right sidebar collapses\n• Tablet (768-992px): Single column with top nav\n• Mobile (<768px): Full-width, bottom tab bar, collapsible nav",
+      "iconStyle": "Simple line icons, 24px. 1.5px stroke. Professional, clear. Custom LinkedIn icons for features. Reaction icons are colorful and expressive.",
+      "interactiveStates": "• Hover: Background darken, underline for text links\n• Focus: Blue outline ring (2px)\n• Active: Slight scale down\n• Connect sent: Checkmark + 'Pending'\n• Reactions: Color-coded hover previews",
+      "mediaPatterns": "• Avatar: 48px in posts, 72px in cards, 152px on profile\n• Banner: 1584x396px (4:1), cropped responsively\n• Post images: Max 1:1 or 16:9, rounded (8px)\n• Video: 16:9, native player\n• Document carousel: Slides with navigation arrows\n• Company logos: Square, 48-72px",
+      "copyVoice": "Professional, career-focused. 'Connect with professionals.' Thought leadership tone. Third-person for profiles. Accomplishment-oriented. Business jargon accepted. Trust and credibility.",
+      "designPrinciples": [
+        "Professional networking first",
+        "Trust through design",
+        "Information density okay",
+        "Beige background signature",
+        "Career-focused features"
+      ],
+      "mood": ["professional", "networking", "career", "corporate", "trustworthy"]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "category": "SaaS",
+      "public": true,
+      "stockSymbol": "DBX",
+      "colors": {
+        "primary": [
+          { "name": "Dropbox Blue", "hex": "#0061FF", "usage": "Primary brand, CTAs" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Gray 10", "hex": "#F7F5F2", "usage": "Subtle backgrounds" },
+          { "name": "Gray 30", "hex": "#D9D7D4", "usage": "Borders" },
+          { "name": "Gray 60", "hex": "#807E7C", "usage": "Secondary text" },
+          { "name": "Gray 80", "hex": "#484644", "usage": "Body text" },
+          { "name": "Black", "hex": "#1E1919", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Blue 30", "hex": "#70B1FF", "usage": "Light blue accent" },
+          { "name": "Purple", "hex": "#6F42C1", "usage": "Replay product" },
+          { "name": "Pink", "hex": "#FF1C90", "usage": "Marketing accents" },
+          { "name": "Yellow", "hex": "#FFD830", "usage": "Highlights" },
+          { "name": "Green", "hex": "#1BB76E", "usage": "Success states" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1E1919", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#2B2929", "usage": "Cards" },
+          { "name": "Dark Border", "hex": "#484644", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#F7F5F2", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Blue for primary actions and brand. Bold accent colors (pink, yellow, purple) for marketing and illustration — NOT in product UI. Product is clean, minimal. Warm grays (beige-tinted). Creative brand positioning.",
+      "typography": {
+        "headings": "Sharp Grotesk Bold / Atlas Grotesk Bold",
+        "body": "Atlas Grotesk Regular",
+        "mono": "Atlas Typewriter",
+        "fallback": "Helvetica Neue, Arial, sans-serif"
+      },
+      "typographyScale": "Display: 64px/1.1 • H1: 48px/1.15 • H2: 36px/1.2 • H3: 24px/1.25 • Body: 16px/1.5 • Small: 14px/1.43 • Caption: 12px/1.33.",
+      "spacing": "Base: 8px. Card padding: 16-24px. Section margins: 48-64px. File list: 12px row padding. Grid gap: 16-24px. Max-width: 1120px content.",
+      "components": "• File browser: List or grid view, thumbnail previews\n• Folder cards: Icon + name + metadata\n• Upload dropzone: Dashed border, drag state\n• Share modal: User search + permissions\n• Buttons: Rounded (4px), blue primary, 36px height\n• Progress: Blue fill bar, percentage",
+      "elevation": "• Level 0: No shadow (flat file list)\n• Level 1: 0 1px 2px rgba(0,0,0,0.1) — Cards\n• Level 2: 0 4px 8px rgba(0,0,0,0.1) — Dropdowns\n• Level 3: 0 8px 24px rgba(0,0,0,0.15) — Modals\n• Dropzone active: Blue dashed border glow",
+      "motion": "Smooth, professional. Duration: 200-300ms. Upload: Progress bar + success checkmark. File operations: Optimistic updates. Drag: Ghost with shadow. Playful illustrations on empty states.",
+      "layout": "File browser: Left nav (folders), main content (files grid/list), preview panel optional. Responsive: Sidebar collapses. Mobile: Tab navigation.",
+      "responsive": "• Desktop (>1024px): Full sidebar, file browser, preview pane\n• Tablet (768-1024px): Sidebar as overlay\n• Mobile (<768px): Bottom tabs, full-width file list, simplified actions",
+      "iconStyle": "Custom Dropbox icons, 24px. Rounded, friendly style. File type icons are recognizable. Blue folder icon is signature. Illustrations are bold, colorful.",
+      "interactiveStates": "• Hover: Background highlight, show actions\n• Focus: Blue outline ring\n• Selected: Blue background tint, checkmark\n• Dragging: Ghost element, drop target highlight\n• Uploading: Progress overlay",
+      "mediaPatterns": "• File thumbnails: Square (1:1), rounded (4px)\n• Preview: Full-width, native aspect ratio\n• Illustrations: Bold shapes, brand colors, playful\n• Icons: 24px default, 48px in empty states\n• Avatar: Circle, 32-40px",
+      "copyVoice": "Creative, collaborative. 'Your work anywhere.' Second-person. Friendly, not corporate. File management made human. Team collaboration emphasis.",
+      "designPrinciples": [
+        "Creative focus",
+        "Playful brand, serious product",
+        "Collaboration is core",
+        "Bold marketing, clean product",
+        "Illustrations tell stories"
+      ],
+      "mood": ["creative", "collaborative", "organized", "playful", "modern"]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "category": "SaaS",
+      "public": true,
+      "stockSymbol": "ZM",
+      "colors": {
+        "primary": [
+          { "name": "Zoom Blue", "hex": "#2D8CFF", "usage": "Primary brand, CTAs" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Gray 100", "hex": "#F5F6F7", "usage": "Subtle backgrounds" },
+          { "name": "Gray 300", "hex": "#D8D8D8", "usage": "Borders" },
+          { "name": "Gray 500", "hex": "#747487", "usage": "Secondary text" },
+          { "name": "Gray 700", "hex": "#4A4A5A", "usage": "Body text" },
+          { "name": "Gray 900", "hex": "#232333", "usage": "Headlines, meeting bg" }
+        ],
+        "secondary": [
+          { "name": "Orange", "hex": "#F26D21", "usage": "Webinars" },
+          { "name": "Green", "hex": "#4BBF73", "usage": "Success, connected" },
+          { "name": "Red", "hex": "#E02828", "usage": "End call, muted, errors" },
+          { "name": "Yellow", "hex": "#FFB800", "usage": "Warnings, hand raise" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1E1E1E", "usage": "Meeting background" },
+          { "name": "Dark Surface", "hex": "#2D2D2D", "usage": "Controls, panels" },
+          { "name": "Dark Controls", "hex": "#3D3D3D", "usage": "Hover states" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "All text in meeting" }
+        ]
+      },
+      "colorUsage": "Blue for primary actions. Meeting UI is dark (gray-900 or darker). Red for destructive (end call, mute indicator). Green for connected/success. Simple, clear color coding. Minimize distractions during calls.",
+      "typography": {
+        "headings": "Lato Bold",
+        "body": "Lato Regular",
+        "mono": "Roboto Mono",
+        "googleFonts": "Lato:wght@400;700&family=Roboto+Mono"
+      },
+      "typographyScale": "H1: 36px/1.2 • H2: 28px/1.25 • H3: 20px/1.3 • Body: 14px/1.5 • Small: 12px/1.33 • Meeting name: 18px/1.3. Compact for UI density.",
+      "spacing": "Base: 8px. Controls bar: 48-56px height. Participant tiles: 4px gap. Settings padding: 16px. Modal padding: 24px. Meeting controls: Center-aligned.",
+      "components": "• Video tile: Participant video, name overlay bottom-left\n• Controls bar: Center icons (mute, video, share, etc), dark bg\n• Participant panel: List with avatars, status icons\n• Chat: Message bubbles, timestamp\n• Buttons: Rounded (4px), blue primary, 36px height\n• Join form: Meeting ID input, name, join button",
+      "elevation": "• Video tiles: No shadow (flat grid)\n• Control bar: Subtle shadow above when at bottom\n• Panels: 0 4px 12px rgba(0,0,0,0.15)\n• Modals: 0 8px 24px rgba(0,0,0,0.2)",
+      "motion": "Minimal, functional. Video connect/disconnect: Fade. Screen share: Instant switch. Hand raise: Bounce. Reactions: Float up and fade. Duration: 150-200ms. No distracting animations.",
+      "layout": "Meeting: Full-screen video grid (gallery) or speaker view. Controls bottom center. Participants/chat panels slide from right. Floating self-view. Settings: Tabbed modal.",
+      "responsive": "• Desktop (>1024px): Gallery view with many tiles, side panels\n• Tablet (768-1024px): Fewer tiles, compact controls\n• Mobile (<768px): Speaker view default, swipe for participants, bottom sheet panels",
+      "iconStyle": "Simple, clear icons, 24px. Rounded style. Mic, Video, Share, Participants, Chat, React, End. Red slash for muted. Instant recognition required.",
+      "interactiveStates": "• Hover: Icon background highlight\n• Muted: Red slash on icon, text indicator\n• Speaking: Green ring around video tile\n• Hand raised: Yellow hand icon\n• Screen sharing: Green border on sharer\n• Reactions: Emoji overlay on video tile",
+      "mediaPatterns": "• Video tiles: 16:9, object-fit cover, name overlay\n• Gallery view: Auto-grid, maximize tiles\n• Speaker view: Large speaker, small filmstrip\n• Screen share: Full-width, optional thumbnail view\n• Virtual backgrounds: Behind participant, edge detect\n• Profile photos: Circle, shown when video off",
+      "copyVoice": "Clear, simple, inclusive. 'Start Meeting.' 'Join with Computer Audio.' Minimal jargon. Accessibility-conscious. 'We're here to help.' Enterprise-ready but consumer-friendly.",
+      "designPrinciples": [
+        "Video-first communication",
+        "Simple to join",
+        "Works on everything",
+        "Don't distract from faces",
+        "Reliable and clear"
+      ],
+      "mood": ["communication", "simple", "reliable", "professional", "video"]
+    },
+    {
+      "id": "asana",
+      "name": "Asana",
+      "category": "SaaS",
+      "public": true,
+      "stockSymbol": "ASAN",
+      "colors": {
+        "primary": [
+          { "name": "Coral", "hex": "#F06A6A", "usage": "Primary brand, CTAs" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Card backgrounds" },
+          { "name": "Cocoa Cream", "hex": "#F5F4F3", "usage": "Page background" },
+          { "name": "Mist", "hex": "#ECEAE9", "usage": "Borders, dividers" },
+          { "name": "Steel", "hex": "#6D6E6F", "usage": "Secondary text" },
+          { "name": "Charcoal", "hex": "#1E1F21", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Orange", "hex": "#F8803A", "usage": "Accents" },
+          { "name": "Yellow", "hex": "#FDBD39", "usage": "Warnings, highlights" },
+          { "name": "Lime", "hex": "#ADC772", "usage": "On track" },
+          { "name": "Mint", "hex": "#6EC6B1", "usage": "Complete" },
+          { "name": "Blue", "hex": "#4186E0", "usage": "Info, links" },
+          { "name": "Indigo", "hex": "#7A7ADA", "usage": "In progress" },
+          { "name": "Purple", "hex": "#AA62E3", "usage": "Accents" },
+          { "name": "Magenta", "hex": "#E362A5", "usage": "Accents" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1E1F21", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#2A2B2D", "usage": "Cards" },
+          { "name": "Dark Border", "hex": "#424244", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Coral for primary CTAs and brand. Rainbow palette for project colors, tags, and status. Cream/beige background signature (NOT white). Colorful but organized. Celebration moments use color bursts.",
+      "typography": {
+        "headings": "Asana Bold / Inter Bold",
+        "body": "Asana Regular / Inter Regular",
+        "mono": "JetBrains Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "H1: 28px/1.2 • H2: 22px/1.25 • H3: 18px/1.3 • Body: 13px/1.46 • Small: 11px/1.4 • Task name: 14px/1.4. Compact for task density.",
+      "spacing": "Base: 4px. Task row: 36-44px height. Card padding: 12-16px. Section gaps: 24px. Sidebar: 240px. Project header: 48px.",
+      "components": "• Task row: Checkbox + name + assignee avatar + due date + tags\n• Project views: List, Board, Timeline, Calendar\n• Board columns: Header + card stack, drag between\n• My Tasks: Inbox-style list, sections\n• Buttons: Rounded (4px), coral primary, 32px height\n• Tags: Colored pills, small (22px height)",
+      "elevation": "• Level 0: No shadow (inline tasks)\n• Level 1: 0 1px 2px rgba(0,0,0,0.1) — Cards on board\n• Level 2: 0 4px 12px rgba(0,0,0,0.15) — Task detail pane\n• Level 3: 0 8px 24px rgba(0,0,0,0.2) — Modals",
+      "motion": "Delightful, celebratory. Task complete: Checkmark animation + confetti burst. Drag: Smooth card following cursor. Duration: 200-300ms. Celebration creatures (unicorns!) on milestones. Engaging but not distracting.",
+      "layout": "Sidebar (240px) + Main content. List view: Single column tasks. Board view: Kanban columns. Timeline: Gantt-style. Task detail: Slide-over panel right.",
+      "responsive": "• Desktop (>1100px): Full sidebar, all views available\n• Tablet (768-1100px): Sidebar collapses to icons\n• Mobile (<768px): Bottom tabs, simplified task views, gesture navigation",
+      "iconStyle": "Custom Asana icons, 16-24px. Rounded, friendly. Checkmark is signature. Status icons match project colors. Three dots logo is recognizable.",
+      "interactiveStates": "• Hover: Row highlight, show actions\n• Focus: Blue outline ring\n• Complete: Checkmark animation + gray strikethrough\n• Drag: Card lifts with shadow\n• Celebration: Confetti burst, flying creatures",
+      "mediaPatterns": "• Avatar: Circle, 24px inline, 32px task detail, 48px profile\n• Cover images: Project covers, 16:9\n• Attachments: Preview thumbnails, file type icons\n• Timeline: Horizontal bars, dates on axis\n• Charts: Progress donuts, colorful",
+      "copyVoice": "Encouraging, team-focused. 'Work together effortlessly.' Celebrate wins. Action-oriented ('Add task', 'Mark complete'). Productivity-positive. Collaboration language.",
+      "designPrinciples": [
+        "Clarity enables focus",
+        "Colorful organization",
+        "Celebrate completion",
+        "Multiple views, one source of truth",
+        "Cream background signature"
+      ],
+      "mood": ["productive", "colorful", "organized", "collaborative", "celebration"]
+    },
+    {
+      "id": "trello",
+      "name": "Trello",
+      "category": "SaaS",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Trello Blue", "hex": "#0079BF", "usage": "Primary brand" },
+          { "name": "Board Blue", "hex": "#0079BF", "usage": "Default board color" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Card backgrounds" },
+          { "name": "Background Light", "hex": "#F4F5F7", "usage": "Page bg (light mode)" },
+          { "name": "N500", "hex": "#5E6C84", "usage": "Secondary text" },
+          { "name": "N700", "hex": "#42526E", "usage": "Body text" },
+          { "name": "N900", "hex": "#172B4D", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Green", "hex": "#61BD4F", "usage": "Complete, success" },
+          { "name": "Yellow", "hex": "#F2D600", "usage": "Warnings, attention" },
+          { "name": "Orange", "hex": "#FF9F1A", "usage": "Priority" },
+          { "name": "Red", "hex": "#EB5A46", "usage": "Overdue, errors" },
+          { "name": "Purple", "hex": "#C377E0", "usage": "Labels" },
+          { "name": "Pink", "hex": "#FF78CB", "usage": "Labels" },
+          { "name": "Sky", "hex": "#00C2E0", "usage": "Labels" },
+          { "name": "Lime", "hex": "#51E898", "usage": "Labels" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1D2125", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#282E33", "usage": "Cards, lists" },
+          { "name": "Dark Elevated", "hex": "#323940", "usage": "Hover states" },
+          { "name": "Dark Text", "hex": "#B6C2CF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Boards have custom background colors/images. Cards are always white (light) or dark surface (dark mode). Labels are rainbow palette. Blue for primary actions. Keep cards clean — color is in labels and backgrounds.",
+      "typography": {
+        "headings": "Charlie Display Bold / Inter Bold",
+        "body": "Charlie Text Regular / Inter Regular",
+        "mono": "Roboto Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Board name: 18px/1.3 • List name: 14px/1.2 Bold • Card title: 14px/1.3 • Description: 14px/1.5 • Labels: 12px/1.2. Simple, readable scale.",
+      "spacing": "Base: 8px. Card padding: 8px. List padding: 4px. List gap: 8px. Card gap: 8px. Board margin: 8-16px.",
+      "components": "• Board: Background + columns (lists)\n• List: Header (name + menu) + cards stack\n• Card: Labels + cover (optional) + title + badges\n• Card badges: Due date, comments, attachments, checklist progress\n• Labels: Colored pills, 8px height, text optional\n• Checklist: Progress bar + items",
+      "elevation": "• Cards: 0 1px 0 rgba(9,30,66,0.25) (subtle bottom shadow)\n• Card drag: 0 8px 16px rgba(0,0,0,0.2)\n• Modals: 0 8px 16px rgba(0,0,0,0.15)\n• Lists have no shadow (flat)",
+      "motion": "Smooth, card-focused. Card drag: Instant grab, smooth move. Drop: Settle into place. Modal: Slide up. Duration: 150-250ms. Butler animations for automation.",
+      "layout": "Horizontal scrolling board. Lists as vertical columns (272px width). Cards stack vertically. Card detail: Modal overlay. Workspace: Board grid.",
+      "responsive": "• Desktop (>1024px): Full board, horizontal scroll\n• Tablet (768-1024px): Same layout, touch-friendly\n• Mobile (<768px): Single list view, swipe between lists, card detail full-screen",
+      "iconStyle": "Simple icons, 16-20px. Rounded, friendly. Due date calendar, comment bubble, attachment clip, checklist checkbox. Trello logo is blue gradient.",
+      "interactiveStates": "• Hover: Card lightens, show edit pencil\n• Focus: Blue outline ring\n• Drag: Card lifts, placeholder shows\n• Due soon: Yellow badge\n• Overdue: Red badge\n• Complete: Green checkmark",
+      "mediaPatterns": "• Card covers: Top of card, cropped image or solid color\n• Backgrounds: Full-bleed, image or gradient, darkened for readability\n• Attachments: Thumbnail previews on card back\n• Avatar: Circle, 28px on cards, 32-40px in menus\n• Power-Up icons: 24px, branded",
+      "copyVoice": "Simple, flexible. 'Boards, lists, cards.' No jargon. Empowering individuals and teams. 'Move work forward.' Template-oriented. Butler for automation.",
+      "designPrinciples": [
+        "Boards, lists, cards",
+        "Visual organization",
+        "Drag and drop is core",
+        "Flexible for any workflow",
+        "Colorful labels for status"
+      ],
+      "mood": ["simple", "visual", "organized", "flexible", "colorful"]
+    },
+    {
+      "id": "monzo",
+      "name": "Monzo",
+      "category": "Fintech",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Hot Coral", "hex": "#FF5C5C", "usage": "Primary brand, card color" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Light", "hex": "#F7F7F7", "usage": "Subtle backgrounds" },
+          { "name": "Grey 300", "hex": "#D4D4D4", "usage": "Borders" },
+          { "name": "Grey 600", "hex": "#666666", "usage": "Secondary text" },
+          { "name": "Dark", "hex": "#1E1E1E", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Navy", "hex": "#14233C", "usage": "Headlines, dark sections" },
+          { "name": "Sky", "hex": "#62C4E8", "usage": "Info, calm accent" },
+          { "name": "Lime", "hex": "#B4EC51", "usage": "Success, money in" },
+          { "name": "Amber", "hex": "#FFBA00", "usage": "Warnings" },
+          { "name": "Red", "hex": "#FF3030", "usage": "Errors, money out alerts" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1E1E1E", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#2A2A2A", "usage": "Cards" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Hot Coral is THE brand — the physical card is coral. Coral for CTAs sparingly. Lime for money in, red hints for overspending. Navy for serious content. Clean, trustworthy palette. Coral glow effects occasionally.",
+      "typography": {
+        "headings": "FS Me Bold",
+        "body": "FS Me Regular",
+        "mono": "Source Code Pro",
+        "fallback": "system-ui, sans-serif"
+      },
+      "typographyScale": "H1: 32px/1.2 • H2: 24px/1.25 • H3: 18px/1.3 • Body: 16px/1.5 • Small: 14px/1.4 • Amount: 32-48px Bold. Clear for financial data.",
+      "spacing": "Base: 8px. Card padding: 16px. Transaction row: 64px height. Section gaps: 24px. Screen padding: 16px. Bottom nav: 56px.",
+      "components": "• Transaction row: Merchant icon + name + amount + category color\n• Balance card: Large amount, trend indicator\n• Spending pie: Colorful category breakdown\n• Pots: Rounded cards with progress toward goal\n• Buttons: Rounded-full (pill), coral primary, 48px height\n• Account card: Physical card preview, coral",
+      "elevation": "• Level 0: No shadow (flat design)\n• Level 1: 0 2px 8px rgba(0,0,0,0.08) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.12) — Modals\n• Coral card: Subtle coral glow on hover",
+      "motion": "Smooth, reassuring. Balance update: Number animation. Payments: Success tick + haptic. Pull to refresh: Custom coral spinner. Duration: 200-300ms. Notifications: Instant push.",
+      "layout": "Mobile-first app. Tab bar bottom. Feed: Transaction list. Summary: Spending breakdown. Pots: Savings goals. Full-screen modals for actions.",
+      "responsive": "• Mobile (primary): Single column, bottom tabs, 16px padding\n• Tablet: Larger cards, same structure\n• Desktop (web): Centered container, sidebar for navigation",
+      "iconStyle": "Custom Monzo icons, 24px. Rounded, friendly. Category icons (groceries, transport, etc) are distinct. Coral accents on icons sparingly.",
+      "interactiveStates": "• Hover: Background highlight (web)\n• Active: Scale 0.98\n• Loading: Coral spinner\n• Success: Green checkmark animation\n• Failed: Red X with explanation",
+      "mediaPatterns": "• Merchant logos: Circle, 40px, brand colors\n• Card preview: Physical card mockup, coral\n• Spending charts: Colorful pie/bar charts\n• Empty states: Friendly illustrations\n• Avatars: Circle for contacts/payees",
+      "copyVoice": "Friendly, transparent, British. 'The bank that has your back.' Clear about fees (or lack of). Community tone. 'Make money work for everyone.' Plain language for finance.",
+      "designPrinciples": [
+        "Coral card is iconic",
+        "Transparency builds trust",
+        "Real-time notifications",
+        "Financial wellbeing focus",
+        "Mobile-first banking"
+      ],
+      "mood": ["friendly", "transparent", "modern", "coral", "trustworthy"]
+    },
+    {
+      "id": "revolut",
+      "name": "Revolut",
+      "category": "Fintech",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Revolut Blue", "hex": "#0075EB", "usage": "Primary brand, CTAs" },
+          { "name": "Revolut Black", "hex": "#000000", "usage": "Headlines, dark mode" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Light Gray", "hex": "#F5F5F5", "usage": "Surface" },
+          { "name": "Gray", "hex": "#8B8B8B", "usage": "Secondary text" },
+          { "name": "Dark Gray", "hex": "#353535", "usage": "Body text" },
+          { "name": "Black", "hex": "#000000", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Green", "hex": "#00C896", "usage": "Success, positive" },
+          { "name": "Red", "hex": "#FF3B6A", "usage": "Errors, spending" },
+          { "name": "Purple", "hex": "#6B24D6", "usage": "Metal, premium" },
+          { "name": "Gold", "hex": "#C9A227", "usage": "Ultra premium" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#0D0D0D", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#1A1A1A", "usage": "Cards" },
+          { "name": "Dark Border", "hex": "#2A2A2A", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Blue for primary interactive elements. Dark mode is polished and premium. Purple/gold for premium tiers (Metal, Ultra). Green for gains, red for spending. Clean, fintech aesthetic. Gradient accents for marketing.",
+      "typography": {
+        "headings": "Revolut Sans Bold / Inter Bold",
+        "body": "Revolut Sans Regular / Inter Regular",
+        "mono": "Roboto Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "H1: 32px/1.15 • H2: 24px/1.2 • H3: 18px/1.25 • Body: 15px/1.5 • Small: 13px/1.4 • Amount: 40px/1.0 Bold. Clean financial typography.",
+      "spacing": "Base: 8px. Card padding: 16-20px. Transaction row: 60px. Section gaps: 24px. Screen padding: 20px. Nav height: 56px.",
+      "components": "• Account card: Balance + currency + card preview\n• Transaction: Merchant + category icon + amount + date\n• Currency exchange: From/To fields, rate display\n• Crypto widget: Price chart, buy/sell buttons\n• Buttons: Rounded (8px), blue primary, 48px height\n• Cards: Rounded (12px), subtle shadow",
+      "elevation": "• Level 0: No shadow (dark mode default)\n• Level 1: 0 2px 8px rgba(0,0,0,0.1) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.15) — Sheets\n• Premium cards: Subtle gradient shimmer",
+      "motion": "Polished, premium. Card flip: 3D rotation. Balance: Animated numbers. Exchange rates: Real-time updates. Duration: 200-300ms. Charts: Smooth drawing.",
+      "layout": "Tab bar bottom. Home: Accounts + quick actions + spending. Cards: Stack view. Crypto/Stocks: Chart + portfolio. Full-screen for payments.",
+      "responsive": "• Mobile (primary): Single column, bottom tabs, 20px padding\n• Tablet: Two-column layout, sidebar\n• Desktop: Web app with left sidebar, dashboard layout",
+      "iconStyle": "Clean line icons, 24px. 1.5px stroke. Custom category icons. Premium icons for Metal/Ultra. Currency flags for multi-currency.",
+      "interactiveStates": "• Hover: Background highlight\n• Active: Scale 0.98\n• Loading: Blue spinner\n• Success: Green checkmark\n• Premium: Gradient shimmer on hover",
+      "mediaPatterns": "• Card designs: Physical card previews, multiple colors/materials\n• Charts: Line charts for stocks/crypto, minimal axes\n• Flags: Currency flags, circle crop\n• Merchant logos: Square or circle, 40px\n• Premium badges: Metal sheen, gradient",
+      "copyVoice": "Global, financial freedom. 'One app, all things money.' Multi-currency focus. Tech-forward language. Premium tier emphasis. 'Unlock your money.'",
+      "designPrinciples": [
+        "One app for all money",
+        "Premium tiers visible",
+        "Multi-currency native",
+        "Dark mode polished",
+        "Global financial access"
+      ],
+      "mood": ["global", "premium", "fintech", "modern", "sleek"]
+    },
+    {
+      "id": "wise",
+      "name": "Wise",
+      "category": "Fintech",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Wise Green", "hex": "#9FE870", "usage": "Primary brand, success" },
+          { "name": "Navy", "hex": "#163300", "usage": "Dark sections, text" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Light Gray", "hex": "#F2F5F7", "usage": "Subtle backgrounds" },
+          { "name": "Gray", "hex": "#5D7079", "usage": "Secondary text" },
+          { "name": "Dark", "hex": "#2E4052", "usage": "Body text" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#2ED3B7", "usage": "Info, receiving" },
+          { "name": "Yellow", "hex": "#FFDD00", "usage": "Warnings, attention" },
+          { "name": "Orange", "hex": "#FF8B00", "usage": "Alerts" },
+          { "name": "Pink", "hex": "#FF5287", "usage": "Accents" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#163300", "usage": "Dark sections" },
+          { "name": "Dark Surface", "hex": "#1F4400", "usage": "Cards on dark" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Text on dark" },
+          { "name": "Dark Accent", "hex": "#9FE870", "usage": "Green on dark" }
+        ]
+      },
+      "colorUsage": "Bright green (#9FE870) is signature — very distinctive. Navy for dark sections and serious content. White backgrounds default. Green for CTAs, success, and brand moments. Yellow/orange for warnings. Clean, trustworthy.",
+      "typography": {
+        "headings": "Wise Sans Bold / Inter Bold",
+        "body": "Wise Sans Regular / Inter Regular",
+        "mono": "Roboto Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Display: 56px/1.1 • H1: 40px/1.15 • H2: 28px/1.2 • H3: 20px/1.25 • Body: 16px/1.5 • Small: 14px/1.4 • Rate display: 24px Bold.",
+      "spacing": "Base: 8px. Card padding: 24px. Form fields: 12px vertical gap. Section margins: 48px. Max-width: 560px forms, 1200px page.",
+      "components": "• Transfer form: Amount inputs, currency selectors, rate display\n• Rate comparison: Bank vs Wise, savings highlighted\n• Progress tracker: Steps with checkmarks\n• Currency selector: Flag + code + name\n• Buttons: Rounded (8px), green primary, 48px height\n• Cards: Rounded (16px), white, subtle shadow",
+      "elevation": "• Level 0: No shadow (flat)\n• Level 1: 0 2px 8px rgba(0,0,0,0.08) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.12) — Dropdowns\n• Level 3: 0 8px 32px rgba(0,0,0,0.15) — Modals",
+      "motion": "Clear, purposeful. Rate updates: Smooth number transitions. Transfer progress: Step-by-step reveal. Duration: 200-300ms. Savings counter: Animated on load.",
+      "layout": "Transfer flow: Centered form (560px max). Dashboard: Account overview + transactions. Multi-currency: Tabbed account views. Mobile: Single column, sticky CTAs.",
+      "responsive": "• Desktop (>1024px): Centered forms, side illustrations\n• Tablet (768-1024px): Full-width forms, stacked layout\n• Mobile (<768px): Single column, bottom CTA, simplified inputs",
+      "iconStyle": "Custom Wise icons, 24px. Rounded, friendly. Currency flags (circle). Progress checkmarks. Arrow for transfers. Simple and clear.",
+      "interactiveStates": "• Hover: Background darken for buttons\n• Focus: Green outline ring\n• Active: Scale 0.98\n• Success: Green checkmark animation\n• Error: Orange/red highlight with message",
+      "mediaPatterns": "• Currency flags: Circle, 24px inline, 40px in selectors\n• Rate charts: Line charts over time\n• Card designs: Physical card preview, green accent\n• Illustrations: Simple, flat, green accents\n• Trust badges: Partners, security certifications",
+      "copyVoice": "Transparent, mission-driven. 'Money without borders.' Clear about fees. Comparison language (vs banks). 'The cheap, fast way to send money abroad.' Trustworthy, no hidden fees.",
+      "designPrinciples": [
+        "Transparency in pricing",
+        "Green is the brand",
+        "Show the savings",
+        "Simple transfer flow",
+        "Multi-currency accounts"
+      ],
+      "mood": ["transparent", "global", "green", "trustworthy", "simple"]
+    }
+  ]
+}

@@ -1,0 +1,493 @@
+{
+  "brands": [
+    {
+      "id": "palantir",
+      "name": "Palantir",
+      "category": "Enterprise",
+      "public": true,
+      "stockSymbol": "PLTR",
+      "colors": {
+        "primary": [
+          { "name": "Palantir Black", "hex": "#101113", "usage": "Primary brand, hero backgrounds, text" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Primary text on dark, cards" },
+          { "name": "Gray 100", "hex": "#F8F9FA", "usage": "Light backgrounds" },
+          { "name": "Gray 300", "hex": "#CED4DA", "usage": "Borders, dividers" },
+          { "name": "Gray 500", "hex": "#6C757D", "usage": "Secondary text" },
+          { "name": "Gray 900", "hex": "#212529", "usage": "Body text on light" }
+        ],
+        "secondary": [
+          { "name": "Electric Blue", "hex": "#1B9CFC", "usage": "Data visualizations, accents, interactive elements" },
+          { "name": "Cyan", "hex": "#00D9FF", "usage": "Graphs, highlights, terminal aesthetics" },
+          { "name": "Orange", "hex": "#FF6B35", "usage": "Alerts, warnings, emphasis" },
+          { "name": "Green", "hex": "#00C853", "usage": "Success states, positive metrics" },
+          { "name": "Red", "hex": "#FF1744", "usage": "Critical alerts, errors" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#0A0B0D", "usage": "Primary page background" },
+          { "name": "Dark Surface", "hex": "#101113", "usage": "Cards, panels" },
+          { "name": "Dark Elevated", "hex": "#1A1C1F", "usage": "Elevated surfaces, dropdowns" },
+          { "name": "Dark Border", "hex": "#2D3035", "usage": "Borders, dividers" },
+          { "name": "Dark Text Primary", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#9CA3AF", "usage": "Secondary text, labels" }
+        ]
+      },
+      "colorUsage": "Dark mode native — black backgrounds (#0A0B0D) are default, NOT optional. Electric blue (#1B9CFC) and cyan (#00D9FF) for data viz and accents. Orange for critical alerts only. UI is almost monochromatic with data providing color. Terminal/hacker aesthetic throughout.",
+      "typography": {
+        "headings": "Inter Bold",
+        "body": "Inter Regular",
+        "mono": "JetBrains Mono",
+        "fallback": "system-ui, -apple-system, sans-serif"
+      },
+      "typographyScale": "H1: 48px/1.1/−0.02em • H2: 36px/1.15 • H3: 24px/1.25 • Body: 16px/1.6 • Small: 14px/1.5 • Mono: 13px/1.6. Tight headlines, readable body. Mono for all data/code.",
+      "spacing": "Base: 8px. Dashboard panels: 24px padding. Cards: 16px gap. Data tables: Compact 8px rows. Section margins: 64px. Max-width: 1440px dashboards, full-width data.",
+      "components": "• Data panels: Dark bg (#101113), 1px cyan border on hover, rounded-lg (8px)\n• Cards: Subtle gradient top edge (cyan glow), 16px padding\n• Buttons: Sharp corners (4px), 40px height, outlined default, filled primary\n• Tables: Striped rows (#0A0B0D/#101113), sticky headers, sortable\n• Charts: Cyan/blue/orange palette, dark grid lines (#2D3035)\n• Terminal: JetBrains Mono, green (#00C853) text optional, black bg",
+      "elevation": "• Level 0: No shadow, border only\n• Level 1: 0 0 0 1px rgba(0,217,255,0.1) — Subtle glow\n• Level 2: 0 4px 20px rgba(0,0,0,0.5), 0 0 1px rgba(0,217,255,0.2) — Cards\n• Level 3: 0 8px 32px rgba(0,0,0,0.7), 0 0 2px rgba(0,217,255,0.3) — Modals\n• Data highlight: Box-shadow glow effect with cyan",
+      "motion": "Minimal, functional, data-first. Duration: 150-200ms. Data loading: Skeleton with pulse. Chart animations: Sequential reveal (staggered 50ms). No playful motion — everything precise and intentional.",
+      "layout": "Dashboard-centric. Dense grids of data panels. Sidebar navigation (280px). Top bar with search. Full-width for data exploration. Split views for analysis. Command palette (⌘K) overlay.",
+      "responsive": "• Desktop (>1440px): Full dashboard, multi-panel grids, 280px sidebar\n• Laptop (1024-1440px): 2-3 column panels, collapsible sidebar\n• Tablet (768-1024px): Stacked panels, hamburger nav\n• Mobile (<768px): Single column, swipe between views, bottom nav — limited mobile support (desktop-focused)",
+      "iconStyle": "Sharp, geometric icons. 20-24px. 1.5px stroke, square line caps. Minimal, functional. Glyph-like quality. Custom data icons (graphs, nodes, connections).",
+      "interactiveStates": "• Hover: Cyan border glow, subtle bg lighten\n• Focus: Cyan outline (2px)\n• Active: Cyan fill accent\n• Selected: Left cyan bar (3px)\n• Loading: Pulsing skeleton with cyan tint\n• Data hover: Tooltip with details",
+      "mediaPatterns": "• Data visualizations: Full-width, dark canvas, cyan/blue/orange palette\n• Network graphs: Node-link diagrams, force-directed layouts\n• Maps: Dark basemap, bright data overlays\n• Screenshots: Dark UI, subtle outer glow\n• Video: 16:9, minimal chrome, autoplay demos\n• Infographics: Geometric, technical illustration style",
+      "copyVoice": "Technical, authoritative, mission-driven. 'Build software that matters.' Direct, no fluff. Government/enterprise serious tone. 'The world's most important institutions.'",
+      "designPrinciples": [
+        "Data is the interface",
+        "Dark mode is default",
+        "Density serves analysis",
+        "Terminal aesthetic",
+        "Precision over playfulness"
+      ],
+      "mood": ["technical", "powerful", "dark", "analytical", "mission-driven"]
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "category": "Enterprise",
+      "public": true,
+      "stockSymbol": "CRM",
+      "colors": {
+        "primary": [
+          { "name": "Salesforce Blue", "hex": "#00A1E0", "usage": "Primary brand, CTAs, links" },
+          { "name": "Cloud Blue", "hex": "#1B96FF", "usage": "Lightning Design System primary" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, cards" },
+          { "name": "Gray 100", "hex": "#F3F3F3", "usage": "Page backgrounds" },
+          { "name": "Gray 300", "hex": "#C9C9C9", "usage": "Borders" },
+          { "name": "Gray 700", "hex": "#706E6B", "usage": "Secondary text" },
+          { "name": "Gray 900", "hex": "#181818", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Green", "hex": "#2E844A", "usage": "Success, positive" },
+          { "name": "Orange", "hex": "#DD7A01", "usage": "Warnings" },
+          { "name": "Red", "hex": "#C23934", "usage": "Errors, destructive" },
+          { "name": "Purple", "hex": "#9050E9", "usage": "Trailhead, learning" },
+          { "name": "Teal", "hex": "#0B827C", "usage": "Service Cloud" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#16181D", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#1E2128", "usage": "Cards, panels" },
+          { "name": "Dark Elevated", "hex": "#2A2E37", "usage": "Elevated surfaces" },
+          { "name": "Dark Border", "hex": "#3E4249", "usage": "Borders" },
+          { "name": "Dark Text Primary", "hex": "#ECEBEA", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#A7A6A5", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Blue (#1B96FF) for all interactive elements. Gray-100 (#F3F3F3) for page backgrounds, white for cards. Cloud-specific colors: Sales=blue, Service=teal, Marketing=orange. Purple for Trailhead/education. Status colors for data states.",
+      "typography": {
+        "headings": "Salesforce Sans Bold",
+        "body": "Salesforce Sans Regular",
+        "mono": "Consolas, monospace",
+        "fallback": "Arial, Helvetica, sans-serif"
+      },
+      "typographyScale": "Display: 44px/1.25 • H1: 28px/1.25 • H2: 20px/1.25 • H3: 16px/1.25 • Body: 14px/1.5 • Small: 12px/1.5. Consistent 1.25 line-height for headings. Dense for enterprise data.",
+      "spacing": "Base: 4px (SLDS uses 0.25rem = 4px). Card padding: 12px. List items: 8px. Section spacing: 24px. Grid gap: 12px. Dense UI optimized for data tables.",
+      "components": "• Cards: White bg, 4px border-radius, subtle shadow, 12px padding\n• Data tables: Striped optional, sortable columns, inline actions\n• Record pages: Header + tabs + related lists layout\n• Buttons: Rounded (4px), 32px height, brand/neutral/destructive variants\n• Pills: Rounded-full tags for filters and selections\n• Modals: 640px default width, header/body/footer sections\n• Path: Chevron progress indicator for sales stages",
+      "elevation": "• Level 0: No shadow (inline)\n• Level 1: 0 2px 4px rgba(0,0,0,0.1) — Cards\n• Level 2: 0 4px 8px rgba(0,0,0,0.15) — Dropdowns, popovers\n• Level 3: 0 8px 16px rgba(0,0,0,0.2) — Modals\n• Level 4: 0 16px 32px rgba(0,0,0,0.25) — Notifications",
+      "motion": "Functional, not decorative. Duration: 150-300ms. Ease: ease-out. Toast: Slide from top. Modal: Fade + scale. Focus: Immediate. Loading: Spinner (SLDS spinner component).",
+      "layout": "Record-centric. App launcher (grid), global navigation (top), utility bar (bottom). Record pages: 3-column (header/tabs, main, sidebar). List views: Full-width data tables. Kanban for pipelines.",
+      "responsive": "• Desktop (>1024px): Full 3-column record layout, 200px nav rail\n• Tablet (768-1024px): 2-column, stacked sidebar below\n• Mobile (<768px): Single column, bottom navigation, Salesforce Mobile app optimized\n• Breakpoints tied to Lightning Design System",
+      "iconStyle": "SLDS icons (Lightning Design System). 16/20/24px. Filled icons default. Action icons in colored circles. Utility icons monochrome. Consistent optical weight.",
+      "interactiveStates": "• Hover: Blue text links, gray bg on rows (#F3F3F3)\n• Focus: Blue ring (2px, box-shadow style)\n• Active: Darker blue\n• Selected: Blue left border (3px) or blue bg\n• Disabled: 50% opacity\n• Error: Red border + icon",
+      "mediaPatterns": "• Avatars: Circle, 32-48px, initials fallback with colored bg\n• Record images: 1:1 aspect, rounded corners\n• File previews: Thumbnails with type icons\n• Charts: Salesforce Reports palette (blue dominant)\n• Illustrations: Friendly, diverse characters (Salesforce Characters)\n• Icons in circles: 24-40px action icons with colored backgrounds",
+      "copyVoice": "Friendly, professional, helpful. 'Success from anywhere.' Customer-focused. Benefits over features. 'Blaze your trail.' Inclusive, motivational.",
+      "designPrinciples": [
+        "Clarity — reduce cognitive load",
+        "Efficiency — get work done fast",
+        "Consistency — Lightning Design System",
+        "Beauty — delightful details",
+        "Accessibility — WCAG compliant"
+      ],
+      "mood": ["professional", "friendly", "enterprise", "trustworthy", "energetic"]
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle",
+      "category": "Enterprise",
+      "public": true,
+      "stockSymbol": "ORCL",
+      "colors": {
+        "primary": [
+          { "name": "Oracle Red", "hex": "#C74634", "usage": "Primary brand, logo, critical accents" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Gray 100", "hex": "#F5F5F5", "usage": "Light backgrounds" },
+          { "name": "Gray 300", "hex": "#BFBFBF", "usage": "Borders" },
+          { "name": "Gray 600", "hex": "#6B6B6B", "usage": "Secondary text" },
+          { "name": "Gray 900", "hex": "#312D2A", "usage": "Primary text, dark surfaces" }
+        ],
+        "secondary": [
+          { "name": "Teal", "hex": "#00758F", "usage": "Links, secondary actions" },
+          { "name": "Green", "hex": "#1D8C29", "usage": "Success states" },
+          { "name": "Blue", "hex": "#0572CE", "usage": "Information, data viz" },
+          { "name": "Orange", "hex": "#D97B00", "usage": "Warnings" },
+          { "name": "Purple", "hex": "#7B47A8", "usage": "Analytics, insights" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1A1816", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#252220", "usage": "Cards" },
+          { "name": "Dark Elevated", "hex": "#312D2A", "usage": "Elevated surfaces" },
+          { "name": "Dark Border", "hex": "#4A4541", "usage": "Borders" },
+          { "name": "Dark Text Primary", "hex": "#F5F5F5", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#A8A29E", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Red (#C74634) for brand moments and critical actions only — NOT for general CTAs. Teal (#00758F) for links and interactive elements. Dark gray (#312D2A) for body text. Very conservative color use. Enterprise serious.",
+      "typography": {
+        "headings": "Oracle Sans Bold",
+        "body": "Oracle Sans Regular",
+        "mono": "Oracle Sans Mono",
+        "fallback": "Helvetica Neue, Helvetica, Arial, sans-serif"
+      },
+      "typographyScale": "H1: 48px/1.2 • H2: 32px/1.25 • H3: 24px/1.3 • H4: 18px/1.35 • Body: 16px/1.5 • Small: 14px/1.5 • Caption: 12px/1.4. Clean, corporate scale.",
+      "spacing": "Base: 8px. Card padding: 24px. Section spacing: 48-80px. Table rows: 48px height. Button padding: 16px 24px. Max-width: 1200px content.",
+      "components": "• Cards: White bg, rounded (8px), 1px border, 24px padding\n• Data tables: Dense, alternating rows, column sorting, pagination\n• Tabs: Underline style, red indicator when active\n• Buttons: Rounded (4px), 40px height, teal primary, outlined secondary\n• Forms: Labels above, 40px inputs, grouped fieldsets\n• Badges: Rounded-full, status colored",
+      "elevation": "• Level 0: No shadow, 1px border (#E5E5E5)\n• Level 1: 0 2px 8px rgba(0,0,0,0.08) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.12) — Dropdowns\n• Level 3: 0 8px 24px rgba(0,0,0,0.16) — Modals\n• Borders preferred over shadows for cleaner look",
+      "motion": "Minimal, enterprise appropriate. Duration: 200-300ms. Ease: ease-in-out. Transitions: Fade for content, slide for drawers. No bouncy or playful motion. Professional restraint.",
+      "layout": "Dashboard-oriented. Left navigation (240px collapsible). Top header with global actions. Content area with breadcrumbs. 12-column grid. Master-detail patterns for records.",
+      "responsive": "• Desktop (>1280px): Full layout, 240px sidebar, 3-column grids\n• Laptop (1024-1280px): Sidebar collapses to icons (64px)\n• Tablet (768-1024px): Hamburger nav, 2-column\n• Mobile (<768px): Single column, bottom sheet nav, limited feature set",
+      "iconStyle": "Redwood icons (Oracle design system). 16/20/24px. Outlined default, filled for selected states. Consistent 1.5px stroke. Functional, not decorative.",
+      "interactiveStates": "• Hover: Teal text, light gray bg (#F5F5F5)\n• Focus: Teal outline (2px)\n• Active: Darker teal\n• Selected: Red left border or red underline\n• Disabled: 40% opacity\n• Error: Red border + error icon",
+      "mediaPatterns": "• Charts: Oracle data viz palette (teal/blue/purple dominant)\n• Tables: Dense data, fixed headers, horizontal scroll\n• Diagrams: Technical architecture diagrams, grid-aligned\n• Screenshots: Clean UI captures, browser chrome removed\n• Video: 16:9, corporate style, professional narration\n• Icons: Functional, never decorative illustrations",
+      "copyVoice": "Enterprise professional, technical credibility. 'The world's database company.' Feature-focused, specification-heavy. Confident, authoritative. Less warm, more competent.",
+      "designPrinciples": [
+        "Enterprise reliability",
+        "Data-driven interfaces",
+        "Consistency across products",
+        "Redwood Design System",
+        "Scalability for complexity"
+      ],
+      "mood": ["enterprise", "reliable", "technical", "corporate", "powerful"]
+    },
+    {
+      "id": "ibm",
+      "name": "IBM",
+      "category": "Enterprise",
+      "public": true,
+      "stockSymbol": "IBM",
+      "colors": {
+        "primary": [
+          { "name": "IBM Blue 60", "hex": "#0F62FE", "usage": "Primary interactive, CTAs, links" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Gray 10", "hex": "#F4F4F4", "usage": "Light backgrounds, input fills" },
+          { "name": "Gray 30", "hex": "#C6C6C6", "usage": "Borders, dividers" },
+          { "name": "Gray 60", "hex": "#6F6F6F", "usage": "Secondary text" },
+          { "name": "Gray 100", "hex": "#161616", "usage": "Primary text, dark mode bg" }
+        ],
+        "secondary": [
+          { "name": "Cyan 50", "hex": "#1192E8", "usage": "Links alternative, info" },
+          { "name": "Teal 50", "hex": "#009D9A", "usage": "Success, sustainability" },
+          { "name": "Green 50", "hex": "#24A148", "usage": "Success states" },
+          { "name": "Yellow 30", "hex": "#F1C21B", "usage": "Warnings" },
+          { "name": "Red 60", "hex": "#DA1E28", "usage": "Errors, danger" },
+          { "name": "Purple 60", "hex": "#8A3FFC", "usage": "AI, Watson" },
+          { "name": "Magenta 50", "hex": "#EE5396", "usage": "Accent" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#161616", "usage": "Page background (Gray 100)" },
+          { "name": "Dark Surface", "hex": "#262626", "usage": "Cards (Gray 90)" },
+          { "name": "Dark Elevated", "hex": "#393939", "usage": "Elevated (Gray 80)" },
+          { "name": "Dark Border", "hex": "#525252", "usage": "Borders (Gray 70)" },
+          { "name": "Dark Text Primary", "hex": "#F4F4F4", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#C6C6C6", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Blue 60 (#0F62FE) for ALL interactive elements — links, buttons, focus states. Carbon's 10-step gray scale for UI. Purple for AI/Watson branding. Dark mode uses Gray 100 (#161616) as base. Strict adherence to Carbon color tokens.",
+      "typography": {
+        "headings": "IBM Plex Sans Bold",
+        "body": "IBM Plex Sans Regular",
+        "mono": "IBM Plex Mono",
+        "serif": "IBM Plex Serif",
+        "googleFonts": "IBM+Plex+Sans:wght@400;500;600;700|IBM+Plex+Mono"
+      },
+      "typographyScale": "Display: 54px/64px/300 • H1: 42px/50px/300 • H2: 28px/36px/400 • H3: 20px/28px/400 • Body: 16px/24px • Small: 14px/20px • Caption: 12px/16px. Light weight headlines, regular body.",
+      "spacing": "Base: 8px (Carbon 2x grid). Mini unit: 8px. Layout columns: 16. Gutter: 32px. Margins: 16px mobile, 32px desktop. Component spacing: 16/24/32/48px.",
+      "components": "• Cards: Rounded (0 by default, can be 8px), contained in tiles\n• Tiles: Clickable, read-only, or expandable variants\n• Buttons: Rounded (0) default, 48px height, icon+label\n• Data tables: Full-featured with selection, expansion, batch actions\n• Accordion: Chevron left, border-bottom dividers\n• Tags: Rounded-full, filter/read-only/operational variants\n• Modals: Passive, transactional, danger variants",
+      "elevation": "• Level 0: No shadow (flat, uses color/borders)\n• Level 1: 0 2px 6px rgba(0,0,0,0.2) — Dropdowns\n• Level 2: 0 4px 8px rgba(0,0,0,0.25) — Popovers, tooltips\n• Level 3: 0 8px 16px rgba(0,0,0,0.3) — Modals\n• Carbon prefers flat design with color differentiation over shadows",
+      "motion": "Productive and expressive modes. Productive: 150ms, ease-out. Expressive: 400ms, ease-in-out. Enter: Fade + translate up. Exit: Fade. Loading: Skeleton or inline spinner. IBM motion curves documented.",
+      "layout": "2x Grid system (base 8px). UI Shell: Header (48px), left panel (256px), content. 16-column layout. Fluid width containers. Narrow/default/wide container options.",
+      "responsive": "• XLG (>1584px): 16 columns, 32px gutter, centered content\n• LG (1312-1584px): 16 columns, 32px gutter\n• MD (672-1312px): 8 columns, 32px gutter\n• SM (<672px): 4 columns, 16px gutter, stacked layout\n• Carbon breakpoints are precise and component-responsive",
+      "iconStyle": "IBM Design Language icons. 16/20/24/32px. 2px stroke, square caps, rounded joins. Monochrome, interactive states colored. Extensive pictogram library for concepts.",
+      "interactiveStates": "• Hover: Background darken (Field: Gray-10→Gray-20)\n• Focus: Blue outline (2px), inset -2px\n• Active: Blue 70 (#0043CE)\n• Selected: Blue background or checkmark\n• Disabled: 25% opacity, no pointer events\n• Error: Red border, error icon, helper text",
+      "mediaPatterns": "• Avatars: Circle, 24-48px, initials fallback\n• Data viz: Carbon Charts palette, accessible colors\n• Diagrams: Isometric illustrations, technical precision\n• Photography: High-contrast, editorial style, diverse subjects\n• Video: 16:9, professional production, subtitle support\n• Illustrations: Line art, isometric, or photographic — no cartoon style",
+      "copyVoice": "Thoughtful, clear, human. 'Let's create.' Active voice, present tense. Technical but accessible. 'Think.' Inclusive language. Avoid jargon.",
+      "designPrinciples": [
+        "Carbon Design System consistency",
+        "2x Grid foundation",
+        "Accessible by default (WCAG AA)",
+        "Productive and expressive motion",
+        "Open source philosophy"
+      ],
+      "mood": ["professional", "systematic", "innovative", "thoughtful", "reliable"]
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian",
+      "category": "Enterprise",
+      "public": true,
+      "stockSymbol": "TEAM",
+      "colors": {
+        "primary": [
+          { "name": "Atlassian Blue", "hex": "#0052CC", "usage": "Primary brand, CTAs, links" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, cards" },
+          { "name": "N20", "hex": "#F4F5F7", "usage": "Light backgrounds" },
+          { "name": "N40", "hex": "#DFE1E6", "usage": "Borders" },
+          { "name": "N200", "hex": "#6B778C", "usage": "Secondary text" },
+          { "name": "N800", "hex": "#172B4D", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Green", "hex": "#36B37E", "usage": "Success, done" },
+          { "name": "Yellow", "hex": "#FFAB00", "usage": "Warning, in progress" },
+          { "name": "Red", "hex": "#DE350B", "usage": "Error, blocked" },
+          { "name": "Purple", "hex": "#6554C0", "usage": "New, special" },
+          { "name": "Teal", "hex": "#00B8D9", "usage": "Information" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1D2125", "usage": "Page background (DN-100)" },
+          { "name": "Dark Surface", "hex": "#22272B", "usage": "Cards (DN-200)" },
+          { "name": "Dark Elevated", "hex": "#2C333A", "usage": "Elevated (DN-300)" },
+          { "name": "Dark Border", "hex": "#3B444C", "usage": "Borders (DN-400)" },
+          { "name": "Dark Text Primary", "hex": "#B6C2CF", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#8C9BAB", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Blue (#0052CC) for interactive elements. Status colors map to issue states: Green=done, Yellow=in-progress, Red=blocked/error. Product-specific blues: Jira=#0052CC, Confluence=#0065FF, Trello=#0079BF. N800 (#172B4D) for all text — NOT pure black.",
+      "typography": {
+        "headings": "Charlie Display Bold",
+        "body": "Atlassian Sans Regular",
+        "mono": "SF Mono / Roboto Mono",
+        "fallback": "-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+      },
+      "typographyScale": "H900: 35px/40px/500 • H800: 29px/32px • H700: 24px/28px • H600: 20px/24px • H500: 16px/20px • Body: 14px/20px • Small: 12px/16px. Design tokens use H900-H100 naming.",
+      "spacing": "Base: 8px (space.100). Tokens: 4/8/12/16/20/24/32/40/48/64px. Card padding: 16px. Inline items: 8px gap. Section spacing: 24-48px. Dense UI for productivity tools.",
+      "components": "• Cards: Rounded (3px), white bg, subtle shadow, 16px padding\n• Buttons: Rounded (3px), 32px height, primary/subtle/link variants\n• Lozenges: Status pills (rounded-full), colored by state\n• Flags: Alert banners with icon, title, description\n• Avatars: Circle, 16-48px, status dot, stack groups\n• Inline edit: Click-to-edit patterns throughout\n• Issue cards: Key, summary, avatar, status lozenge",
+      "elevation": "• Level 0: No shadow (inline)\n• Level 1: 0 1px 1px rgba(9,30,66,0.25), 0 0 1px rgba(9,30,66,0.31) — Cards\n• Level 2: 0 3px 5px rgba(9,30,66,0.2), 0 0 1px rgba(9,30,66,0.31) — Dropdowns\n• Level 3: 0 8px 12px rgba(9,30,66,0.15), 0 0 1px rgba(9,30,66,0.31) — Modals\n• Custom shadow color: #091E42 (N900)",
+      "motion": "Quick, productive. Duration: 100-200ms. Ease: ease-in-out. Card transitions: Lift on hover (translateY -2px). Modals: Fade + scale. Flags: Slide from top. Skeleton loading states.",
+      "layout": "Product-specific patterns. Jira: Board/backlog/timeline views, left nav. Confluence: Page tree, breadcrumbs, space nav. Common: 64px top nav, 240px sidebar, flexible content.",
+      "responsive": "• Desktop (>1200px): Full sidebar, multi-column boards\n• Laptop (992-1200px): Collapsible sidebar (icon mode)\n• Tablet (768-992px): Hamburger nav, single-column lists\n• Mobile (<768px): Bottom nav (mobile apps), full-width content\n• Breakpoints from Atlassian Design System",
+      "iconStyle": "Atlassian icons, 16/20/24px. 2px stroke, rounded caps. Functional, recognizable. Product icons have unique brand shapes. Status icons colored.",
+      "interactiveStates": "• Hover: N20 background, underline links\n• Focus: Blue outline (2px), 2px offset\n• Active: Blue background, white text\n• Selected: Blue left border (4px) or blue bg\n• Disabled: 50% opacity\n• Dragging: Card lifts, shadow increases, origin placeholder",
+      "mediaPatterns": "• Avatars: 16px inline, 24px comments, 32px cards, 48px profiles\n• Thumbnails: Attachments show preview, file type icons\n• Cover images: Confluence pages, 16:9 max height 200px\n• Charts: Gadget/report visualizations, blue/green palette\n• Illustrations: Flat, friendly, diverse characters\n• Empty states: Illustration + call to action",
+      "copyVoice": "Clear, helpful, occasionally playful. 'Unleash the potential of every team.' Action-oriented. Jira: Efficient, task-focused. Confluence: Collaborative, encouraging.",
+      "designPrinciples": [
+        "Team productivity first",
+        "Atlassian Design System (ADS) consistency",
+        "Density for power users",
+        "Playful illustrations, serious UI",
+        "Cross-product coherence"
+      ],
+      "mood": ["productive", "collaborative", "friendly", "systematic", "team-focused"]
+    },
+    {
+      "id": "hashicorp",
+      "name": "HashiCorp",
+      "category": "Infrastructure",
+      "public": true,
+      "stockSymbol": "HCP",
+      "colors": {
+        "primary": [
+          { "name": "HashiCorp Black", "hex": "#000000", "usage": "Primary brand, text" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Gray 100", "hex": "#F7F8FA", "usage": "Light backgrounds" },
+          { "name": "Gray 200", "hex": "#E7E8EB", "usage": "Borders" },
+          { "name": "Gray 400", "hex": "#8E8E93", "usage": "Secondary text" },
+          { "name": "Gray 900", "hex": "#1B1B1F", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Terraform Purple", "hex": "#7B42BC", "usage": "Terraform product" },
+          { "name": "Vault Yellow", "hex": "#FFCF25", "usage": "Vault product" },
+          { "name": "Consul Pink", "hex": "#DC477D", "usage": "Consul product" },
+          { "name": "Nomad Green", "hex": "#00CA8E", "usage": "Nomad product" },
+          { "name": "Packer Blue", "hex": "#02A8EF", "usage": "Packer product" },
+          { "name": "Vagrant Blue", "hex": "#1868F2", "usage": "Vagrant product" },
+          { "name": "Waypoint Yellow", "hex": "#F9DC5C", "usage": "Waypoint product" },
+          { "name": "Boundary Red", "hex": "#F24C53", "usage": "Boundary product" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#0C0C0E", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#17171B", "usage": "Cards" },
+          { "name": "Dark Elevated", "hex": "#222228", "usage": "Elevated surfaces" },
+          { "name": "Dark Border", "hex": "#363640", "usage": "Borders" },
+          { "name": "Dark Text Primary", "hex": "#F7F8FA", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#9494A0", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Product colors are primary identifiers — each product has a signature color. Marketing uses product colors for headers/accents. UI itself is black/white/gray. Dark mode for documentation and cloud console. Product logos are multi-colored geometric shapes.",
+      "typography": {
+        "headings": "Gilmer Bold",
+        "body": "Metro / System UI",
+        "mono": "Fira Code / JetBrains Mono",
+        "fallback": "system-ui, -apple-system, sans-serif",
+        "googleFonts": "Fira+Code"
+      },
+      "typographyScale": "H1: 48px/1.15/−0.02em • H2: 36px/1.2 • H3: 24px/1.25 • H4: 20px/1.3 • Body: 16px/1.6 • Small: 14px/1.5 • Code: 14px/1.6 mono. Tight headlines, generous body.",
+      "spacing": "Base: 8px. Section padding: 80-120px. Card padding: 24px. Code blocks: 16px. Navigation: 16px items. Max-width: 1200px content, full-width code.",
+      "components": "• Cards: Rounded (8px), white bg, subtle shadow, product color top border\n• Code blocks: Dark bg (#0C0C0E), syntax highlighted, language badge, copy button\n• Tabs: Underline style, product color indicator\n• Buttons: Rounded (4px), 44px height, black primary, outlined secondary\n• Navigation: Top global, left local docs, breadcrumbs\n• Terminal: HCL syntax highlighting, $ prompt style",
+      "elevation": "• Level 0: No shadow (inline)\n• Level 1: 0 2px 8px rgba(0,0,0,0.05) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.1) — Dropdowns\n• Level 3: 0 8px 32px rgba(0,0,0,0.15) — Modals\n• Product cards: Top 4px border in product color",
+      "motion": "Minimal, developer-focused. Duration: 200ms. Ease: ease-out. Transitions: Fade for content, slide for sidebars. No playful animations. Syntax highlighting: No animations.",
+      "layout": "Documentation-centric. Top nav (64px), left sidebar (280px docs nav), main content (prose width ~72ch). Full-width for landing heroes. Grid for product cards.",
+      "responsive": "• Desktop (>1280px): Full layout, 280px sidebar, 72ch content\n• Laptop (1024-1280px): Sidebar collapsible, full-width prose\n• Tablet (768-1024px): Hamburger nav, scrollable TOC\n• Mobile (<768px): Single column, drawer nav, full-width code blocks",
+      "iconStyle": "Custom product icons (geometric, multi-part shapes). UI icons: 16/20/24px, 2px stroke. Monochrome except product logos. Terminal/cloud infrastructure motifs.",
+      "interactiveStates": "• Hover: Underline links, light gray bg (#F7F8FA)\n• Focus: Black outline (2px)\n• Active: Darker fill\n• Selected: Product color accent or left border\n• Code hover: Line highlight\n• Copy: Checkmark confirmation",
+      "mediaPatterns": "• Product logos: Geometric shapes, multi-colored, square aspect\n• Diagrams: Infrastructure architecture diagrams, flowcharts\n• Code snippets: HCL/YAML/JSON syntax, dark bg, line numbers\n• Screenshots: Terminal output, CLI demos, cloud console\n• Video: Technical demos, 16:9, minimal intro\n• Illustrations: Technical, line-art style, infrastructure concepts",
+      "copyVoice": "Technical, practical, developer-first. 'Infrastructure as code.' Clear documentation style. Problem→solution framing. Open source ethos. Community-driven.",
+      "designPrinciples": [
+        "Products as distinct brands",
+        "Developer experience first",
+        "Documentation is the product",
+        "Dark mode for terminals",
+        "Infrastructure visualization"
+      ],
+      "mood": ["technical", "developer", "infrastructure", "open-source", "systematic"]
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "category": "Infrastructure",
+      "public": true,
+      "stockSymbol": "DDOG",
+      "colors": {
+        "primary": [
+          { "name": "Datadog Purple", "hex": "#632CA6", "usage": "Primary brand, logo, key accents" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, cards" },
+          { "name": "Gray 100", "hex": "#F5F5F5", "usage": "Light backgrounds" },
+          { "name": "Gray 300", "hex": "#D3D3D3", "usage": "Borders" },
+          { "name": "Gray 600", "hex": "#777777", "usage": "Secondary text" },
+          { "name": "Gray 900", "hex": "#252525", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Orange", "hex": "#FF6B00", "usage": "Warnings, alerts, mascot accent" },
+          { "name": "Blue", "hex": "#1E90FF", "usage": "Links, info" },
+          { "name": "Green", "hex": "#2CA02C", "usage": "Success, OK status" },
+          { "name": "Red", "hex": "#E02222", "usage": "Critical, errors" },
+          { "name": "Yellow", "hex": "#FFD700", "usage": "Warnings, caution" },
+          { "name": "Cyan", "hex": "#00CED1", "usage": "Data viz, metrics" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#141419", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#1E1E26", "usage": "Cards, panels" },
+          { "name": "Dark Elevated", "hex": "#2A2A35", "usage": "Elevated surfaces" },
+          { "name": "Dark Border", "hex": "#3C3C4A", "usage": "Borders" },
+          { "name": "Dark Text Primary", "hex": "#EAEAEA", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#9E9EA8", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Purple (#632CA6) for brand elements and primary CTAs. Dashboards use full color palette for metrics/graphs. Status colors semantic: Green=OK, Yellow=Warn, Orange=Alert, Red=Critical. Dark mode native for observability dashboards.",
+      "typography": {
+        "headings": "Proxima Nova Bold",
+        "body": "Proxima Nova Regular",
+        "mono": "Roboto Mono",
+        "fallback": "system-ui, Arial, sans-serif"
+      },
+      "typographyScale": "H1: 36px/1.2 • H2: 28px/1.25 • H3: 20px/1.3 • H4: 16px/1.35 • Body: 14px/1.5 • Small: 12px/1.5 • Mono: 12px/1.6. Dense for dashboard metrics.",
+      "spacing": "Base: 4px. Dashboard widgets: 8px gap. Card padding: 12px. Metric values: 8px inline. Section margins: 24px. Dense layouts for maximum data visibility.",
+      "components": "• Dashboard widgets: Rounded (4px), dark bg options, resize handles\n• Metric cards: Large number display, sparkline, comparison\n• Graph panels: Time series, multiple overlays, zoom/pan\n• Status pills: Rounded-full, colored by severity\n• Tables: Dense rows, sortable, filterable\n• Alerts: Left color bar for severity\n• Tags: Rounded (4px), key:value format, colored",
+      "elevation": "• Level 0: No shadow (flat widgets)\n• Level 1: 0 1px 4px rgba(0,0,0,0.1) — Cards\n• Level 2: 0 4px 12px rgba(0,0,0,0.15) — Dropdowns, tooltips\n• Level 3: 0 8px 24px rgba(0,0,0,0.2) — Modals\n• Dashboards are predominantly flat, data-focused",
+      "motion": "Functional, data-first. Duration: 150ms. Graph animations: Line draw on load. Data updates: Smooth transitions. Tooltips: Instant. No decorative motion in observability UI.",
+      "layout": "Dashboard grid system. Flexible widget placement. Full-width graphs. Left nav (56px collapsed, 240px expanded). Top bar with time picker. Split views for logs/traces.",
+      "responsive": "• Desktop (>1440px): Multi-column dashboards, expanded nav\n• Laptop (1024-1440px): 2-3 widget columns, collapsed nav\n• Tablet (768-1024px): Single/double column, hamburger nav\n• Mobile (<768px): Stacked widgets, limited functionality — desktop-first product",
+      "iconStyle": "Simple UI icons, 16/20px. Filled style. Status icons colored. Mascot (Bits the dog) for empty states and marketing. Infrastructure/cloud icons.",
+      "interactiveStates": "• Hover: Light bg, tooltip with data\n• Focus: Purple outline (2px)\n• Active: Purple fill\n• Selected: Purple left bar or bg highlight\n• Graph hover: Crosshair + values tooltip\n• Loading: Skeleton pulse",
+      "mediaPatterns": "• Graphs: Time series, line/area/bar charts, stacked options\n• Heatmaps: Color gradients for density visualization\n• Traces: Waterfall flame graphs, span details\n• Logs: Monospace text, syntax colored, filterable\n• Screenshots: Dashboard captures, dark mode preferred\n• Mascot: Bits the dog for friendly moments",
+      "copyVoice": "Technical, helpful, slightly playful (via mascot). 'See inside any stack.' Developer/DevOps focused. Clear, actionable alerts. 'Bits' personality in empty states.",
+      "designPrinciples": [
+        "Data density over whitespace",
+        "Real-time visibility",
+        "Observability trifecta (metrics, logs, traces)",
+        "Customizable dashboards",
+        "Bits adds personality"
+      ],
+      "mood": ["technical", "observable", "real-time", "dashboard", "DevOps"]
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "category": "Infrastructure",
+      "public": true,
+      "stockSymbol": "NET",
+      "colors": {
+        "primary": [
+          { "name": "Cloudflare Orange", "hex": "#F48120", "usage": "Primary brand, CTAs, accents" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, cards" },
+          { "name": "Gray 100", "hex": "#F4F4F4", "usage": "Light backgrounds" },
+          { "name": "Gray 300", "hex": "#CCCCCC", "usage": "Borders" },
+          { "name": "Gray 600", "hex": "#666666", "usage": "Secondary text" },
+          { "name": "Gray 900", "hex": "#1D1D1D", "usage": "Primary text, dark heroes" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#0051C3", "usage": "Links, info states" },
+          { "name": "Green", "hex": "#2DA52D", "usage": "Success, active" },
+          { "name": "Red", "hex": "#E34747", "usage": "Errors, blocked" },
+          { "name": "Yellow", "hex": "#E8B224", "usage": "Warnings" },
+          { "name": "Purple", "hex": "#6E42D4", "usage": "Workers, serverless" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#0D0D0D", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#1A1A1A", "usage": "Cards" },
+          { "name": "Dark Elevated", "hex": "#262626", "usage": "Elevated surfaces" },
+          { "name": "Dark Border", "hex": "#404040", "usage": "Borders" },
+          { "name": "Dark Text Primary", "hex": "#F4F4F4", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#A0A0A0", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Orange (#F48120) for brand moments and primary CTAs. Blue (#0051C3) for standard links and interactive elements. Dashboard uses dark mode by default. Status colors for security/performance indicators. Orange+dark gray hero sections.",
+      "typography": {
+        "headings": "Cloudflare Sans Bold",
+        "body": "Cloudflare Sans Regular",
+        "mono": "Source Code Pro",
+        "fallback": "system-ui, -apple-system, sans-serif"
+      },
+      "typographyScale": "H1: 48px/1.15/−0.02em • H2: 36px/1.2 • H3: 24px/1.25 • H4: 20px/1.3 • Body: 16px/1.5 • Small: 14px/1.5 • Mono: 13px/1.6. Clean, readable scale.",
+      "spacing": "Base: 8px. Card padding: 24px. Dashboard widgets: 16px gap. Form spacing: 16px vertical. Section margins: 64-96px. Max-width: 1200px content.",
+      "components": "• Cards: Rounded (8px), white bg, subtle shadow\n• Stats: Large numbers, comparison arrows, sparklines\n• Toggles: Rounded-full, orange when active\n• Buttons: Rounded (4px), 44px height, orange primary, outlined secondary\n• Tables: Clean, sortable, action columns\n• Zone cards: Domain name, status indicators, quick actions\n• Timeline: Activity log with icons and timestamps",
+      "elevation": "• Level 0: No shadow (flat)\n• Level 1: 0 2px 8px rgba(0,0,0,0.06) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.1) — Dropdowns\n• Level 3: 0 8px 32px rgba(0,0,0,0.15) — Modals\n• Dark mode: Subtle lighter shadows for depth",
+      "motion": "Smooth, professional. Duration: 200-300ms. Ease: ease-out. Toggle: Slide animation. Charts: Line draw. Loading: Orange spinner. Page transitions: Fade.",
+      "layout": "Dashboard-centric. Left nav (240px), top header, main content area. Zone overview → drill-down pattern. Full-width analytics graphs. Card grids for features.",
+      "responsive": "• Desktop (>1280px): Full dashboard, 240px sidebar, multi-column\n• Laptop (1024-1280px): Collapsed sidebar (icons), 2-column grids\n• Tablet (768-1024px): Hamburger nav, stacked cards\n• Mobile (<768px): Single column, bottom nav option, limited features",
+      "iconStyle": "Simple icons, 16/20/24px. 2px stroke, rounded. Security icons prominent (shield, lock). Globe/network motifs. Orange accent on key icons.",
+      "interactiveStates": "• Hover: Orange text or border, light bg\n• Focus: Orange outline (2px)\n• Active: Darker orange\n• Selected: Orange left bar or fill\n• Toggle on: Orange bg, slide right\n• Loading: Orange spinner or skeleton",
+      "mediaPatterns": "• Network maps: Global edge locations visualization\n• Analytics charts: Time series, bar charts, pie for distribution\n• Status indicators: Green/yellow/red dots or badges\n• Screenshots: Dashboard UI, dark and light modes\n• Diagrams: Network architecture, data flow\n• Illustrations: Abstract geometric, network/cloud themes",
+      "copyVoice": "Technical, confident, security-focused. 'Helping build a better Internet.' Clear, no-nonsense. Performance and security benefits emphasized. Developer-friendly.",
+      "designPrinciples": [
+        "Security visibility",
+        "Performance metrics prominent",
+        "Dashboard clarity",
+        "Developer-friendly docs",
+        "Global scale communication"
+      ],
+      "mood": ["secure", "fast", "technical", "reliable", "infrastructure"]
+    }
+  ]
+}

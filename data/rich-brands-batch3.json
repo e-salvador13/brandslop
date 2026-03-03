@@ -1,0 +1,476 @@
+{
+  "brands": [
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "category": "Technology",
+      "public": true,
+      "stockSymbol": "MSFT",
+      "colors": {
+        "primary": [
+          { "name": "Microsoft Orange", "hex": "#F25022", "usage": "Logo quadrant, warm accent" },
+          { "name": "Microsoft Green", "hex": "#7FBA00", "usage": "Logo quadrant, success states" },
+          { "name": "Microsoft Blue", "hex": "#00A4EF", "usage": "Logo quadrant, primary interactive" },
+          { "name": "Microsoft Yellow", "hex": "#FFB900", "usage": "Logo quadrant, warning states" }
+        ],
+        "neutral": [
+          { "name": "Black", "hex": "#000000", "usage": "Headlines, primary text" },
+          { "name": "Gray 160", "hex": "#323130", "usage": "Body text" },
+          { "name": "Gray 130", "hex": "#605E5C", "usage": "Secondary text" },
+          { "name": "Gray 60", "hex": "#C8C6C4", "usage": "Borders, dividers" },
+          { "name": "Gray 20", "hex": "#F3F2F1", "usage": "Backgrounds" },
+          { "name": "White", "hex": "#FFFFFF", "usage": "Card backgrounds" }
+        ],
+        "secondary": [
+          { "name": "Communication Blue", "hex": "#0078D4", "usage": "Links, primary buttons, Teams" },
+          { "name": "Success", "hex": "#107C10", "usage": "Xbox, success states" },
+          { "name": "Severe Warning", "hex": "#D83B01", "usage": "Errors, critical" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1F1F1F", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#2D2D2D", "usage": "Cards, panels" },
+          { "name": "Dark Elevated", "hex": "#383838", "usage": "Hover states" },
+          { "name": "Dark Border", "hex": "#484848", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#A19F9D", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Communication Blue (#0078D4) for ALL interactive elements. Four-color logo ONLY in logo contexts, never as UI colors. Gray-20 (#F3F2F1) for subtle backgrounds. Product-specific colors: Teams purple, Xbox green, Azure blue. Never use logo colors decoratively.",
+      "typography": {
+        "headings": "Segoe UI Bold",
+        "body": "Segoe UI Regular",
+        "mono": "Cascadia Code",
+        "fallback": "system-ui, -apple-system, sans-serif"
+      },
+      "typographyScale": "Hero: 68px/1.0 • Display: 42px/1.1 • H1: 28px/1.14 • H2: 24px/1.17 • H3: 20px/1.2 • Body: 14px/1.43 • Caption: 12px/1.33. Segoe UI is the system font on Windows.",
+      "spacing": "Base: 8px (Fluent uses 4px increments). Card padding: 16-24px. Section margins: 48px. Grid gap: 16-24px. Page margins: 48px desktop, 16px mobile. Max-width: 1600px.",
+      "components": "• Cards: Rounded (4-8px), subtle shadow, white bg\n• Buttons: Rounded (4px), 32px height, Communication Blue primary\n• Command Bar: Top toolbar with icon buttons\n• Pivot/Tabs: Underline style, selected has blue underline\n• Persona: Avatar + name + metadata, 32/48/72px sizes\n• Dialog: Centered modal, 320-640px width",
+      "elevation": "• Rest: 0 1.6px 3.6px rgba(0,0,0,0.132), 0 0.3px 0.9px rgba(0,0,0,0.108)\n• Hover: 0 3.2px 7.2px rgba(0,0,0,0.132), 0 0.6px 1.8px rgba(0,0,0,0.108)\n• Pressed: 0 0.4px 1.2px rgba(0,0,0,0.132), 0 0.2px 0.6px rgba(0,0,0,0.108)\n• Dialog: 0 25.6px 57.6px rgba(0,0,0,0.22), 0 4.8px 14.4px rgba(0,0,0,0.18)",
+      "motion": "Fluent Motion principles. Duration: 150-300ms. Ease: cubic-bezier(0.1, 0.9, 0.2, 1) for decelerate, cubic-bezier(0.9, 0.1, 1, 0.2) for accelerate. Reveal effects on hover. Depth transitions for panels.",
+      "layout": "Fluent app layout: Left nav (48-280px), top command bar, content area. Hub pages with hero. Master-detail patterns. Responsive grid: 12-column. Max-width containers centered.",
+      "responsive": "• Desktop (>1024px): Full nav, 1600px max-width\n• Tablet (640-1024px): Collapsible nav, reduced margins\n• Mobile (<640px): Bottom nav or hamburger, full-width content, 16px margins",
+      "iconStyle": "Fluent UI Icons — 16/20/24/28/32px. Filled and outline variants. 1-1.5px stroke for outline. Consistent visual weight. Monochrome in UI.",
+      "interactiveStates": "• Hover: Background lighten/darken, elevation increase\n• Focus: 2px black border (high contrast mode compliant)\n• Pressed: Scale 0.98, darker bg\n• Disabled: 40% opacity\n• Selected: Blue indicator (underline or fill)",
+      "mediaPatterns": "• Hero images: Full-width, 16:9 or 21:9 ultrawide\n• Product shots: On gradient or solid color background\n• Icons grid: 4-8 columns, consistent sizing\n• Avatar: Circle (Persona component), 32/48/72/100px\n• Video: 16:9, rounded corners (8px), controls on hover",
+      "copyVoice": "Inclusive, empowering, clear. 'Empower every person and every organization.' Second-person, active voice. Accessibility-conscious language. Professional but warm.",
+      "designPrinciples": [
+        "Fluent Design System",
+        "Light, depth, motion, material, scale",
+        "Inclusive by design",
+        "Cross-platform consistency",
+        "Acrylic and Reveal effects"
+      ],
+      "mood": ["professional", "accessible", "modern", "productive", "enterprise"]
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "category": "Developer",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Tailwind Cyan", "hex": "#06B6D4", "usage": "Primary brand, links, accents" },
+          { "name": "Tailwind Sky", "hex": "#0EA5E9", "usage": "Secondary accent, gradients" }
+        ],
+        "neutral": [
+          { "name": "Slate 950", "hex": "#020617", "usage": "Darkest background" },
+          { "name": "Slate 900", "hex": "#0F172A", "usage": "Dark mode background" },
+          { "name": "Slate 800", "hex": "#1E293B", "usage": "Dark cards" },
+          { "name": "Slate 700", "hex": "#334155", "usage": "Dark borders" },
+          { "name": "Slate 400", "hex": "#94A3B8", "usage": "Muted text" },
+          { "name": "Slate 200", "hex": "#E2E8F0", "usage": "Light borders" },
+          { "name": "Slate 100", "hex": "#F1F5F9", "usage": "Light backgrounds" },
+          { "name": "Slate 50", "hex": "#F8FAFC", "usage": "Subtle light bg" }
+        ],
+        "secondary": [
+          { "name": "Violet 500", "hex": "#8B5CF6", "usage": "Accent, code highlights" },
+          { "name": "Pink 500", "hex": "#EC4899", "usage": "Accent, gradients" },
+          { "name": "Amber 400", "hex": "#FBBF24", "usage": "Warning, highlights" },
+          { "name": "Emerald 400", "hex": "#34D399", "usage": "Success states" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#0F172A", "usage": "Page background (default)" },
+          { "name": "Dark Surface", "hex": "#1E293B", "usage": "Cards, code blocks" },
+          { "name": "Dark Elevated", "hex": "#334155", "usage": "Hover states" },
+          { "name": "Dark Text", "hex": "#F8FAFC", "usage": "Primary text" },
+          { "name": "Dark Text Muted", "hex": "#94A3B8", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Cyan for primary brand and links. Documentation is DARK MODE default (slate-900 bg). Code blocks are signature — dark with syntax highlighting. Gradient accents (cyan→sky→violet→pink) for hero sections only. Light mode exists but dark is preferred.",
+      "typography": {
+        "headings": "Inter Bold",
+        "body": "Inter Regular",
+        "mono": "Fira Code / JetBrains Mono",
+        "googleFonts": "Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500"
+      },
+      "typographyScale": "Hero: 64px/1.1/−0.02em • H1: 48px/1.15 • H2: 36px/1.2 • H3: 24px/1.25 • Body: 16px/1.75 • Small: 14px/1.5 • Code: 14px/1.7 mono. Generous line-heights for readability.",
+      "spacing": "Base: 4px (matches Tailwind spacing scale). Section: 96px (py-24). Cards: 24px padding (p-6). Max-width: 80ch for prose, 1280px for page. Very precise spacing aligned to 4px grid.",
+      "components": "• Code blocks: Dark (slate-800), syntax highlighted, language badge, copy button\n• Prose: Max-width 65ch, generous leading (1.75)\n• Cards: Rounded-xl (12px), slate-800 bg, subtle border\n• Buttons: Rounded-lg (8px), cyan-500 fill, 36-40px height\n• Tabs: Underline style with cyan indicator\n• Search (Algolia): Rounded modal, ⌘K trigger",
+      "elevation": "• Level 0: No shadow (dark mode default)\n• Level 1: 0 1px 3px rgba(0,0,0,0.3) — Cards on dark\n• Level 2: 0 4px 12px rgba(0,0,0,0.4) — Dropdowns\n• Ring focus: ring-2 ring-cyan-500 ring-offset-2 ring-offset-slate-900",
+      "motion": "Subtle, developer-focused. Duration: 150-200ms. Transitions: colors, opacity, transform. No playful animations. Code examples: Type effect or fade-in. Smooth scrolling between sections.",
+      "layout": "Documentation layout: Left sidebar (256px), content (prose-lg centered), right TOC (200px). Marketing: Full-width hero, centered content sections. Grid: Flexible, content-width containers.",
+      "responsive": "• Desktop (>1280px): Full 3-column docs layout\n• Laptop (1024-1280px): Right TOC hidden\n• Tablet (768-1024px): Sidebar as overlay sheet\n• Mobile (<768px): Single column, hamburger nav, bottom-sticky search",
+      "iconStyle": "Heroicons (made by Tailwind team) — 20/24px. Outline (1.5px stroke) or solid. Consistent sizing. Used sparingly in docs.",
+      "interactiveStates": "• Hover: bg-slate-700 from bg-slate-800\n• Focus: ring-2 ring-cyan-500 (visible focus rings)\n• Active: Scale 0.98\n• Code hover: Copy button appears\n• Link: text-cyan-400 hover:text-cyan-300",
+      "mediaPatterns": "• Code snippets: Full-width, rounded-xl, dark bg, line numbers optional\n• Comparison: Before/after side-by-side code\n• Component examples: Live preview + code below\n• Diagrams: Simple, brand colors, minimal\n• Screenshots: Rounded-lg, subtle shadow",
+      "copyVoice": "Developer-focused, practical, confident. 'Rapidly build modern websites without ever leaving your HTML.' Documentation is exhaustive and clear. No marketing fluff. Examples > explanations.",
+      "designPrinciples": [
+        "Utility-first CSS",
+        "Constraints enable creativity",
+        "Documentation is product",
+        "Dark mode default",
+        "Design systems built-in"
+      ],
+      "mood": ["developer", "modern", "productive", "clean", "utility"]
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "category": "Developer",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Supabase Green", "hex": "#3ECF8E", "usage": "Primary brand, CTAs, success" },
+          { "name": "Supabase Dark", "hex": "#1C1C1C", "usage": "Primary background" }
+        ],
+        "neutral": [
+          { "name": "Scale 100", "hex": "#1C1C1C", "usage": "Background" },
+          { "name": "Scale 200", "hex": "#2A2A2A", "usage": "Surface" },
+          { "name": "Scale 300", "hex": "#3E3E3E", "usage": "Elevated" },
+          { "name": "Scale 500", "hex": "#6E6E6E", "usage": "Borders" },
+          { "name": "Scale 900", "hex": "#B4B4B4", "usage": "Muted text" },
+          { "name": "Scale 1100", "hex": "#EDEDED", "usage": "Primary text" },
+          { "name": "Scale 1200", "hex": "#F8F8F8", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Brand 400", "hex": "#24B47E", "usage": "Darker green accent" },
+          { "name": "Amber 900", "hex": "#F59E0B", "usage": "Warnings" },
+          { "name": "Red 900", "hex": "#EF4444", "usage": "Errors, destructive" },
+          { "name": "Blue 900", "hex": "#3B82F6", "usage": "Links, info" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1C1C1C", "usage": "Page background (default)" },
+          { "name": "Dark Surface", "hex": "#2A2A2A", "usage": "Cards, panels" },
+          { "name": "Dark Border", "hex": "#3E3E3E", "usage": "Borders" },
+          { "name": "Dark Text", "hex": "#EDEDED", "usage": "Primary text" },
+          { "name": "Dark Text Muted", "hex": "#B4B4B4", "usage": "Secondary text" }
+        ]
+      },
+      "colorUsage": "Green (#3ECF8E) for primary brand, success, and CTAs. DARK MODE is default — marketing and dashboard both. Light mode exists but dark is signature. Green glow effects (box-shadow with green) for emphasis. Terminal aesthetic.",
+      "typography": {
+        "headings": "Source Sans Pro Bold / Inter Bold",
+        "body": "Source Sans Pro Regular / Inter Regular",
+        "mono": "Source Code Pro / JetBrains Mono",
+        "googleFonts": "Source+Sans+Pro:wght@400;600;700&family=Source+Code+Pro:wght@400;500"
+      },
+      "typographyScale": "Hero: 56px/1.1 • H1: 40px/1.15 • H2: 32px/1.2 • H3: 24px/1.25 • Body: 16px/1.6 • Small: 14px/1.5 • Code: 14px/1.6. Monospace is first-class.",
+      "spacing": "Base: 4px. Card padding: 20-24px. Section margins: 64-96px. Dashboard density: tighter. Marketing: generous. Max-width: 1280px.",
+      "components": "• Code blocks: Dark (#2A2A2A), green-tinted syntax, copy button, language tabs\n• Dashboard cards: Dark surface, green accents for active states\n• SQL Editor: Monaco-style, dark theme, run button green\n• Buttons: Rounded (6px), green primary, 36px height\n• Tables: Dense data tables, sortable, green highlights\n• Terminal: Green text on black, blinking cursor",
+      "elevation": "• Level 0: No shadow (flat dark surfaces)\n• Level 1: 0 2px 8px rgba(0,0,0,0.5) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.6) — Dropdowns\n• Green glow: 0 0 20px rgba(62,207,142,0.3) — Emphasis",
+      "motion": "Smooth, developer-focused. Duration: 150-250ms. Terminal typing effects for marketing. Code blocks: Syntax highlight fade-in. Dashboard: Instant transitions. Loading: Green spinner.",
+      "layout": "Dashboard: Left nav (240px), content area. SQL Editor: Full-height split pane. Marketing: Hero + feature sections. Docs: 3-column with sidebar + TOC.",
+      "responsive": "• Desktop (>1200px): Full layout, 1280px max\n• Laptop (900-1200px): Reduced sidebar\n• Tablet (600-900px): Overlay sidebar\n• Mobile (<600px): Bottom nav for dashboard, hamburger for marketing",
+      "iconStyle": "Feather icons style, 20px. 1.5px stroke. Consistent with developer tooling. Custom DB icons (PostgreSQL elephant, etc).",
+      "interactiveStates": "• Hover: Lighter background (#3E3E3E), green border accent\n• Focus: Green ring (2px)\n• Active: Scale 0.98\n• Running: Pulsing green indicator\n• Success: Green checkmark + brief glow",
+      "mediaPatterns": "• Code comparisons: Side-by-side, dark blocks\n• Architecture diagrams: Dark bg, green + white lines\n• Dashboard screenshots: Rounded, dark with green accents\n• API examples: Terminal-style display\n• Video: Dark player, green progress bar",
+      "copyVoice": "Developer-friendly, open-source proud. 'The open source Firebase alternative.' Technical but approachable. PostgreSQL expertise. Community-driven. 'Build in a weekend, scale to millions.'",
+      "designPrinciples": [
+        "Open source first",
+        "PostgreSQL-powered",
+        "Dark mode default",
+        "Developer experience",
+        "Firebase alternative positioning"
+      ],
+      "mood": ["developer", "open-source", "modern", "dark", "powerful"]
+    },
+    {
+      "id": "raycast",
+      "name": "Raycast",
+      "category": "Developer",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Raycast Red", "hex": "#FF6363", "usage": "Primary brand, logo" },
+          { "name": "Raycast Orange", "hex": "#FF9F0A", "usage": "Secondary accent" }
+        ],
+        "neutral": [
+          { "name": "Background", "hex": "#1A1A1A", "usage": "App background" },
+          { "name": "Surface", "hex": "#252525", "usage": "List items, cards" },
+          { "name": "Surface Elevated", "hex": "#2D2D2D", "usage": "Selected items" },
+          { "name": "Border", "hex": "#3D3D3D", "usage": "Subtle dividers" },
+          { "name": "Text Primary", "hex": "#FFFFFF", "usage": "Headlines, primary" },
+          { "name": "Text Secondary", "hex": "#808080", "usage": "Metadata, hints" },
+          { "name": "Text Tertiary", "hex": "#5C5C5C", "usage": "Disabled, placeholder" }
+        ],
+        "secondary": [
+          { "name": "Purple", "hex": "#9B8AFF", "usage": "Extensions, special" },
+          { "name": "Blue", "hex": "#5AC8FA", "usage": "Links, info" },
+          { "name": "Green", "hex": "#4CD964", "usage": "Success, active" },
+          { "name": "Yellow", "hex": "#FFD60A", "usage": "Warnings" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1A1A1A", "usage": "Window background" },
+          { "name": "Dark Surface", "hex": "#252525", "usage": "List items" },
+          { "name": "Dark Selected", "hex": "#2D2D2D", "usage": "Selected state" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Red/orange gradient for brand identity. UI is ALWAYS dark — no light mode. Selection highlights are subtle (slightly lighter bg). macOS vibrancy effects. System accent color support. Avoid red in UI (reserved for brand).",
+      "typography": {
+        "headings": "SF Pro Display Bold / Inter Bold",
+        "body": "SF Pro Text Regular / Inter Regular",
+        "mono": "SF Mono / JetBrains Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "List Title: 13px/1.3 • List Subtitle: 11px/1.2 • Command: 15px/1.3 • Body: 13px/1.5 • Caption: 11px/1.3. Compact macOS-native sizing. Dense but readable.",
+      "spacing": "Base: 4px. List item padding: 8px 12px. Section gaps: 16px. Command bar: 12px padding. Extension grid: 16px gap. macOS-density throughout.",
+      "components": "• Command Bar: Rounded (10px), dark bg, centered search input\n• List Items: Icon (24px) + title + subtitle + accessory right\n• Actions: Keyboard shortcut badges (⌘K style)\n• Extensions: Grid cards, icon + name\n• Form: Dark inputs, inline validation\n• Shortcuts: Pill badges with key symbols",
+      "elevation": "• Window: macOS native shadow + vibrancy\n• Popover: 0 4px 20px rgba(0,0,0,0.4)\n• No internal elevation — flat dark surfaces\n• Vibrancy: NSVisualEffectView blur",
+      "motion": "Instant, responsive. Duration: 100-150ms max. Selection: Immediate bg change. List scroll: Native macOS physics. Window: Spring animation on open. Keyboard-speed is the goal.",
+      "layout": "Command bar centered. Results list below. Detail pane optional right. Full keyboard navigation. No mouse required. Extension store: Grid layout.",
+      "responsive": "macOS-only native app. Adaptive width (600-800px typical). Height based on results. No mobile — desktop launcher only.",
+      "iconStyle": "macOS-style app icons, 24-32px in lists. SF Symbols for system actions. Extension icons: Rounded square (8px radius). Colored or monochrome based on context.",
+      "interactiveStates": "• Selected: Background #2D2D2D, subtle highlight\n• Hover: Slightly lighter than selected\n• Active: Instant response\n• Disabled: 40% opacity\n• Keyboard focus: Always visible, no mouse needed",
+      "mediaPatterns": "• Extension icons: 64px for store, 24px in lists\n• Screenshots: macOS window chrome, dark theme\n• Keyboard hints: Inline with content\n• Empty states: Centered illustration + message\n• Onboarding: Step-by-step with keyboard shortcuts",
+      "copyVoice": "Speed-focused, keyboard-centric. 'Supercharged productivity.' macOS-native language. Keyboard shortcuts are features. Extension ecosystem. 'Blazingly fast.'",
+      "designPrinciples": [
+        "Speed above all",
+        "Keyboard-first, mouse-optional",
+        "macOS native integration",
+        "Dark mode only",
+        "Extensions extend everything"
+      ],
+      "mood": ["fast", "developer", "macOS", "productivity", "elegant"]
+    },
+    {
+      "id": "framer",
+      "name": "Framer",
+      "category": "Design",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Framer Blue", "hex": "#0055FF", "usage": "Primary brand, CTAs" },
+          { "name": "Framer Black", "hex": "#000000", "usage": "Logo mark" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, canvas" },
+          { "name": "Gray 50", "hex": "#F7F7F7", "usage": "Subtle backgrounds" },
+          { "name": "Gray 100", "hex": "#EBEBEB", "usage": "Borders" },
+          { "name": "Gray 400", "hex": "#999999", "usage": "Secondary text" },
+          { "name": "Gray 600", "hex": "#666666", "usage": "Body text" },
+          { "name": "Gray 900", "hex": "#1A1A1A", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Purple", "hex": "#8855FF", "usage": "Pro features, accents" },
+          { "name": "Cyan", "hex": "#00CCFF", "usage": "Selection, highlights" },
+          { "name": "Pink", "hex": "#FF55AA", "usage": "Gradient accents" },
+          { "name": "Green", "hex": "#00C853", "usage": "Success, published" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#111111", "usage": "Editor background" },
+          { "name": "Dark Surface", "hex": "#1A1A1A", "usage": "Panels" },
+          { "name": "Dark Border", "hex": "#2A2A2A", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" },
+          { "name": "Dark Text Muted", "hex": "#808080", "usage": "Labels" }
+        ]
+      },
+      "colorUsage": "Blue for primary CTAs and links. Editor is dark, marketing/sites can be light. Purple for Pro/premium features. Canvas shows user content — chrome stays minimal. Gradients (blue→purple→pink) for brand moments.",
+      "typography": {
+        "headings": "Inter Bold / Framer Display",
+        "body": "Inter Regular",
+        "mono": "JetBrains Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Display: 72px/1.0/−0.02em • H1: 56px/1.1 • H2: 40px/1.15 • H3: 28px/1.2 • Body: 18px/1.6 • Small: 14px/1.5 • Panel labels: 11px/1.3 caps.",
+      "spacing": "Base: 8px. Panel padding: 12px. Section gaps: 24-48px. Canvas: Infinite. Marketing sections: 80-120px vertical. Grid gap: 16-24px.",
+      "components": "• Canvas: Infinite, grid snapping, zoom 25-400%\n• Properties Panel: Right side, sectioned accordions\n• Layers: Left panel, tree structure, drag-sort\n• Insert Menu: Grid of components, search\n• Buttons: Rounded (8px), blue primary, 36-40px\n• Code Override: Monaco editor, dark theme",
+      "elevation": "• Level 0: No shadow (canvas content)\n• Level 1: 0 2px 8px rgba(0,0,0,0.08) — Panels\n• Level 2: 0 4px 16px rgba(0,0,0,0.12) — Dropdowns\n• Level 3: 0 8px 32px rgba(0,0,0,0.16) — Modals",
+      "motion": "Motion is core to brand. Duration: 200-400ms. Ease: cubic-bezier(0.4, 0, 0, 1) spring-like. Canvas animations preview inline. Page transitions: Smooth, configurable. Hover effects encouraged.",
+      "layout": "Editor: Left layers (240px), Canvas (flexible), Right properties (280px). Top toolbar. Site pages in tabs. Marketing: Full-width sections, centered content (1200px max).",
+      "responsive": "• Desktop (>1280px): Full editor layout\n• Laptop (1024-1280px): Collapsible panels\n• Tablet/Mobile: Preview mode only, no editing\n• Published sites: Fully responsive by design (breakpoints built-in)",
+      "iconStyle": "Clean line icons, 16-20px. 1.5px stroke. Minimal detail. Custom Framer icons for components. Monochrome in panels.",
+      "interactiveStates": "• Hover: Background highlight, cursor change\n• Focus: Blue ring (2px)\n• Selected: Blue border on canvas, highlight in layers\n• Drag: Ghost element, drop indicators\n• Resize: Corner handles, dimension labels",
+      "mediaPatterns": "• Templates: Preview cards with hover interaction\n• Component previews: Live mini-previews\n• Site screenshots: Browser mockups, device frames\n• Animations: Inline video/GIF previews\n• Code examples: Syntax highlighted, dark blocks",
+      "copyVoice": "Creative, empowering, motion-focused. 'Ship sites that move.' Designer-friendly, no-code accessible. Animation is natural. 'Design, animate, publish.' Component-based language.",
+      "designPrinciples": [
+        "Motion is meaning",
+        "Design meets code",
+        "Visual site building",
+        "Responsive by default",
+        "Components are reusable"
+      ],
+      "mood": ["creative", "motion", "modern", "design-focused", "powerful"]
+    },
+    {
+      "id": "twitter",
+      "name": "X (Twitter)",
+      "category": "Social",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "X Black", "hex": "#000000", "usage": "Primary brand (current)" },
+          { "name": "X White", "hex": "#FFFFFF", "usage": "Logo on dark" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Background (light)" },
+          { "name": "Extra Light Gray", "hex": "#EFF3F4", "usage": "Subtle backgrounds" },
+          { "name": "Light Gray", "hex": "#CFD9DE", "usage": "Borders" },
+          { "name": "Gray", "hex": "#536471", "usage": "Secondary text" },
+          { "name": "Dark Gray", "hex": "#0F1419", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#1D9BF0", "usage": "Links, buttons, verified (legacy)" },
+          { "name": "Green", "hex": "#00BA7C", "usage": "Retweets, success" },
+          { "name": "Red", "hex": "#F4212E", "usage": "Likes, errors" },
+          { "name": "Yellow", "hex": "#FFD400", "usage": "Premium/Gold verified" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#000000", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#16181C", "usage": "Cards, compose" },
+          { "name": "Dark Border", "hex": "#2F3336", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#E7E9EA", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#71767B", "usage": "Metadata" }
+        ]
+      },
+      "colorUsage": "Blue for interactive elements (legacy Twitter blue #1D9BF0). X rebrand emphasizes black/white. Red for likes, green for retweets. Yellow for premium verification. Dark mode is popular default. Minimal color in feed — content is focus.",
+      "typography": {
+        "headings": "Chirp Bold",
+        "body": "Chirp Regular",
+        "fallback": "-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+      },
+      "typographyScale": "Display Name: 20px/1.2 • Username: 15px/1.2 • Tweet: 15px/1.35 • Timestamp: 13px/1.2 • Count: 13px/1.2 Bold. Compact, scannable scale for feeds.",
+      "spacing": "Base: 4px. Tweet padding: 12px 16px. Avatar gap: 12px. Section dividers: 1px border. Feed width: 598px. Sidebar: 350px. Full-width mobile.",
+      "components": "• Tweet: Avatar (40px) + content + actions row\n• Compose: Rounded textarea, character count, media buttons\n• Avatar: Circle, 40px feed / 48px profile / 134px profile header\n• Action buttons: Icon + count, spaced evenly\n• Trends: # + topic name + count\n• Who to follow: Avatar + name + username + follow button",
+      "elevation": "• Level 0: No shadow (flat feed)\n• Level 1: 0 0 15px rgba(0,0,0,0.1) — Compose modal\n• Level 2: 0 8px 28px rgba(0,0,0,0.15) — Modals\n• Popover: 0 0 10px rgba(0,0,0,0.1)",
+      "motion": "Minimal, instant. Like: Heart fill + scale pop (300ms). Retweet: Green flash. New tweets: Slide down or count badge. Duration: 150-200ms. Loading: Skeleton shimmer.",
+      "layout": "3-column: Left nav (275px), Feed (598px), Right sidebar (350px). Mobile: Bottom tab bar, single column. Infinite scroll. Sticky compose button (mobile).",
+      "responsive": "• Desktop (>1265px): Full 3-column, sidebar visible\n• Laptop (1005-1265px): Sidebar hidden\n• Tablet (500-1005px): Nav becomes icons (68px)\n• Mobile (<500px): Bottom tabs, full-width tweets, floating compose",
+      "iconStyle": "Custom X icons, 18-24px. 1.5px stroke outline, filled when active. Home, Search, Notifications, Messages, Bookmarks. Action icons: Reply, Retweet, Like, Share.",
+      "interactiveStates": "• Hover: Background rgba for tweet, icon color change\n• Like hover: Pink tint, heart outlines red\n• Retweet hover: Green tint\n• Focus: Blue outline ring\n• Active: Scale pop for like/retweet\n• Loading: Skeleton shimmer",
+      "mediaPatterns": "• Avatar: 40px in feed, 48px in profiles, 134px in headers\n• Images: Max 2-up or 4-up grid, 16:9 or 1:1 crops, rounded (16px)\n• Video: 16:9, inline autoplay muted, tap for sound\n• Quote tweet: Nested card with border\n• Link preview: Image + title + domain, rounded card",
+      "copyVoice": "Brief, real-time, public. 'What's happening?' 280 characters max (or longer for Premium). Hashtags and mentions. Conversational, newsy. Hot takes encouraged.",
+      "designPrinciples": [
+        "Brevity and speed",
+        "Real-time public conversation",
+        "Timeline is center",
+        "Engagement actions visible",
+        "Minimal UI, content focus"
+      ],
+      "mood": ["social", "real-time", "conversational", "news", "public"]
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "category": "Social",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Purple", "hex": "#833AB4", "usage": "Gradient start" },
+          { "name": "Pink", "hex": "#E1306C", "usage": "Gradient middle" },
+          { "name": "Orange", "hex": "#F77737", "usage": "Gradient middle" },
+          { "name": "Yellow", "hex": "#FCAF45", "usage": "Gradient end" }
+        ],
+        "neutral": [
+          { "name": "Black", "hex": "#000000", "usage": "Text, icons" },
+          { "name": "Dark Gray", "hex": "#262626", "usage": "Primary text (light mode)" },
+          { "name": "Gray", "hex": "#8E8E8E", "usage": "Secondary text" },
+          { "name": "Light Gray", "hex": "#DBDBDB", "usage": "Borders" },
+          { "name": "Background", "hex": "#FAFAFA", "usage": "Page background" },
+          { "name": "White", "hex": "#FFFFFF", "usage": "Cards, surfaces" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#0095F6", "usage": "Links, buttons, verification" },
+          { "name": "Red", "hex": "#ED4956", "usage": "Likes, notifications" },
+          { "name": "Green", "hex": "#58C322", "usage": "Active now indicator" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#000000", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#121212", "usage": "Cards" },
+          { "name": "Dark Border", "hex": "#262626", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#FAFAFA", "usage": "Primary text" },
+          { "name": "Dark Text Secondary", "hex": "#A8A8A8", "usage": "Metadata" }
+        ]
+      },
+      "colorUsage": "Gradient (purple→pink→orange→yellow) for brand identity only — NOT in UI. Blue for all interactive elements (links, buttons, verified). Red for likes/hearts. UI is minimal — photos are color. Stories ring uses gradient.",
+      "typography": {
+        "headings": "Instagram Sans Bold / Proxima Nova Bold",
+        "body": "Instagram Sans Regular / Proxima Nova Regular",
+        "fallback": "-apple-system, system-ui, sans-serif"
+      },
+      "typographyScale": "Display Name: 14px/1.3 Bold • Username: 14px/1.3 • Caption: 14px/1.4 • Comment: 14px/1.4 • Timestamp: 10px/1.2 • Stats: 16px Bold. Very compact for content density.",
+      "spacing": "Base: 4px. Post padding: 0 (photos edge-to-edge). Caption padding: 0 12px 16px. Avatar gap: 12px. Feed max-width: 470px. Minimal spacing overall.",
+      "components": "• Post: Full-width image + header (avatar+name+menu) + actions + caption + comments\n• Stories: Circle avatar (56px) with gradient ring, horizontal scroll\n• Avatar: Circle, 32px posts / 56px stories / 150px profile\n• Action row: Like, Comment, Share, Save icons\n• Reels: Full-screen video, actions on right\n• Grid: 3-column squares (1:1), 3px gap",
+      "elevation": "• Level 0: No shadow (flat, image-focused)\n• Level 1: 0 4px 12px rgba(0,0,0,0.15) — Modals\n• Stories: Ring shadow for active viewing\n• Minimal elevation — content is flat",
+      "motion": "Smooth, polished. Like: Heart burst animation (red fill + scale). Double-tap: Large heart overlay. Stories: Horizontal slide. Reels: Vertical swipe. Duration: 200-300ms. Loading: Skeleton shimmer.",
+      "layout": "Feed: Single column centered (470px max). Stories tray top (horizontal scroll). Profile: 3-column grid. Reels: Full-screen. Mobile-first, responsive scaling.",
+      "responsive": "• Desktop (>735px): Feed centered, sidebars with suggestions\n• Tablet (600-735px): Full-width feed\n• Mobile (<600px): Full-width, bottom tab bar, edge-to-edge photos, stories tray sticky",
+      "iconStyle": "Custom Instagram icons, 24px. Outline (2px stroke) default, filled when active. Camera, Heart, Comment, Share, Save, Profile. Clean, recognizable.",
+      "interactiveStates": "• Hover: Darken on buttons\n• Like: Red heart fill + burst animation\n• Double-tap: Large heart overlay on image\n• Bookmark: Fill animation\n• Focus: Blue outline\n• Stories viewed: Gray ring (vs gradient unviewed)",
+      "mediaPatterns": "• Feed images: 1:1 (square), 4:5 (portrait), 1.91:1 (landscape), rounded (0px mobile, 4px desktop)\n• Stories: 9:16, full-screen, swipe navigation\n• Reels: 9:16, full-screen, sound on\n• Profile grid: 1:1 squares, 3px gap, 3 columns\n• Avatar: 32px in posts, 56px stories, 77px suggestions, 150px profile page\n• Carousel: Dots indicator below, swipe horizontal",
+      "copyVoice": "Visual-first, caption optional. Hashtags for discovery. Emojis welcome. Authentic, lifestyle. 'Caption this.' Comments are conversations. Influencer-friendly.",
+      "designPrinciples": [
+        "Photos are the product",
+        "Stories and Reels front",
+        "Gradient brand, minimal UI",
+        "Square grid, visual rhythm",
+        "Community through visuals"
+      ],
+      "mood": ["visual", "social", "creative", "lifestyle", "stories"]
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok",
+      "category": "Social",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "TikTok Red", "hex": "#FF0050", "usage": "Logo shadow, accents" },
+          { "name": "TikTok Cyan", "hex": "#00F2EA", "usage": "Logo shadow, accents" },
+          { "name": "TikTok Black", "hex": "#000000", "usage": "Primary background" }
+        ],
+        "neutral": [
+          { "name": "Black", "hex": "#000000", "usage": "Feed background" },
+          { "name": "Dark Gray", "hex": "#161823", "usage": "Surface" },
+          { "name": "Gray", "hex": "#8A8B91", "usage": "Secondary text" },
+          { "name": "Light Gray", "hex": "#E8E8E8", "usage": "Light mode text" },
+          { "name": "White", "hex": "#FFFFFF", "usage": "Primary text on dark" }
+        ],
+        "secondary": [
+          { "name": "Pink", "hex": "#FE2C55", "usage": "Likes, notifications" },
+          { "name": "Blue", "hex": "#25F4EE", "usage": "Following tab, links" },
+          { "name": "Yellow", "hex": "#FFFC00", "usage": "Effects, highlights" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#000000", "usage": "Video background" },
+          { "name": "Dark Surface", "hex": "#121212", "usage": "Cards, panels" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "All text" }
+        ]
+      },
+      "colorUsage": "Red+Cyan 'glitch' effect is signature (logo shadow offset). Black background always for video immersion. Pink for likes. UI text is white on dark. Minimal chrome — video is 100% focus. Glitch/3D effects for brand moments.",
+      "typography": {
+        "headings": "TikTok Sans Bold / Proxima Nova Bold",
+        "body": "TikTok Sans Regular / Proxima Nova Regular",
+        "fallback": "Helvetica Neue, Arial, sans-serif"
+      },
+      "typographyScale": "Username: 16px/1.25 Bold • Description: 14px/1.35 • Hashtags: 14px/1.35 Bold • Stats: 12px/1.2 • Action counts: 12px. Very compact, readable over video.",
+      "spacing": "Base: 4px. Side actions: 16px from edge. Bottom info: 16px padding. Video: Full-screen bleed. Minimal UI spacing.",
+      "components": "• Video: Full-screen, swipe vertical to navigate\n• Side actions: Vertical stack (avatar, like, comment, share, sound)\n• Avatar: Circle, 44px with + button overlay for follow\n• Bottom info: Username, description, hashtags, sound (scrolling)\n• For You/Following: Tab toggle at top\n• Sound disc: Spinning album art (40px circle)",
+      "elevation": "• No shadows — flat over video\n• Text shadows: 0 1px 2px rgba(0,0,0,0.5) for readability\n• Action icons: No elevation, just over video",
+      "motion": "Energetic, viral. Duration: 150-250ms. Video autoplay: Immediate. Swipe: Spring physics. Like: Heart burst. Sound disc: Continuous rotation. Duet effects: Split-screen. Glitch transitions for effects.",
+      "layout": "Full-screen vertical video (9:16). Actions right side. Info bottom left. Header: For You | Following tabs. Profile: Grid of video thumbnails. Mobile-first, desktop adapts.",
+      "responsive": "• Desktop (>768px): Video centered with black bars, sidebar nav\n• Mobile (default): Full-screen video, bottom tab bar, swipe navigation\n• No tablet-specific — phone optimized",
+      "iconStyle": "Bold, simple icons, 24-32px. Filled style. Works over video with shadow. Like heart, Comment bubble, Share arrow, Sound disc. High contrast for visibility.",
+      "interactiveStates": "• Tap: Play/pause video\n• Like tap: Pink heart burst + fill\n• Double-tap: Like shortcut\n• Swipe up: Next video (immediate)\n• Hold: Speed controls\n• Follow: + becomes ✓",
+      "mediaPatterns": "• Video: 9:16 mandatory, full-screen, sound-on default\n• Profile grid: 3 columns, video thumbnails (1:1 or 9:16 crops)\n• Avatar: 44px on videos, 100px on profile\n• Sound: Scrolling text with album art disc\n• Duet/Stitch: Split-screen video compositions\n• Effects: AR filters, text overlays, transitions",
+      "copyVoice": "Gen Z native, trendy, viral. Hashtag challenges. Sound-based culture. Short, punchy captions. Emojis everywhere. 'Make Your Day.' Creator economy language.",
+      "designPrinciples": [
+        "Video-first, full immersion",
+        "Algorithmic discovery (For You)",
+        "Sound is identity",
+        "Glitch/3D brand aesthetic",
+        "Creator-centric"
+      ],
+      "mood": ["viral", "creative", "young", "entertaining", "video-first"]
+    }
+  ]
+}

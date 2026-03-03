@@ -1,0 +1,457 @@
+{
+  "brands": [
+    {
+      "id": "plaid",
+      "name": "Plaid",
+      "category": "Fintech",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Plaid Black", "hex": "#111111", "usage": "Primary brand, headlines" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Gray 100", "hex": "#F5F5F5", "usage": "Subtle backgrounds" },
+          { "name": "Gray 300", "hex": "#CCCCCC", "usage": "Borders" },
+          { "name": "Gray 500", "hex": "#757575", "usage": "Secondary text" },
+          { "name": "Gray 900", "hex": "#333333", "usage": "Body text" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#0A85EA", "usage": "Links, CTAs" },
+          { "name": "Green", "hex": "#00C389", "usage": "Success, connected" },
+          { "name": "Yellow", "hex": "#FFC043", "usage": "Warnings" },
+          { "name": "Red", "hex": "#FF4747", "usage": "Errors" },
+          { "name": "Purple", "hex": "#7D5CFF", "usage": "Accents" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#111111", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#1A1A1A", "usage": "Cards" },
+          { "name": "Dark Border", "hex": "#333333", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Black and white foundation. Blue for interactive elements. Green for successful connections. Colorful illustrations for marketing (patterns, abstract shapes). Product Link UI is minimal. Developer-focused, clean.",
+      "typography": {
+        "headings": "Tiempos Headline Bold / Inter Bold",
+        "body": "Inter Regular",
+        "mono": "JetBrains Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Display: 72px/1.1/−0.02em • H1: 48px/1.15 • H2: 36px/1.2 • H3: 24px/1.25 • Body: 18px/1.6 • Small: 14px/1.5 • Code: 14px mono.",
+      "spacing": "Base: 8px. Card padding: 32px. Section margins: 80-120px. Code block: 24px padding. Max-width: 720px prose, 1200px page.",
+      "components": "• Link modal: Centered, bank search, institution list\n• Bank tiles: Logo + name, grid layout\n• Success state: Checkmark + connected message\n• Code blocks: Dark bg, syntax highlighted\n• Buttons: Rounded (8px), black primary, 44px height\n• API reference: Sidebar + content + code samples",
+      "elevation": "• Level 0: No shadow (flat)\n• Level 1: 0 2px 8px rgba(0,0,0,0.08) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.12) — Link modal\n• Level 3: 0 8px 32px rgba(0,0,0,0.15) — Overlay modal",
+      "motion": "Subtle, professional. Link flow: Step transitions. Success: Checkmark draw. Duration: 200-300ms. Loading: Branded spinner. No playful animations.",
+      "layout": "Marketing: Hero + feature sections. Docs: 3-column (nav, content, code). Link: Centered modal. Dashboard: Sidebar + main content.",
+      "responsive": "• Desktop (>1200px): Full layout, code samples visible\n• Laptop (900-1200px): Reduced margins\n• Tablet (600-900px): Stacked layout, collapsed nav\n• Mobile (<600px): Single column, hamburger nav",
+      "iconStyle": "Simple line icons, 24px. 1.5px stroke. Bank institution logos for Link. Custom pattern illustrations. Minimal and clean.",
+      "interactiveStates": "• Hover: Background darken\n• Focus: Blue outline ring\n• Active: Scale 0.98\n• Connected: Green checkmark\n• Error: Red highlight with message",
+      "mediaPatterns": "• Institution logos: Square or circle, 48px in lists\n• Pattern illustrations: Abstract, colorful, geometric\n• Code samples: Side-by-side with content\n• Diagrams: Clean, labeled flow charts\n• Dashboard charts: Minimal, data-focused",
+      "copyVoice": "Developer-first, fintech B2B. 'The easiest way for users to connect their bank accounts.' Technical but accessible. API-focused language. Trust and security emphasized.",
+      "designPrinciples": [
+        "Developer experience first",
+        "Clean, trustworthy UI",
+        "Black and white foundation",
+        "Colorful illustrations",
+        "API documentation excellence"
+      ],
+      "mood": ["developer", "fintech", "trustworthy", "clean", "professional"]
+    },
+    {
+      "id": "coinbase",
+      "name": "Coinbase",
+      "category": "Fintech",
+      "public": true,
+      "stockSymbol": "COIN",
+      "colors": {
+        "primary": [
+          { "name": "Coinbase Blue", "hex": "#0052FF", "usage": "Primary brand, CTAs" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Gray 100", "hex": "#F7F7F7", "usage": "Subtle backgrounds" },
+          { "name": "Gray 300", "hex": "#BDBDBD", "usage": "Borders" },
+          { "name": "Gray 600", "hex": "#616161", "usage": "Secondary text" },
+          { "name": "Gray 900", "hex": "#0A0B0D", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Green", "hex": "#00D395", "usage": "Price up, success" },
+          { "name": "Red", "hex": "#FF5A5A", "usage": "Price down, errors" },
+          { "name": "Gold", "hex": "#FFB237", "usage": "Bitcoin, premium" },
+          { "name": "Purple", "hex": "#6B5DD3", "usage": "NFTs, special" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#0A0B0D", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#1E1E1E", "usage": "Cards" },
+          { "name": "Dark Elevated", "hex": "#2E2E2E", "usage": "Hover" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Blue for primary actions and brand. Green for gains, red for losses. Dark mode is polished and common. Bitcoin gold for BTC-specific. Clean, professional crypto. No overwhelming gradients.",
+      "typography": {
+        "headings": "Coinbase Sans Bold / Inter Bold",
+        "body": "Coinbase Sans Regular / Inter Regular",
+        "mono": "Coinbase Mono / Roboto Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Display: 56px/1.1 • H1: 40px/1.15 • H2: 28px/1.2 • H3: 20px/1.25 • Body: 16px/1.5 • Small: 14px/1.4 • Price: 32px Bold.",
+      "spacing": "Base: 8px. Card padding: 16-24px. Asset row: 64px height. Section gaps: 32px. Page padding: 24px. Portfolio width: 400px sidebar.",
+      "components": "• Asset row: Logo + name + price + 24h change + sparkline\n• Price chart: Candlestick or line, time toggles (1D/1W/1M/1Y)\n• Buy/Sell widget: Amount input, preview, confirm\n• Portfolio card: Total balance, allocation pie\n• Buttons: Rounded (8px), blue primary, 48px height\n• Watchlist: Star + asset name + price",
+      "elevation": "• Level 0: No shadow (flat lists)\n• Level 1: 0 2px 8px rgba(0,0,0,0.08) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.12) — Modals\n• Dark mode: Borders instead of shadows",
+      "motion": "Smooth, real-time. Price updates: Animated numbers, flash green/red. Charts: Smooth drawing. Trade confirm: Success animation. Duration: 150-250ms.",
+      "layout": "Dashboard: Portfolio left, market center, watchlist right. Asset page: Chart + buy/sell widget. Mobile: Tabs for Portfolio, Markets, Trade.",
+      "responsive": "• Desktop (>1200px): Full dashboard layout\n• Laptop (900-1200px): Sidebar collapses\n• Tablet (600-900px): Stacked layout\n• Mobile (<600px): Bottom tabs, full-width cards, simplified charts",
+      "iconStyle": "Crypto logos are official assets. UI icons: 24px, simple lines. Green/red arrows for price direction. Coinbase 'C' logo is distinctive.",
+      "interactiveStates": "• Hover: Row highlight, show quick actions\n• Focus: Blue outline ring\n• Price up: Green flash + number\n• Price down: Red flash + number\n• Watchlisted: Filled star",
+      "mediaPatterns": "• Crypto logos: Circle, 32-48px, official assets\n• Charts: Line or candlestick, responsive height\n• Sparklines: Tiny line charts in lists, green/red\n• Portfolio pie: Colorful allocation chart\n• QR codes: For wallet addresses",
+      "copyVoice": "Accessible crypto, mainstream. 'The easiest place to buy and sell crypto.' Educates newcomers. Professional but approachable. Security emphasized. 'Crypto for everyone.'",
+      "designPrinciples": [
+        "Crypto made simple",
+        "Real-time data display",
+        "Green up, red down",
+        "Dark mode polished",
+        "Security and trust"
+      ],
+      "mood": ["crypto", "mainstream", "professional", "modern", "trustworthy"]
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "category": "Education",
+      "public": true,
+      "stockSymbol": "DUOL",
+      "colors": {
+        "primary": [
+          { "name": "Duolingo Green", "hex": "#58CC02", "usage": "Primary brand, success, CTAs" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Swan", "hex": "#E5E5E5", "usage": "Borders, dividers" },
+          { "name": "Hare", "hex": "#AFAFAF", "usage": "Secondary text" },
+          { "name": "Wolf", "hex": "#777777", "usage": "Body text" },
+          { "name": "Eel", "hex": "#4B4B4B", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#1CB0F6", "usage": "Info, links" },
+          { "name": "Yellow", "hex": "#FFC800", "usage": "Premium, gems" },
+          { "name": "Red", "hex": "#FF4B4B", "usage": "Hearts, errors" },
+          { "name": "Orange", "hex": "#FF9600", "usage": "Fire, streaks" },
+          { "name": "Purple", "hex": "#CE82FF", "usage": "Leagues, special" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1F1F22", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#2B2B2F", "usage": "Cards" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Green for correct answers, CTAs, and brand. Red for hearts/wrong answers. Orange for streaks/fire. Yellow for premium/gems. Colorful, playful palette throughout. Owl (Duo) is always green.",
+      "typography": {
+        "headings": "Din Round Bold",
+        "body": "Din Round Regular",
+        "fallback": "Nunito, system-ui, sans-serif",
+        "googleFonts": "Nunito:wght@400;600;700;800"
+      },
+      "typographyScale": "H1: 32px/1.2 Bold • H2: 24px/1.25 Bold • H3: 18px/1.3 Bold • Body: 17px/1.5 • Small: 14px/1.4 • Streak: 24px Bold. Rounded, friendly.",
+      "spacing": "Base: 8px. Card padding: 16px. Lesson padding: 24px. Button height: 50px. Bottom nav: 72px. Everything is rounded and spacious.",
+      "components": "• Lesson card: Circle progress + language + current skill\n• XP bar: Green fill, animated progress\n• Streak counter: Fire icon + number\n• Hearts: Red hearts, lose on wrong answer\n• Character: Duo owl, various poses/emotions\n• Buttons: Fully rounded (pill), green primary, 50px height, shadow bottom",
+      "elevation": "• Button style: Unique 3D effect with colored bottom border (4px)\n• Cards: 0 2px 4px rgba(0,0,0,0.1)\n• Modals: 0 8px 24px rgba(0,0,0,0.15)\n• Character: Subtle drop shadow",
+      "motion": "Playful, rewarding. Correct answer: Green burst + XP animation. Wrong: Red shake. Streak: Fire animation. Level up: Confetti. Duration: 200-400ms. Duo animations: Bouncy, expressive.",
+      "layout": "Mobile-first. Lesson: Full-screen questions. Home: Skill tree or path. Profile: Stats + achievements. Practice: Timed challenges.",
+      "responsive": "• Mobile (primary): Single column, bottom tabs, full-width lessons\n• Tablet: Larger lesson cards, side stats\n• Desktop (web): Centered container (600px), sidebar for streaks/leagues",
+      "iconStyle": "Custom Duolingo icons, rounded, playful. 24-32px. Colorful when active. Flag icons for languages. Duo owl in various states.",
+      "interactiveStates": "• Correct: Green highlight, XP burst\n• Incorrect: Red shake, heart loss\n• Hover (web): Scale 1.02, shadow increase\n• Streak active: Orange fire glow\n• Disabled: Grayscale, locked icon",
+      "mediaPatterns": "• Duo owl: Various poses, emotions, expressions\n• Character illustrations: Colorful, consistent style\n• Flags: Country flags for languages\n• XP/gem badges: Shiny, game-like\n• Streak calendar: Grid with fire icons\n• Lessons: Illustrated scenes for vocabulary",
+      "copyVoice": "Fun, encouraging, gamified. 'Learn a language for free. Forever.' Guilt-tripping for missed streaks (Duo's sad face). Celebration for progress. Competitive (leagues). Emoji-friendly. 'You're on fire!'",
+      "designPrinciples": [
+        "Learning should be fun",
+        "Gamification is core",
+        "Green owl is the mascot",
+        "Celebrate every win",
+        "Streaks drive retention"
+      ],
+      "mood": ["fun", "educational", "gamified", "green", "encouraging"]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "category": "Design",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Canva Purple", "hex": "#7D2AE8", "usage": "Primary brand, CTAs" },
+          { "name": "Canva Cyan", "hex": "#00C4CC", "usage": "Secondary accent" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, canvas" },
+          { "name": "N200", "hex": "#F5F5F5", "usage": "Subtle backgrounds" },
+          { "name": "N400", "hex": "#B3B3B3", "usage": "Borders" },
+          { "name": "N600", "hex": "#6B6B6B", "usage": "Secondary text" },
+          { "name": "N900", "hex": "#1E1E1E", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#2196F3", "usage": "Links, info" },
+          { "name": "Green", "hex": "#4CAF50", "usage": "Success" },
+          { "name": "Yellow", "hex": "#FFCA28", "usage": "Warnings, Pro" },
+          { "name": "Red", "hex": "#F44336", "usage": "Errors" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1E1E1E", "usage": "Editor background" },
+          { "name": "Dark Surface", "hex": "#2D2D2D", "usage": "Panels" },
+          { "name": "Dark Border", "hex": "#3D3D3D", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Purple/cyan gradient for brand moments. Editor is dark by default. Templates are colorful and varied. Crown icon for Pro features. Clean panels, colorful content. Selection: Cyan handles.",
+      "typography": {
+        "headings": "Canva Sans Bold / Inter Bold",
+        "body": "Canva Sans Regular / Inter Regular",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Display: 48px/1.1 • H1: 32px/1.15 • H2: 24px/1.2 • H3: 18px/1.25 • Body: 14px/1.5 • Small: 12px/1.4 • Panel: 13px/1.3.",
+      "spacing": "Base: 8px. Panel padding: 12-16px. Template grid: 16px gap. Toolbar: 40-48px height. Left sidebar: 300px. Canvas: Flexible.",
+      "components": "• Template grid: Thumbnail previews, hover shows title\n• Element panel: Search + categories + items grid\n• Toolbar: Horizontal, context-aware tools\n• Canvas: White or custom background, selection handles\n• Layers: Drag-sortable list\n• Buttons: Rounded (8px), purple primary, 40px height",
+      "elevation": "• Panels: 0 2px 8px rgba(0,0,0,0.15)\n• Dropdowns: 0 4px 12px rgba(0,0,0,0.2)\n• Selection handles: Cyan squares, no shadow\n• Canvas content: User-controlled shadows",
+      "motion": "Smooth, helpful. Template hover: Scale 1.02. Drag: Ghost element. Undo: Quick state change. Duration: 150-250ms. Loading: Purple skeleton.",
+      "layout": "Editor: Left panel (elements/templates), Canvas (center), Right panel (properties). Top toolbar for actions. Mobile: Simplified, bottom sheets.",
+      "responsive": "• Desktop (>1024px): Full editor, all panels\n• Tablet (768-1024px): Collapsible panels, touch-optimized\n• Mobile (<768px): Simplified editor, bottom actions, focused mode",
+      "iconStyle": "Simple line icons, 20-24px. Rounded. Custom Canva icons for design tools. Pro crown for premium. Element category icons.",
+      "interactiveStates": "• Hover: Scale 1.02 for templates, bg for tools\n• Selected: Cyan handles on canvas, purple highlight in panels\n• Dragging: Ghost element follows cursor\n• Loading: Skeleton shimmer\n• Pro locked: Crown badge, click to upgrade",
+      "mediaPatterns": "• Template previews: Aspect ratio preserved, rounded (8px)\n• Element thumbnails: Square or original, small\n• Photos: Search results grid, various sizes\n• Exports: Preview before download\n• Collaboration: Avatar stack, colored cursors",
+      "copyVoice": "Empowering, creative. 'Design anything. Publish anywhere.' Non-designer friendly. Template-first language. 'Make it yours.' Pro benefits highlighted. Collaborative.",
+      "designPrinciples": [
+        "Design for everyone",
+        "Templates first",
+        "Drag and drop simplicity",
+        "Purple/cyan brand",
+        "Pro features visible"
+      ],
+      "mood": ["creative", "accessible", "colorful", "empowering", "modern"]
+    },
+    {
+      "id": "adobe",
+      "name": "Adobe",
+      "category": "Design",
+      "public": true,
+      "stockSymbol": "ADBE",
+      "colors": {
+        "primary": [
+          { "name": "Adobe Red", "hex": "#FF0000", "usage": "Primary brand (limited)" },
+          { "name": "Adobe Gray", "hex": "#323232", "usage": "UI surfaces" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Content backgrounds" },
+          { "name": "Gray 75", "hex": "#FAFAFA", "usage": "Light backgrounds" },
+          { "name": "Gray 200", "hex": "#E1E1E1", "usage": "Borders" },
+          { "name": "Gray 500", "hex": "#6E6E6E", "usage": "Secondary text" },
+          { "name": "Gray 800", "hex": "#323232", "usage": "Body text, UI bg" },
+          { "name": "Gray 900", "hex": "#1A1A1A", "usage": "Darkest surfaces" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#1473E6", "usage": "Links, selection, Photoshop" },
+          { "name": "Green", "hex": "#12805C", "usage": "Success" },
+          { "name": "Orange", "hex": "#E34850", "usage": "Illustrator" },
+          { "name": "Purple", "hex": "#9256D9", "usage": "Premiere" },
+          { "name": "Pink", "hex": "#FF4FC2", "usage": "InDesign" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1A1A1A", "usage": "App background" },
+          { "name": "Dark Surface", "hex": "#252525", "usage": "Panels" },
+          { "name": "Dark Elevated", "hex": "#323232", "usage": "Menus" },
+          { "name": "Dark Border", "hex": "#3E3E3E", "usage": "Dividers" },
+          { "name": "Dark Text", "hex": "#E1E1E1", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Red is brand-only, sparingly used. Apps have signature colors (Ps blue, Ai orange, Pr purple). Dark UI is standard for all creative apps. Blue for selection/interaction. Neutral grays dominate. Spectrum design system.",
+      "typography": {
+        "headings": "Adobe Clean Bold",
+        "body": "Adobe Clean Regular",
+        "mono": "Source Code Pro",
+        "fallback": "Helvetica Neue, Arial, sans-serif"
+      },
+      "typographyScale": "H1: 28px/1.3 • H2: 22px/1.35 • H3: 18px/1.4 • Body: 14px/1.5 • Small: 12px/1.33 • Panel: 11px/1.27. Compact for dense pro UIs.",
+      "spacing": "Base: 8px. Panel padding: 8-12px. Toolbar height: 32-40px. Spectrum spacing: 4/8/12/16/24px. Dense professional layouts.",
+      "components": "• Tool panels: Vertical icon strip, tooltip on hover\n• Properties panel: Collapsible sections, slider inputs\n• Workspace tabs: Document tabs at top\n• Color picker: Spectrum-style with swatches\n• Buttons: Rounded (4px), spectrum sizing (S/M/L)\n• Dialogs: Dark, centered, clear actions",
+      "elevation": "• Panel: 0 2px 6px rgba(0,0,0,0.2)\n• Dropdown: 0 4px 16px rgba(0,0,0,0.3)\n• Modal: 0 8px 28px rgba(0,0,0,0.35)\n• Focus ring: Blue (2px, offset)",
+      "motion": "Professional, minimal. Panel open: Slide or fade. Tool switch: Immediate. Undo: Instant state. Duration: 150ms. No playful animations. Focus on responsiveness.",
+      "layout": "Creative Cloud apps: Menu bar, toolbar, panels (customizable), canvas/timeline center. Workspaces saveable. Floating panels supported. Mobile apps: Simplified.",
+      "responsive": "• Desktop apps: Flexible panel layouts, multi-monitor\n• Web apps: Responsive panels, 1024px minimum\n• Mobile apps: Touch-optimized, simplified toolset, focused workflows",
+      "iconStyle": "Spectrum icons, 18px. 1.5px stroke. Simple, functional. Tool icons are recognizable across apps. App icons are colorful squares.",
+      "interactiveStates": "• Hover: Subtle background change\n• Focus: Blue ring (Spectrum style)\n• Selected: Blue fill or indicator\n• Active tool: Highlight in toolbar\n• Disabled: 40% opacity",
+      "mediaPatterns": "• App icons: Colored rounded squares with 2-letter abbreviation\n• Canvas: User content, variable aspect ratios\n• Panels: Stack/dock/float, user-arranged\n• Stock previews: Watermarked thumbnails\n• Artboards: Multiple canvases, outlined",
+      "copyVoice": "Professional, creative. 'Creativity for all.' Feature-focused. Workflow language. 'Powered by Adobe Sensei' for AI. Educational resources prominent. Enterprise and individual.",
+      "designPrinciples": [
+        "Spectrum Design System",
+        "Dark UI for creativity",
+        "Professional density",
+        "Cross-app consistency",
+        "Product colors differentiate apps"
+      ],
+      "mood": ["professional", "creative", "dark", "powerful", "enterprise"]
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "category": "Technology",
+      "public": true,
+      "stockSymbol": "NVDA",
+      "colors": {
+        "primary": [
+          { "name": "NVIDIA Green", "hex": "#76B900", "usage": "Primary brand" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Light Gray", "hex": "#F2F2F2", "usage": "Subtle backgrounds" },
+          { "name": "Gray", "hex": "#808080", "usage": "Secondary text" },
+          { "name": "Dark Gray", "hex": "#333333", "usage": "Body text" },
+          { "name": "Black", "hex": "#000000", "usage": "Headlines, dark sections" }
+        ],
+        "secondary": [
+          { "name": "Bright Green", "hex": "#7CFC00", "usage": "RGB accents, gaming" },
+          { "name": "Blue", "hex": "#0070C0", "usage": "Links, enterprise" },
+          { "name": "Purple", "hex": "#7B68EE", "usage": "AI/ML features" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1A1A1A", "usage": "Page background" },
+          { "name": "Dark Surface", "hex": "#2A2A2A", "usage": "Cards" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "NVIDIA Green for brand moments and CTAs. Dark backgrounds for product pages (gaming aesthetic). RGB rainbow for GeForce gaming. Clean white for enterprise/data center. Green eye logo is iconic.",
+      "typography": {
+        "headings": "NVIDIA Sans Bold",
+        "body": "NVIDIA Sans Regular",
+        "mono": "Fira Code",
+        "fallback": "Arial, sans-serif"
+      },
+      "typographyScale": "Display: 56px/1.1 • H1: 40px/1.15 • H2: 32px/1.2 • H3: 24px/1.25 • Body: 16px/1.6 • Small: 14px/1.4. Bold headlines, clean body.",
+      "spacing": "Base: 8px. Card padding: 24px. Section margins: 64-80px. Product grid: 24px gap. Max-width: 1200px.",
+      "components": "• Product cards: Product image + name + specs + price\n• Spec tables: Dark headers, alternating rows\n• Feature highlights: Icon + headline + description\n• Comparison: Side-by-side product specs\n• Buttons: Rounded (4px), green primary, 44px height\n• GPU viewer: 3D product rotation",
+      "elevation": "• Level 0: No shadow\n• Level 1: 0 4px 16px rgba(0,0,0,0.1) — Cards\n• Level 2: 0 8px 32px rgba(0,0,0,0.15) — Featured\n• Green glow: 0 0 30px rgba(118,185,0,0.3) for emphasis",
+      "motion": "Technical, impressive. Product reveals: Smooth 3D rotation. Stats: Counter animation. Parallax scrolling. Ray tracing demos: Interactive. Duration: 300-500ms.",
+      "layout": "Product pages: Hero + specs + features + comparison. Dark themes for GeForce, lighter for enterprise. Full-width product shots. Sticky spec bars.",
+      "responsive": "• Desktop (>1200px): Full product imagery, specs tables\n• Laptop (900-1200px): Stacked specs\n• Tablet (600-900px): Single column, simplified comparisons\n• Mobile (<600px): Accordion specs, swipeable products",
+      "iconStyle": "Technical icons, 24px. Simple lines. GPU/AI/gaming themed. Green accents when appropriate. Eye logo is recognizable.",
+      "interactiveStates": "• Hover: Green border or glow\n• Focus: Green outline ring\n• Active: Scale 0.98\n• Compare selected: Green checkmark\n• Buy: Green CTA",
+      "mediaPatterns": "• Product shots: High-quality renders, dark backgrounds\n• GPU diagrams: Technical illustrations, labeled\n• Benchmark charts: Bar charts, green brand color\n• Ray tracing: Before/after sliders\n• 3D viewer: Interactive product rotation",
+      "copyVoice": "Technical, powerful. 'The Ultimate Play.' Performance metrics prominent. Gaming and AI language. Specs matter. 'Powered by NVIDIA.' Innovation-focused.",
+      "designPrinciples": [
+        "Green is the brand",
+        "Dark backgrounds for gaming",
+        "Performance data prominent",
+        "Technical credibility",
+        "RGB for gaming products"
+      ],
+      "mood": ["powerful", "gaming", "technical", "green", "innovative"]
+    },
+    {
+      "id": "tesla",
+      "name": "Tesla",
+      "category": "Technology",
+      "public": true,
+      "stockSymbol": "TSLA",
+      "colors": {
+        "primary": [
+          { "name": "Tesla Red", "hex": "#E82127", "usage": "Brand accent only" },
+          { "name": "Tesla Black", "hex": "#000000", "usage": "Primary brand" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Light Gray", "hex": "#F4F4F4", "usage": "Subtle backgrounds" },
+          { "name": "Gray", "hex": "#5C5E62", "usage": "Secondary text" },
+          { "name": "Dark Gray", "hex": "#393C41", "usage": "Body text" },
+          { "name": "Black", "hex": "#171A20", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#3E6AE1", "usage": "Links, info" },
+          { "name": "Green", "hex": "#12BB00", "usage": "Autopilot, success" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#000000", "usage": "Hero sections" },
+          { "name": "Dark Surface", "hex": "#171A20", "usage": "Cards" },
+          { "name": "Dark Text", "hex": "#FFFFFF", "usage": "Primary text" }
+        ]
+      },
+      "colorUsage": "Black and white foundation. Red is brand accent only — never for UI elements. Product images provide color. Dark hero sections, white content. Minimal color, maximum impact. Vehicle configurator shows real paint colors.",
+      "typography": {
+        "headings": "Gotham Bold",
+        "body": "Gotham Book",
+        "fallback": "Helvetica Neue, Arial, sans-serif"
+      },
+      "typographyScale": "Hero: 40px/1.15 • H1: 32px/1.2 • H2: 28px/1.25 • H3: 24px/1.3 • Body: 14px/1.7 • Small: 12px/1.5. Clean, minimal scale. Large heroes, readable body.",
+      "spacing": "Base: 8px. Section margins: 80-100px. Content padding: 40-80px. Card gaps: 8px. Max-width: 1120px. Full-bleed vehicle images.",
+      "components": "• Vehicle hero: Full-screen, dramatic angle, minimal text\n• Configurator: Options grid, real-time preview\n• Spec cards: Icon + value + label, minimal borders\n• Order button: White text on black, simple\n• Buttons: Simple rectangles, no rounded corners, 48px height\n• Range calculator: Interactive slider",
+      "elevation": "• Level 0: No shadows (flat design)\n• Content hovers above background: Large full-bleed images\n• Configurator: Slight shadows on options\n• Minimal elevation hierarchy",
+      "motion": "Smooth, automotive. Vehicle scroll: Parallax effect. Configurator: Instant color/wheel changes. Duration: 300-400ms. Video backgrounds loop seamlessly. Autopilot animations are fluid.",
+      "layout": "Full-screen sections. Vehicle pages: Hero → Features → Specs → Order. Configurator: Sidebar options, full-width preview. Minimal navigation. Single-page flow.",
+      "responsive": "• Desktop (>1200px): Full-bleed images, side-by-side content\n• Laptop (900-1200px): Stacked sections\n• Tablet (600-900px): Single column, smaller images\n• Mobile (<600px): Compact specs, sticky order button",
+      "iconStyle": "Minimal, custom icons. 24px. Simple lines. Autopilot, charging, range themed. Tesla T logo is iconic. Clean, automotive feel.",
+      "interactiveStates": "• Hover: Underline for links, subtle darken for buttons\n• Focus: Blue outline\n• Selected config option: Border highlight\n• Order: Simple state change\n• Disabled: Gray, no interaction",
+      "mediaPatterns": "• Vehicle images: Full-width, dramatic angles, studio lighting\n• Interior shots: High-res, detail-focused\n• Color swatches: Real paint colors, named\n• Video: Full-screen background, autoplay, muted\n• Specs: Minimal diagrams, clean charts",
+      "copyVoice": "Minimal, confident. Product names are enough. Specs speak for themselves. 'Model S.' No exclamation points. Environmental benefits understated. Premium, exclusive feel.",
+      "designPrinciples": [
+        "Product is the hero",
+        "Black and white foundation",
+        "Red is accent only",
+        "Full-bleed imagery",
+        "Minimal everything"
+      ],
+      "mood": ["premium", "minimal", "futuristic", "automotive", "clean"]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "category": "Technology",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Anthropic Tan", "hex": "#CC9B7A", "usage": "Primary brand accent" },
+          { "name": "Anthropic Black", "hex": "#1A1A1A", "usage": "Text, logo" }
+        ],
+        "neutral": [
+          { "name": "Cream", "hex": "#FCF9F4", "usage": "Page background" },
+          { "name": "Light Cream", "hex": "#FFFDF8", "usage": "Card backgrounds" },
+          { "name": "Warm Gray 300", "hex": "#D4CFC7", "usage": "Borders" },
+          { "name": "Warm Gray 500", "hex": "#8B8580", "usage": "Secondary text" },
+          { "name": "Warm Gray 800", "hex": "#3D3834", "usage": "Body text" },
+          { "name": "Black", "hex": "#1A1A1A", "usage": "Headlines" }
+        ],
+        "secondary": [
+          { "name": "Rust", "hex": "#B85C38", "usage": "Accents, highlights" },
+          { "name": "Sage", "hex": "#7A8B6E", "usage": "Success, calm" },
+          { "name": "Blue", "hex": "#4A6FA5", "usage": "Links, info" }
+        ],
+        "dark": [
+          { "name": "Dark Background", "hex": "#1A1A1A", "usage": "Dark sections" },
+          { "name": "Dark Surface", "hex": "#2A2622", "usage": "Cards on dark" },
+          { "name": "Dark Text", "hex": "#FCF9F4", "usage": "Text on dark" }
+        ]
+      },
+      "colorUsage": "Warm cream background (#FCF9F4) is signature. Tan/rust accents for brand moments. Earthy, warm palette — NOT tech blue. Claude product is warmer than corporate. Minimalist, research-focused aesthetic.",
+      "typography": {
+        "headings": "Styrene A Bold / Inter Bold",
+        "body": "Styrene A Regular / Inter Regular",
+        "mono": "JetBrains Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Display: 56px/1.1/−0.02em • H1: 40px/1.15 • H2: 32px/1.2 • H3: 24px/1.25 • Body: 18px/1.7 • Small: 14px/1.5 • Prose: 20px/1.8.",
+      "spacing": "Base: 8px. Section margins: 80-120px. Content padding: 40-80px. Prose max-width: 680px. Page max-width: 1200px. Generous whitespace.",
+      "components": "• Research cards: Title + abstract + date, minimal border\n• Claude chat: Message bubbles, assistant tan, user gray\n• Code blocks: Warm dark theme, syntax highlighted\n• Documentation: Sidebar nav, prose-focused content\n• Buttons: Rounded (6px), tan primary, 44px height\n• Features: Icon + headline + description, grid layout",
+      "elevation": "• Level 0: No shadow (flat, warm)\n• Level 1: 0 1px 3px rgba(0,0,0,0.08) — Cards\n• Level 2: 0 4px 12px rgba(0,0,0,0.1) — Modals\n• Subtle, warm shadows throughout",
+      "motion": "Subtle, thoughtful. Message appear: Fade in. Typing indicator: Animated dots. Page transitions: Crossfade. Duration: 200-300ms. No flashy animations. Research-appropriate.",
+      "layout": "Research-first: Prose-focused, centered content. Documentation: Sidebar + content. Claude: Chat interface, centered. Company: Full-width sections, minimal.",
+      "responsive": "• Desktop (>1200px): Full layout, generous margins\n• Laptop (900-1200px): Reduced margins, same structure\n• Tablet (600-900px): Single column, collapsed sidebar\n• Mobile (<600px): Full-width, hamburger nav, simplified",
+      "iconStyle": "Minimal line icons, 24px. Simple, clean. Research/AI themed where appropriate. No playful icons. Warm, approachable feel.",
+      "interactiveStates": "• Hover: Subtle background warmth increase\n• Focus: Tan outline ring\n• Active: Slight darken\n• Selected: Tan left border\n• Links: Underline on hover",
+      "mediaPatterns": "• Research papers: PDF previews, citation blocks\n• Diagrams: Clean, labeled, warm colors\n• Team photos: Professional, natural lighting\n• Code: Warm syntax theme\n• Logos: Wordmark, subtle anthropic 'a'",
+      "copyVoice": "Thoughtful, research-driven. 'AI safety research.' Academic tone for research, friendlier for Claude. Careful, considered language. 'Building reliable AI systems.' Intellectual but accessible.",
+      "designPrinciples": [
+        "Warm, not cold tech",
+        "Research credibility",
+        "Cream background signature",
+        "Thoughtful, not flashy",
+        "Safety-focused messaging"
+      ],
+      "mood": ["thoughtful", "warm", "research", "safety", "minimal"]
+    }
+  ]
+}

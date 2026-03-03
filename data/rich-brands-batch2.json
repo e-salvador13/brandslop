@@ -1,0 +1,603 @@
+{
+  "brands": [
+    {
+      "id": "meta",
+      "name": "Meta",
+      "category": "Technology",
+      "public": true,
+      "stockSymbol": "META",
+      "colors": {
+        "primary": [
+          { "name": "Meta Blue", "hex": "#0668E1", "usage": "Primary CTAs, links, interactive elements" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds, cards" },
+          { "name": "Gray 100", "hex": "#F0F2F5", "usage": "Page background, input backgrounds" },
+          { "name": "Gray 200", "hex": "#E4E6EB", "usage": "Dividers, borders" },
+          { "name": "Gray 500", "hex": "#65676B", "usage": "Secondary text, icons" },
+          { "name": "Gray 900", "hex": "#1C1E21", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Messenger Blue", "hex": "#0084FF", "usage": "Messenger brand" },
+          { "name": "Success Green", "hex": "#31A24C", "usage": "Success states, online indicators" },
+          { "name": "Warning Yellow", "hex": "#F7B928", "usage": "Warnings" },
+          { "name": "Error Red", "hex": "#FA383E", "usage": "Errors, notifications, live" }
+        ]
+      },
+      "colorUsage": "Blue for ALL interactive elements (buttons, links). Gray-100 (#F0F2F5) is THE signature background. White cards on gray background. Blue-to-white gradient only for marketing, never in product. Notification red for badges. Green dot for online status.",
+      "typography": {
+        "headings": "Optimistic Display Bold",
+        "body": "Optimistic Text Regular / SF Pro",
+        "fallback": "Helvetica Neue, Helvetica, Arial, sans-serif"
+      },
+      "typographyScale": "H1: 32px/1.2 • H2: 24px/1.25 • H3: 20px/1.3 • Body: 15px/1.34 • Small: 13px/1.38 • Caption: 12px/1.33. Tight line-heights, optimized for dense feeds. No tracking adjustments.",
+      "spacing": "Base: 8px. Card padding: 16px. Feed gap: 16px. Section margins: 24px. Sidebar width: 280px left, 280px right. Max content: 680px feed width. Very consistent spacing system.",
+      "components": "• Cards: White bg, rounded-lg (8px), subtle shadow (0 1px 2px rgba(0,0,0,0.1))\n• Avatars: Circular, sizes 28/36/40/60/168px, green dot for online (bottom-right)\n• Story circles: 56px avatar with gradient ring (blue-purple-pink)\n• Reactions: Row of emoji (like, love, haha, wow, sad, angry)\n• Comment threads: Nested with gray background bubbles\n• Buttons: Rounded-lg, 36px height, blue fill or gray secondary\n• Input fields: Gray-100 bg, rounded-full for search, rounded-lg for compose",
+      "motion": "Quick and snappy, not smooth. Duration: 100-200ms. Ease: ease-out. Reactions: Pop animation. Like button: Quick scale bounce. Loading: Skeleton shimmer (gray pulse). Page transitions: Instant, no animation.",
+      "layout": "3-column: Left nav (280px fixed), Feed (flexible, 680px max), Right sidebar (280px fixed). Feed is single-column cards. Mobile: Full-width feed, bottom tab bar. Story tray: Horizontal scroll at top.",
+      "iconStyle": "Filled icons default, 24px. Rounded, friendly style. Active state: Blue fill. Custom icons for reactions. Notification badges: Red circle with white number.",
+      "interactiveStates": "• Hover: Background darken (white → gray-100, gray-100 → gray-200)\n• Focus: Blue outline ring (2px)\n• Active: Scale 0.96 briefly\n• Like button: Blue fill, bounce animation\n• Disabled: 40% opacity\n• Links: Blue, no underline, underline on hover",
+      "copyVoice": "Warm, conversational, inclusive. Second-person ('Connect with friends'). Encouraging ('Share what's on your mind'). Simple, accessible language. Never technical. Community-focused.",
+      "designPrinciples": [
+        "Connection is the product",
+        "Feed is the center of everything",
+        "Gray background, white cards",
+        "Blue means interactive",
+        "Fast, snappy interactions",
+        "Accessibility at scale"
+      ],
+      "mood": ["social", "connected", "modern", "accessible", "friendly"]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "category": "Technology",
+      "public": true,
+      "stockSymbol": "GOOGL",
+      "colors": {
+        "primary": [
+          { "name": "Google Blue", "hex": "#4285F4", "usage": "Primary brand, links, CTAs" },
+          { "name": "Google Red", "hex": "#EA4335", "usage": "Errors, YouTube, accent" },
+          { "name": "Google Yellow", "hex": "#FBBC05", "usage": "Warnings, accent" },
+          { "name": "Google Green", "hex": "#34A853", "usage": "Success, accent" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Gray 100", "hex": "#F1F3F4", "usage": "Hover states, backgrounds" },
+          { "name": "Gray 500", "hex": "#9AA0A6", "usage": "Secondary text, icons" },
+          { "name": "Gray 700", "hex": "#5F6368", "usage": "Body text" },
+          { "name": "Gray 900", "hex": "#202124", "usage": "Headlines" }
+        ]
+      },
+      "colorUsage": "Blue for primary actions, links. Four-color logo only in logo contexts. One accent color per section, not all four at once. Gray-700 for body text (NOT black). Colored icons for product differentiation.",
+      "typography": {
+        "headings": "Google Sans Bold",
+        "body": "Roboto Regular",
+        "mono": "Roboto Mono",
+        "googleFonts": "Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700"
+      },
+      "typographyScale": "Display: 57px/64px • H1: 36px/44px • H2: 28px/36px • H3: 22px/28px • Body: 14px/20px • Body 2: 16px/24px • Caption: 12px/16px. Line-height in px, not ratio.",
+      "spacing": "Base: 8px. Cards: 24px padding. Section: 48px vertical. Grid gap: 24px. Dense lists: 48px row height. Max-width: 1280px content area. Material Design 8px grid.",
+      "components": "• Cards: Rounded-lg (8px), elevation shadows (0 1px 3px, 0 4px 6px)\n• Buttons: Rounded-full (pill), 36px height, uppercase text\n• FAB: 56px circle, colored, bottom-right\n• Chips: Rounded-full, 32px height, outline or filled\n• Text fields: Outlined or filled, floating labels\n• Search bar: Rounded-full, 44-48px height, shadow on focus",
+      "motion": "Material Design motion. Duration: 150-300ms. Ease: cubic-bezier(0.4, 0, 0.2, 1). Ripple effect on click. Shared axis transitions. Elevation changes animate. FAB: Scale up from 0.",
+      "layout": "App bar top (64px), bottom nav on mobile. Responsive grid: 4/8/12 columns. Navigation rail on tablet. Drawer navigation. Cards in grids. Search-centric homepage.",
+      "iconStyle": "Material Icons, 24px default. Outlined or filled variants. 2px stroke for outlined. Rounded style preferred. 5 sizes: 18/20/24/36/48px.",
+      "interactiveStates": "• Hover: Gray-100 background, elevation increase\n• Focus: Blue outline ring\n• Active: Ripple effect spreading from click point\n• Pressed: Darker shade, slight scale down\n• Disabled: 38% opacity",
+      "copyVoice": "Helpful, clear, conversational. 'Search for anything.' Short sentences. Action-oriented. Accessible to all education levels. Slightly playful in consumer products.",
+      "designPrinciples": [
+        "Material Design system",
+        "Motion adds meaning",
+        "Elevation creates hierarchy",
+        "One primary action per screen",
+        "Accessibility first",
+        "Consistent across products"
+      ],
+      "mood": ["friendly", "accessible", "colorful", "helpful", "modern"]
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "category": "Social",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Blurple", "hex": "#5865F2", "usage": "Primary brand, buttons, accents" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Text on dark" },
+          { "name": "Greyple", "hex": "#99AAB5", "usage": "Secondary text, icons" },
+          { "name": "Dark Not Black", "hex": "#2C2F33", "usage": "Lighter surface" },
+          { "name": "Not Quite Black", "hex": "#23272A", "usage": "Main background" },
+          { "name": "Almost Black", "hex": "#18191C", "usage": "Darker areas" }
+        ],
+        "secondary": [
+          { "name": "Green", "hex": "#57F287", "usage": "Online, success, positive" },
+          { "name": "Yellow", "hex": "#FEE75C", "usage": "Idle, warning" },
+          { "name": "Fuchsia", "hex": "#EB459E", "usage": "Boosting, special" },
+          { "name": "Red", "hex": "#ED4245", "usage": "DND, errors, urgent" }
+        ]
+      },
+      "colorUsage": "Blurple for primary actions and accents. Dark grays for all surfaces (NOT pure black). Status colors: Green=online, Yellow=idle, Red=DND, Gray=offline. Fuchsia for Nitro/boosting. White text on dark backgrounds.",
+      "typography": {
+        "headings": "Ginto Bold / gg sans Bold",
+        "body": "gg sans Regular",
+        "mono": "Consolas, monospace",
+        "fallback": "Whitney, Helvetica Neue, sans-serif"
+      },
+      "typographyScale": "H1: 24px/30px/600 • H2: 20px/24px/600 • H3: 16px/20px/600 • Body: 16px/20px • Small: 14px/18px • Tiny: 12px/16px. Consistent 20px line-height for body.",
+      "spacing": "Base: 4px. Channel list: 4px gap. Messages: 16px padding. Server icons: 48px. Section headers: 12px vertical padding. Dense UI overall.",
+      "components": "• Server icons: Rounded square (16px radius), hover → circle\n• Channels: # icon + name, hover shows settings\n• Messages: Avatar left (40px), content right, hover shows actions\n• Voice cards: Users in a list, speaking indicator\n• Buttons: Rounded (3px), small (32px height)\n• Modals: Dark background, rounded-lg, centered",
+      "motion": "Playful, bouncy. Ease: cubic-bezier(0.34, 1.56, 0.64, 1). Duration: 200-300ms. Server icon: Squircle → circle on hover. Unread indicators: Slide in. Reactions: Pop scale.",
+      "layout": "3-panel: Servers (72px), Channels (240px), Chat (flexible). Fixed top bar. Member list toggleable (240px). Mobile: Tab bar navigation. Voice: Overlay or separate view.",
+      "iconStyle": "Custom Discord icons, rounded, friendly. 20-24px. Filled when active. Status dots: 10px circles on avatars. Custom emoji support throughout.",
+      "interactiveStates": "• Hover: Lighter background (#36393F → #40444B)\n• Focus: Blurple outline ring\n• Active: Blurple background, white text\n• Speaking: Green ring around avatar\n• Muted: Strikethrough icon\n• Deafened: Slash through headphone icon",
+      "copyVoice": "Casual, gamer-friendly, playful. Uses gaming slang. Second-person. 'Wumpus' mascot voice. 'Hang out with your friends.' Slightly sarcastic error messages.",
+      "designPrinciples": [
+        "Dark mode native",
+        "Gaming community first",
+        "Voice is core feature",
+        "Server = community",
+        "Dense but scannable",
+        "Playful personality"
+      ],
+      "mood": ["gaming", "community", "playful", "dark", "social"]
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "Developer",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "GitHub Black", "hex": "#24292F", "usage": "Logo, primary text" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Background" },
+          { "name": "Canvas Default", "hex": "#F6F8FA", "usage": "Code blocks, subtle backgrounds" },
+          { "name": "Canvas Inset", "hex": "#EFF2F5", "usage": "Inset surfaces" },
+          { "name": "Border", "hex": "#D0D7DE", "usage": "Borders, dividers" },
+          { "name": "Text Muted", "hex": "#656D76", "usage": "Secondary text" }
+        ],
+        "secondary": [
+          { "name": "Accent Blue", "hex": "#0969DA", "usage": "Links, primary buttons" },
+          { "name": "Success Green", "hex": "#1A7F37", "usage": "Merged, success" },
+          { "name": "Danger Red", "hex": "#CF222E", "usage": "Errors, deletions, closed" },
+          { "name": "Attention Yellow", "hex": "#9A6700", "usage": "Warnings, pending" },
+          { "name": "Done Purple", "hex": "#8250DF", "usage": "Done, completed" }
+        ]
+      },
+      "colorUsage": "Minimal color, content-focused. Blue for links/actions. Status colors for PR/issue states (green=merged/open, red=closed, purple=done). Code uses syntax highlighting. Gray backgrounds for code blocks. Dark mode inverts all.",
+      "typography": {
+        "headings": "Mona Sans Bold",
+        "body": "Mona Sans Regular",
+        "mono": "Source Code Pro / JetBrains Mono",
+        "fallback": "-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+      },
+      "typographyScale": "H1: 32px/40px/600 • H2: 24px/32px/600 • H3: 20px/28px/600 • Body: 14px/21px • Small: 12px/18px • Mono: 12px-14px. Monospace everywhere code appears.",
+      "spacing": "Base: 8px. Card padding: 16px. Repository list: 16px gap. Page margins: 24-32px. Max-width: 1280px. Code: 8px padding. Dense tables.",
+      "components": "• Repo cards: Border, title + description + stats\n• Issues/PRs: Status icon + title + labels (colored pills)\n• Code blocks: Gray background, line numbers, syntax highlight\n• Buttons: Rounded (6px), green for primary, gray outline for secondary\n• Labels: Colored pills, custom colors per repo\n• Avatars: Circle, 20-48px, status indicators",
+      "motion": "Minimal, functional. Duration: 150ms. No playful animations. Diff expansion: Smooth reveal. Dropdowns: Fade + slide. Focus: Immediate, no transition.",
+      "layout": "Repository-centric. Top nav + user menu. Repo layout: Tabs (Code, Issues, PRs...), sidebar optional. File tree: Collapsible. Code view: Full-width. Max-width containers for readability.",
+      "iconStyle": "Octicons — 16px and 24px. Simple line icons. Consistent 1.5px stroke. Functional, not decorative. Status icons have color.",
+      "interactiveStates": "• Hover: Underline for links, background for buttons (#F3F4F6)\n• Focus: Blue outline (2px, offset 2px)\n• Active: Darker shade\n• Selected: Blue left border (2px)\n• Disabled: 50% opacity",
+      "copyVoice": "Technical, clear, developer-focused. 'Commit changes.' Action-oriented. Documentation style. Never cutesy. Error messages are helpful and specific.",
+      "designPrinciples": [
+        "Code is the hero",
+        "Information density is okay",
+        "Primer Design System",
+        "Accessibility for developers",
+        "Status through color",
+        "Monospace is a first-class citizen"
+      ],
+      "mood": ["developer", "open", "collaborative", "technical", "community"]
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "category": "Design",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Figma Red", "hex": "#F24E1E", "usage": "Logo segment" },
+          { "name": "Figma Orange", "hex": "#FF7262", "usage": "Logo segment" },
+          { "name": "Figma Purple", "hex": "#A259FF", "usage": "Logo segment" },
+          { "name": "Figma Blue", "hex": "#1ABCFE", "usage": "Logo segment" },
+          { "name": "Figma Green", "hex": "#0ACF83", "usage": "Logo segment, success" }
+        ],
+        "neutral": [
+          { "name": "Black", "hex": "#000000", "usage": "Text" },
+          { "name": "Dark", "hex": "#2C2C2C", "usage": "Editor background" },
+          { "name": "Gray", "hex": "#A6A6A6", "usage": "Secondary elements" },
+          { "name": "Light", "hex": "#E5E5E5", "usage": "Borders" },
+          { "name": "White", "hex": "#FFFFFF", "usage": "Background, canvas" }
+        ]
+      },
+      "colorUsage": "Logo colors for brand moments, NOT UI. Editor is dark gray (#2C2C2C). Canvas is white or transparent grid. Selection: Blue boxes. UI chrome is minimal grays. Multiplayer cursors get unique colors.",
+      "typography": {
+        "headings": "Inter Bold",
+        "body": "Inter Regular",
+        "mono": "Source Code Pro",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "H1: 40px/1.2/−0.02em • H2: 32px/1.25 • H3: 24px/1.3 • Body: 14px/1.5 • Small: 12px/1.4 • Panel labels: 11px/1.3 caps. Tiny text in tool panels.",
+      "spacing": "Base: 8px. Panel padding: 8-12px. Tool rows: 32px height. Section gaps: 16px. Canvas: Infinite, zoom-agnostic. Properties panel: Dense, minimal spacing.",
+      "components": "• Toolbar: Horizontal top, icon buttons 32px\n• Layers panel: Tree structure, indented items\n• Properties panel: Right side, grouped sections\n• Cursors: Named colored cursors for each user\n• Frames: Blue selection box, resize handles\n• Comments: Yellow pin markers, threaded",
+      "motion": "Smooth and precise. Canvas zoom/pan: Immediate, no easing. Panel transitions: 150ms ease-out. Cursor movements: Real-time, no smoothing. Selection: Instant blue box.",
+      "layout": "Canvas-centric. Toolbar top, Layers left (collapsible), Properties right (collapsible). Infinite canvas in center. Minimal chrome — canvas is the focus. Tabs for pages/files.",
+      "iconStyle": "Simple line icons, 16px. Minimal detail. Tool icons are highly specific. Consistent 1.5px stroke. Monochrome (black or gray).",
+      "interactiveStates": "• Hover: Slight background highlight (#F5F5F5)\n• Focus: Blue outline (1px)\n• Selected: Blue fill for tools, blue border for canvas objects\n• Active (tool): Blue background pill\n• Drag: Ghost element follows cursor",
+      "copyVoice": "Designer-friendly, clear, minimal. Feature names are verbs ('Auto Layout', 'Prototype'). Documentation is visual. Collaborative tone. 'Design together.'",
+      "designPrinciples": [
+        "Canvas is infinite",
+        "Chrome disappears when working",
+        "Real-time collaboration is core",
+        "Precision tools, not prescriptive",
+        "Browser-based, no install"
+      ],
+      "mood": ["creative", "collaborative", "modern", "design-focused", "playful"]
+    },
+    {
+      "id": "airbnb",
+      "name": "Airbnb",
+      "category": "Travel",
+      "public": true,
+      "stockSymbol": "ABNB",
+      "colors": {
+        "primary": [
+          { "name": "Rausch", "hex": "#FF5A5F", "usage": "Primary brand, CTAs, logo" },
+          { "name": "Babu", "hex": "#00A699", "usage": "Success, secondary accent" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Backgrounds" },
+          { "name": "Foggy", "hex": "#767676", "usage": "Secondary text" },
+          { "name": "Hof", "hex": "#484848", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Arches", "hex": "#FFB400", "usage": "Superhost, ratings" },
+          { "name": "Beach", "hex": "#FFAA91", "usage": "Soft accent" }
+        ]
+      },
+      "colorUsage": "Rausch (coral red) for primary CTAs and brand moments. Teal for success/positive states. Dark gray for text (NOT black). White backgrounds. Photography provides color. Yellow stars for ratings. Minimal color in UI.",
+      "typography": {
+        "headings": "Airbnb Cereal Bold",
+        "body": "Airbnb Cereal Book",
+        "fallback": "Circular, Helvetica Neue, sans-serif",
+        "googleFonts": "Nunito+Sans:wght@400;600;700"
+      },
+      "typographyScale": "Display: 48px/1.1 • H1: 32px/1.2 • H2: 24px/1.25 • H3: 18px/1.3 • Body: 16px/1.5 • Small: 14px/1.5 • Caption: 12px/1.4. Generous line-heights for readability.",
+      "spacing": "Base: 8px. Card padding: 16-24px. Section margins: 48px. Grid gap: 24px. Page margins: 24px mobile, 80px desktop. Generous whitespace overall.",
+      "components": "• Listing cards: Photo carousel, heart icon overlay, price bottom-right\n• Search bar: Rounded-full, segmented (Where/When/Who)\n• Profile pics: Circles, 24-56px, verification badge\n• Star ratings: Filled stars, 1 decimal (4.92)\n• Map pins: Brand coral, price inside\n• Buttons: Rounded-lg (12px), coral fill or black outline",
+      "motion": "Smooth, welcoming. Duration: 200-400ms. Ease: ease-in-out. Photo carousels: Smooth slide. Heart: Scale pop + fill on save. Page transitions: Fade. Map: Smooth zoom/pan.",
+      "layout": "Search-centric homepage. Grid of listing cards (2-6 columns). Listing page: Full-width photos, details below. Sticky booking widget right. Mobile: Full-width cards, bottom sheet booking.",
+      "iconStyle": "Rounded line icons, 24px. 2px stroke. Friendly, travel-themed. Custom icons for amenities. Heart icon is signature.",
+      "interactiveStates": "• Hover: Shadow increase, slight scale 1.02 for cards\n• Focus: Black outline ring\n• Active: Scale 0.98\n• Saved: Heart fills red with animation\n• Disabled: 50% opacity",
+      "copyVoice": "Welcoming, aspirational, personal. 'Belong anywhere.' Host-centric language. Second-person. Descriptions are evocative. Trust and safety emphasized.",
+      "designPrinciples": [
+        "Photography is the product",
+        "Trust through design",
+        "Belong anywhere",
+        "Simple search experience",
+        "Mobile-first",
+        "Hosts are partners"
+      ],
+      "mood": ["welcoming", "travel", "warm", "trustworthy", "community"]
+    },
+    {
+      "id": "uber",
+      "name": "Uber",
+      "category": "Transportation",
+      "public": true,
+      "stockSymbol": "UBER",
+      "colors": {
+        "primary": [
+          { "name": "Uber Black", "hex": "#000000", "usage": "Primary brand, CTAs" },
+          { "name": "Uber White", "hex": "#FFFFFF", "usage": "Background, reverse text" }
+        ],
+        "neutral": [
+          { "name": "Gray 10", "hex": "#F6F6F6", "usage": "Backgrounds" },
+          { "name": "Gray 50", "hex": "#EEEEEE", "usage": "Dividers" },
+          { "name": "Gray 80", "hex": "#545454", "usage": "Secondary text" }
+        ],
+        "secondary": [
+          { "name": "Uber Blue", "hex": "#276EF1", "usage": "Links, info" },
+          { "name": "UberEats Green", "hex": "#06C167", "usage": "Eats brand, success" },
+          { "name": "Safety Blue", "hex": "#3D4F5F", "usage": "Safety features" }
+        ]
+      },
+      "colorUsage": "Black and white foundation. Black buttons, white backgrounds. Map is the UI — color comes from the map. Green for Eats. Blue for informational. Minimal color in ride UI to reduce distraction.",
+      "typography": {
+        "headings": "Uber Move Bold",
+        "body": "Uber Move Regular",
+        "fallback": "system-ui, sans-serif"
+      },
+      "typographyScale": "Display: 52px/1.1 • H1: 36px/1.15 • H2: 24px/1.25 • H3: 18px/1.3 • Body: 16px/1.5 • Small: 14px/1.4. Clean, legible scale.",
+      "spacing": "Base: 8px. Card padding: 16px. Bottom sheet: 24px padding. List items: 56px height. Map takes most of screen. Minimal UI chrome.",
+      "components": "• Map: Full-screen, minimal overlays\n• Destination input: Prominent search bar top\n• Driver cards: Photo + name + rating + car\n• Ride options: Horizontal scroll cards, price visible\n• Bottom sheet: Rounded top, draggable\n• Buttons: Pill shape, black fill, 48-56px height",
+      "motion": "Smooth, purposeful. Map animations: Continuous. Car icons: Real-time movement. Bottom sheets: Spring physics. Ride request: Progress animation. Duration: 200-400ms.",
+      "layout": "Map-centric. Destination input at top. Bottom sheet for ride options. Full-screen map behind. Driver arriving: Card overlay. Mobile-first, minimal desktop.",
+      "iconStyle": "Simple line icons, 24px. Minimal detail. Vehicle types are illustrated. 2px stroke. Monochrome default.",
+      "interactiveStates": "• Hover: Background darken (for non-map elements)\n• Focus: Black outline ring\n• Selected: Black fill, white text\n• Active: Scale 0.98\n• Disabled: 40% opacity",
+      "copyVoice": "Clear, direct, action-oriented. 'Where to?' 'Request ride.' Minimal words. Safety messaging is prominent. International-friendly, simple language.",
+      "designPrinciples": [
+        "Map is the product",
+        "Black and white foundation",
+        "Speed of request is key",
+        "Safety is visible",
+        "Works one-handed",
+        "Real-time information"
+      ],
+      "mood": ["efficient", "modern", "urban", "fast", "reliable"]
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "category": "SaaS",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Aubergine", "hex": "#4A154B", "usage": "Primary brand, workspace sidebar" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Message background" },
+          { "name": "Light Gray", "hex": "#F4EDE4", "usage": "Soft backgrounds" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#36C5F0", "usage": "Logo, notifications, mentions" },
+          { "name": "Green", "hex": "#2EB67D", "usage": "Logo, online status, success" },
+          { "name": "Yellow", "hex": "#ECB22E", "usage": "Logo, stars, highlights" },
+          { "name": "Red", "hex": "#E01E5A", "usage": "Logo, alerts, unreads" }
+        ]
+      },
+      "colorUsage": "Aubergine sidebar is signature. Four colors from logo used as accents throughout. Green for online. Red for unread/alerts. Yellow for starred. Custom themes allow workspace personalization. White message area.",
+      "typography": {
+        "headings": "Slack Lato Bold / Larsseit",
+        "body": "Lato Regular",
+        "mono": "Monaco, Consolas, monospace",
+        "googleFonts": "Lato:wght@400;700"
+      },
+      "typographyScale": "H1: 28px/1.2 • H2: 22px/1.25 • H3: 18px/1.3 • Body: 15px/1.46 • Small: 13px/1.38 • Tiny: 12px/1.33. Comfortable reading in message threads.",
+      "spacing": "Base: 4px. Message padding: 8px vertical. Channel sidebar: 8px item height. Section gaps: 16px. Compact mode reduces spacing 20%.",
+      "components": "• Messages: Avatar (36px) + name + timestamp + content\n• Channels: # prefix, unread bold + badge\n• Threads: Indented replies, collapse/expand\n• Reactions: Emoji row below message\n• Huddles: Audio indicator, avatar stack\n• Buttons: Rounded (4px), teal or gray",
+      "motion": "Quick, functional. Duration: 100-200ms. Message send: Instant appear. Threads: Slide open. Emoji reactions: Pop + settle. Notifications: Slide in from right.",
+      "layout": "3-column: Workspaces (60px), Channels (260px), Messages (flexible). Thread panel: Right side (400px). Mobile: Single panel with navigation. Top bar: Search + profile.",
+      "iconStyle": "Simple, friendly icons. 20px default. Rounded style. Custom emoji support. Status icons use brand colors. Hash (#) for channels, @ for mentions.",
+      "interactiveStates": "• Hover: Background highlight, show message actions\n• Focus: Blue outline ring\n• Unread: Bold channel name, white dot\n• Active channel: Aubergine background (on light theme)\n• Mention: Yellow highlight\n• Typing: Animated dots",
+      "copyVoice": "Friendly, slightly playful, work-appropriate. 'Where work happens.' Uses emoji naturally. Celebrates with confetti. Helpful error messages. Slightly irreverent.",
+      "designPrinciples": [
+        "Channels organize everything",
+        "Searchable history",
+        "Emoji are communication",
+        "Customizable workspaces",
+        "Keyboard shortcuts for power users",
+        "Threads reduce noise"
+      ],
+      "mood": ["colorful", "professional", "friendly", "productive", "playful"]
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "category": "E-commerce",
+      "public": true,
+      "stockSymbol": "SHOP",
+      "colors": {
+        "primary": [
+          { "name": "Shopify Green", "hex": "#96BF48", "usage": "Primary brand (legacy)" },
+          { "name": "Shopify Black", "hex": "#000000", "usage": "Current primary" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Background" },
+          { "name": "Surface", "hex": "#F6F6F7", "usage": "Card backgrounds" },
+          { "name": "Text", "hex": "#202223", "usage": "Primary text" },
+          { "name": "Subdued", "hex": "#6D7175", "usage": "Secondary text" },
+          { "name": "Border", "hex": "#C9CCCF", "usage": "Borders, dividers" }
+        ],
+        "secondary": [
+          { "name": "Interactive", "hex": "#2C6ECB", "usage": "Links, buttons" },
+          { "name": "Success", "hex": "#008060", "usage": "Success states" },
+          { "name": "Warning", "hex": "#B98900", "usage": "Warnings" },
+          { "name": "Critical", "hex": "#D82C0D", "usage": "Errors, alerts" }
+        ]
+      },
+      "colorUsage": "Blue for interactive elements (Polaris system). Green for success states. Admin is light and neutral. Storefront themes are customizable. Critical red for errors. Muted, professional palette.",
+      "typography": {
+        "headings": "Inter Bold",
+        "body": "Inter Regular",
+        "mono": "SF Mono, Consolas",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Display: 27px/32px • H1: 21px/28px • H2: 16px/24px • Body: 14px/20px • Caption: 12px/16px. Compact scale for admin density.",
+      "spacing": "Base: 4px. Card padding: 16px. Section gaps: 16px. List items: 40px height. Page margins: 32px. Polaris spacing tokens: tight/base/loose.",
+      "components": "• Cards: White bg, rounded (8px), subtle border\n• Data tables: Striped rows, sortable headers\n• Buttons: Rounded (4px), primary green/blue, secondary gray\n• Badges: Colored pills for status\n• Forms: Labeled inputs, validation inline\n• Modals: Centered, rounded, backdrop blur",
+      "motion": "Subtle, functional. Duration: 150-200ms. Page transitions: Fade. Modals: Scale + fade. Dropdowns: Slide down. Loading: Skeleton shimmer. Toast: Slide from bottom.",
+      "layout": "Admin layout: Top bar + side nav (240px) + content. Dashboard: Cards grid. Product list: Data table. Settings: Sectioned form. Mobile: Bottom nav.",
+      "iconStyle": "Polaris icons, 20px. Simple line icons. 1.5px stroke. Functional, not decorative. Status colors applied to icons.",
+      "interactiveStates": "• Hover: Background darken, underline for links\n• Focus: Blue outline ring (2px, offset 1px)\n• Active: Darker shade\n• Loading: Spinner replaces text\n• Disabled: 50% opacity, cursor not-allowed",
+      "copyVoice": "Merchant-focused, encouraging. 'Build your business.' Helpful guidance. Clear actions. Success celebrates. Errors explain how to fix.",
+      "designPrinciples": [
+        "Polaris Design System",
+        "Merchant success first",
+        "Consistency breeds confidence",
+        "Admin is a tool, not a destination",
+        "Accessible to all merchants"
+      ],
+      "mood": ["entrepreneurial", "helpful", "trustworthy", "commerce", "growth"]
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "category": "Developer",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "Vercel Black", "hex": "#000000", "usage": "Primary brand, text" },
+          { "name": "Vercel White", "hex": "#FFFFFF", "usage": "Background" }
+        ],
+        "neutral": [
+          { "name": "Gray 100", "hex": "#FAFAFA", "usage": "Subtle background" },
+          { "name": "Gray 200", "hex": "#EAEAEA", "usage": "Borders" },
+          { "name": "Gray 400", "hex": "#999999", "usage": "Secondary text" },
+          { "name": "Gray 600", "hex": "#666666", "usage": "Body text" }
+        ],
+        "secondary": [
+          { "name": "Blue", "hex": "#0070F3", "usage": "Links, success" },
+          { "name": "Cyan", "hex": "#79FFE1", "usage": "Accent, highlights" },
+          { "name": "Error", "hex": "#EE0000", "usage": "Errors" },
+          { "name": "Warning", "hex": "#F5A623", "usage": "Warnings" }
+        ]
+      },
+      "colorUsage": "Black and white foundation. Blue for links only. Cyan for special highlights/marketing. Terminal aesthetic — dark code blocks. Error red is pure. No gradients in product.",
+      "typography": {
+        "headings": "Inter Bold",
+        "body": "Inter Regular",
+        "mono": "Geist Mono / JetBrains Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Display: 64px/1.1/−0.02em • H1: 48px/1.15 • H2: 32px/1.2 • H3: 24px/1.25 • Body: 16px/1.6 • Small: 14px/1.5 • Mono: 14px/1.6. Generous line-heights.",
+      "spacing": "Base: 8px. Card padding: 24px. Section margins: 64px. Grid gap: 24px. Max-width: 1200px. Code blocks: 16px padding.",
+      "components": "• Cards: Border (1px gray-200), rounded (8px), white bg\n• Code blocks: Dark bg (#000), syntax highlighted\n• Buttons: Rounded (5px), black fill or border\n• Terminal: Dark with colored output\n• Deployment cards: Status indicator + URL + time\n• Triangle logo: Animated on load",
+      "motion": "Minimal, refined. Duration: 200ms. Ease: ease-out. Page transitions: Fade. Triangle: Subtle rotation on hover. Deploy animation: Progress bar. No playful animations.",
+      "layout": "Dashboard: Nav left (200px), content flexible. Project page: Overview + deployments + settings tabs. Marketing: Centered content, full-width sections. Max-width containers.",
+      "iconStyle": "Minimal line icons, 20px. 1.5px stroke. Geometric. Triangle is the brand mark. Monochrome (black or gray).",
+      "interactiveStates": "• Hover: Background gray-100, border darken\n• Focus: Blue outline ring\n• Active: Scale 0.98\n• Loading: Skeleton shimmer\n• Deployed: Blue checkmark",
+      "copyVoice": "Developer-focused, confident. 'Develop. Preview. Ship.' Short, punchy statements. Technical but not alienating. Framework-aware.",
+      "designPrinciples": [
+        "Speed is everything",
+        "Black and white foundation",
+        "Code is a first-class citizen",
+        "Triangle is sacred",
+        "Deploy is the goal",
+        "Minimal, intentional"
+      ],
+      "mood": ["developer", "minimal", "fast", "modern", "technical"]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "category": "AI",
+      "public": true,
+      "colors": {
+        "primary": [
+          { "name": "OpenAI Black", "hex": "#000000", "usage": "Primary brand, text" },
+          { "name": "OpenAI Green", "hex": "#10A37F", "usage": "Accent, ChatGPT" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Background" },
+          { "name": "Gray 100", "hex": "#F7F7F8", "usage": "ChatGPT sidebar" },
+          { "name": "Gray 500", "hex": "#6E6E80", "usage": "Secondary text" },
+          { "name": "Gray 900", "hex": "#202123", "usage": "ChatGPT dark bg" }
+        ]
+      },
+      "colorUsage": "Minimal color palette. Green for ChatGPT brand and positive actions. Black/white for everything else. Dark mode uses near-black grays. No gradients. Code blocks use standard syntax highlighting.",
+      "typography": {
+        "headings": "Söhne Bold",
+        "body": "Söhne Regular",
+        "mono": "Söhne Mono",
+        "fallback": "system-ui, -apple-system, sans-serif"
+      },
+      "typographyScale": "H1: 40px/1.2 • H2: 32px/1.25 • H3: 24px/1.3 • Body: 16px/1.6 • Chat: 16px/1.75 • Small: 14px/1.5 • Mono: 14px/1.6. Generous line-heights for readability.",
+      "spacing": "Base: 8px. Chat bubbles: 16px padding. Sidebar: 12px padding. Message gap: 24px. Max-width: 768px for chat. Research pages: 680px content width.",
+      "components": "• Chat bubbles: User right (no bg), AI left (light bg or no bg)\n• Code blocks: Dark bg, copy button, language label\n• Sidebar: Conversation history list\n• Input: Full-width, rounded, send button right\n• Model selector: Dropdown, model icons\n• Buttons: Rounded (6px), green fill or gray outline",
+      "motion": "Subtle, purposeful. Duration: 200ms. Chat messages: Fade in + slide up. Typing indicator: Animated dots. Code blocks: Syntax highlight progressive. No playful animations.",
+      "layout": "Chat-centric. Sidebar left (260px collapsible), chat center (max 768px), empty right. Research site: Centered content, minimal nav. API docs: Left nav + content.",
+      "iconStyle": "Simple, minimal icons. 20px. 1.5px stroke. Geometric shapes. ChatGPT logo: Abstract knot. Functional, not decorative.",
+      "interactiveStates": "• Hover: Background lighten (on dark), darken (on light)\n• Focus: Green outline ring\n• Active: Slight darken\n• Regenerating: Spinner\n• Streaming: Cursor blink at end of text",
+      "copyVoice": "Research-oriented, accessible, hopeful. 'Introducing ChatGPT.' Clear, educational. Safety-conscious. Avoids hype. Mission-driven.",
+      "designPrinciples": [
+        "AI should be accessible",
+        "Conversation is natural",
+        "Research informs product",
+        "Safety is visible",
+        "Minimal, focused UI",
+        "Code and prose equally important"
+      ],
+      "mood": ["intelligent", "minimal", "research", "accessible", "future"]
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "category": "Entertainment",
+      "public": true,
+      "stockSymbol": "NFLX",
+      "colors": {
+        "primary": [
+          { "name": "Netflix Red", "hex": "#E50914", "usage": "Brand, CTAs, logo" },
+          { "name": "Netflix Black", "hex": "#000000", "usage": "Background" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Text" },
+          { "name": "Gray", "hex": "#808080", "usage": "Secondary text" },
+          { "name": "Dark Gray", "hex": "#141414", "usage": "Card backgrounds" }
+        ]
+      },
+      "colorUsage": "Red ONLY for brand moments and primary CTAs. Black background always. Content thumbnails provide color. Text is white on dark. Minimal UI chrome — content is the interface.",
+      "typography": {
+        "headings": "Netflix Sans Bold",
+        "body": "Netflix Sans Regular",
+        "fallback": "Helvetica Neue, sans-serif"
+      },
+      "typographyScale": "Display: 56px/1.1 • H1: 40px/1.15 • H2: 28px/1.2 • Body: 16px/1.5 • Small: 14px/1.4 • UI: 12px/1.3. Bold headlines, subtle body text.",
+      "spacing": "Base: 8px. Row gap: 4-8px. Section titles: 24px padding. Card gaps: 4px. Full-bleed rows. Minimal margins.",
+      "components": "• Title cards: 16:9 thumbnail, hover expands with info\n• Billboard: Full-width hero, play/info buttons\n• Progress bars: Red fill, thin\n• Profile icons: Rounded squares, colorful\n• Top 10 badges: Red with number\n• Player controls: Minimal, auto-hide",
+      "motion": "Cinematic, smooth. Duration: 300-500ms. Card hover: Scale 1.3 + z-index raise. Billboard: Ken Burns slow zoom. Transitions: Crossfade. Player: Controls fade in/out.",
+      "layout": "Full-screen content. Horizontal scrolling rows. Billboard hero at top. Categories as rows. Video player is fullscreen takeover. Mobile: Vertical scroll, smaller cards.",
+      "iconStyle": "Simple white icons, 24px. Play triangle is signature. Minimal detail. Icons only visible on hover or in player.",
+      "interactiveStates": "• Hover: Scale 1.3, show info card, z-index above neighbors\n• Focus: White outline ring\n• Playing: Red progress bar\n• Buffering: Spinner\n• Watched: Gray checkmark, progress shown",
+      "copyVoice": "Entertainment-focused, minimal. 'Watch anywhere.' Genre labels. Match % for recommendations. Episode descriptions are concise. No hard sell.",
+      "designPrinciples": [
+        "Content is the interface",
+        "Dark mode only",
+        "Red is sacred",
+        "Binge-watching is the goal",
+        "Personalization drives everything",
+        "Minimal UI chrome"
+      ],
+      "mood": ["bold", "cinematic", "immersive", "premium", "entertainment"]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "category": "E-commerce",
+      "public": true,
+      "stockSymbol": "AMZN",
+      "colors": {
+        "primary": [
+          { "name": "Amazon Orange", "hex": "#FF9900", "usage": "Brand, CTAs, smile arrow" },
+          { "name": "Amazon Black", "hex": "#232F3E", "usage": "Header, footer" }
+        ],
+        "neutral": [
+          { "name": "White", "hex": "#FFFFFF", "usage": "Background" },
+          { "name": "Light Gray", "hex": "#F3F3F3", "usage": "Subtle backgrounds" },
+          { "name": "Text", "hex": "#0F1111", "usage": "Primary text" }
+        ],
+        "secondary": [
+          { "name": "Link Blue", "hex": "#007185", "usage": "Links" },
+          { "name": "Deal Red", "hex": "#CC0C39", "usage": "Deals, savings" },
+          { "name": "Prime Blue", "hex": "#00A8E1", "usage": "Prime branding" }
+        ]
+      },
+      "colorUsage": "Orange for add-to-cart and primary CTAs. Dark header/footer. White content areas. Blue for text links. Red for deals/discounts. Prime blue for Prime benefits. Dense, information-rich.",
+      "typography": {
+        "headings": "Amazon Ember Bold",
+        "body": "Amazon Ember Regular",
+        "fallback": "Arial, sans-serif"
+      },
+      "typographyScale": "H1: 28px/1.2 • H2: 21px/1.25 • H3: 17px/1.3 • Body: 14px/1.4 • Small: 12px/1.3 • Price: 18-28px bold. Compact, information-dense.",
+      "spacing": "Base: 4px. Card padding: 12px. Section margins: 16px. Dense layouts. Minimal whitespace. Grid gaps: 12-16px.",
+      "components": "• Product cards: Image + title + rating + price + Prime badge\n• Star ratings: Orange filled stars, count in parentheses\n• Add to Cart: Orange button, full width\n• Buy Now: Yellow button\n• Prime badge: Blue checkmark\n• Carousels: Arrow navigation, peek next item\n• Search: Full-width, category dropdown",
+      "motion": "Minimal, functional. Page loads: Instant. Carousels: Smooth scroll. Add to Cart: Subtle feedback. No decorative animations. Speed is priority.",
+      "layout": "Dense grid layouts. Multiple carousels per page. Sidebar filters on search. Product page: Images left, details right. Mega menus for navigation. Mobile: Single column, sticky buy bar.",
+      "iconStyle": "Simple, functional icons. 20px. Minimal detail. Cart icon with count badge. Prime checkmark. Delivery truck. Rating stars.",
+      "interactiveStates": "• Hover: Blue text darkens, orange buttons darken\n• Focus: Blue outline ring\n• Active: Button darkens\n• Disabled: Grayed out\n• Loading: Spinner\n• In Cart: Green checkmark",
+      "copyVoice": "Direct, informational, deal-focused. Prices prominent. 'FREE delivery.' 'Only X left in stock.' Urgency tactics. Customer reviews emphasized.",
+      "designPrinciples": [
+        "Customer obsession",
+        "Information density is okay",
+        "Speed matters more than polish",
+        "Trust through reviews",
+        "Price is always visible",
+        "Conversion is the goal"
+      ],
+      "mood": ["functional", "trustworthy", "efficient", "customer-focused", "direct"]
+    }
+  ]
+}
