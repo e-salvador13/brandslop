@@ -1,12 +1,14 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'BrandSlop - AI-Ready Brand Aesthetics',
-  description: 'Copy-paste brand aesthetics for AI tools. Colors, typography, design principles in one click.',
+  title: 'BrandSlop — AI-Ready Brand Design Systems',
+  description: 'Copy-paste brand design systems for AI tools. Full specifications including colors, typography, spacing, components, motion, and more.',
+  openGraph: {
+    title: 'BrandSlop — AI-Ready Brand Design Systems',
+    description: 'Copy-paste brand design systems for AI tools.',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
@@ -16,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
