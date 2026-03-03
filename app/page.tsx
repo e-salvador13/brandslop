@@ -57,6 +57,13 @@ export default function Home() {
     return brand.designPrinciples?.length > 0 || brand.spacing || brand.motion || brand.components || brand.elevation;
   };
 
+  // Get logo URL for a brand
+  const getLogo = (brand: any) => {
+    if (brand.logo) return brand.logo;
+    const domain = brand.id.replace(/-/g, '') + '.com';
+    return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+  };
+
   // Separate curated (full system) and color-only brands
   const { curatedBrands, colorOnlyBrands } = useMemo(() => {
     const curated: any[] = [];
@@ -307,16 +314,25 @@ export default function Home() {
                 
                 {/* Content */}
                 <div className="p-4 relative">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <h3 className="font-semibold text-sm">{brand.name}</h3>
+                  <div className="flex items-start gap-3">
+                    {/* Logo */}
+                    <div className={`w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0 ${isDark ? 'bg-white/10' : 'bg-black/5'}`}>
+                      <img
+                        src={getLogo(brand)}
+                        alt=""
+                        className="w-8 h-8 object-contain"
+                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                      />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-sm truncate">{brand.name}</h3>
                       {hasFullSystem(brand) && (
                         <span className="text-[11px] text-[#0071E3]">Full System</span>
                       )}
                     </div>
                     <button
                       onClick={(e) => toggleFavorite(brand.id, e)}
-                      className={`p-1 rounded transition ${
+                      className={`p-1 rounded transition flex-shrink-0 ${
                         favorites.has(brand.id) 
                           ? 'text-[#FF9500]' 
                           : 'text-[--color-text-secondary] opacity-0 group-hover:opacity-100'
