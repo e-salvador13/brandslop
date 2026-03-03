@@ -3,8 +3,8 @@
 import { useState, useEffect, useMemo } from 'react';
 import { jsPDF } from 'jspdf';
 import brandsData from '../data/brands.json';
+import Link from 'next/link';
 
-type ViewMode = 'curated' | 'all';
 type ExportFormat = 'prompt' | 'css' | 'tailwind' | 'json';
 
 export default function Home() {
@@ -14,8 +14,8 @@ export default function Home() {
   const [categoryFilter, setCategoryFilter] = useState<string>('all');
   const [exportFormat, setExportFormat] = useState<ExportFormat>('prompt');
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
-  const [viewMode, setViewMode] = useState<ViewMode>('curated');
   const [isDark, setIsDark] = useState(false);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // Load favorites and theme from localStorage
   useEffect(() => {
@@ -66,7 +66,7 @@ export default function Home() {
   };
 
   // Separate curated (full system) and color-only brands
-  const { curatedBrands, colorOnlyBrands } = useMemo(() => {
+  const { curatedBrands, colorOnlyBrands, allBrands } = useMemo(() => {
     const curated: any[] = [];
     const colorOnly: any[] = [];
     
@@ -78,7 +78,7 @@ export default function Home() {
       }
     });
     
-    return { curatedBrands: curated, colorOnlyBrands: colorOnly };
+    return { curatedBrands: curated, colorOnlyBrands: colorOnly, allBrands: brandsData.brands };
   }, []);
 
   const categories = useMemo(() => {
@@ -86,23 +86,55 @@ export default function Home() {
     return ['all', ...Array.from(cats)];
   }, [curatedBrands]);
 
+  // New filtering logic: 
+  // - No search: show only curated brands with category filter
+  // - With search: search ALL brands, mark color-only as muted
   const filteredBrands = useMemo(() => {
-    const source = viewMode === 'curated' ? curatedBrands : colorOnlyBrands;
-    return source
-      .filter((b: any) =>
-        (categoryFilter === 'all' || b.category === categoryFilter) &&
-        (b.name.toLowerCase().includes(search.toLowerCase()) ||
-         b.mood?.some((m: string) => m.toLowerCase().includes(search.toLowerCase())))
-      )
-      .sort((a, b) => {
-        // Favorites first
-        const aFav = favorites.has(a.id);
-        const bFav = favorites.has(b.id);
-        if (aFav && !bFav) return -1;
-        if (!aFav && bFav) return 1;
-        return a.name.localeCompare(b.name);
-      });
-  }, [viewMode, curatedBrands, colorOnlyBrands, categoryFilter, search, favorites]);
+    const searchLower = search.toLowerCase().trim();
+    
+    if (!searchLower) {
+      // No search: show only full system brands with category filter
+      return curatedBrands
+        .filter((b: any) => categoryFilter === 'all' || b.category === categoryFilter)
+        .sort((a, b) => {
+          const aFav = favorites.has(a.id);
+          const bFav = favorites.has(b.id);
+          if (aFav && !bFav) return -1;
+          if (!aFav && bFav) return 1;
+          return a.name.localeCompare(b.name);
+        });
+    } else {
+      // Search: search ALL brands
+      return allBrands
+        .filter((b: any) =>
+          b.name.toLowerCase().includes(searchLower) ||
+          b.mood?.some((m: string) => m.toLowerCase().includes(searchLower)) ||
+          b.category?.toLowerCase().includes(searchLower)
+        )
+        .sort((a, b) => {
+          // Full systems first, then favorites, then alphabetical
+          const aFull = hasFullSystem(a);
+          const bFull = hasFullSystem(b);
+          if (aFull && !bFull) return -1;
+          if (!aFull && bFull) return 1;
+          const aFav = favorites.has(a.id);
+          const bFav = favorites.has(b.id);
+          if (aFav && !bFav) return -1;
+          if (!aFav && bFav) return 1;
+          return a.name.localeCompare(b.name);
+        });
+    }
+  }, [curatedBrands, allBrands, categoryFilter, search, favorites]);
+
+  // Handle request for color-only brand
+  const handleRequestBrand = (brand: any, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const requests = JSON.parse(localStorage.getItem('brandslop-requests') || '[]');
+    requests.push({ brandId: brand.id, brandName: brand.name, timestamp: Date.now() });
+    localStorage.setItem('brandslop-requests', JSON.stringify(requests));
+    setToastMessage("Requested! We'll add full specs soon.");
+    setTimeout(() => setToastMessage(null), 3000);
+  };
 
   const generatePrompt = (brand: any): string => {
     let prompt = `# ${brand.name} Design System\n\n`;
@@ -386,11 +418,28 @@ export default function Home() {
 
   return (
     <div className={`min-h-screen ${isDark ? 'dark bg-black' : 'bg-white'}`}>
+      {/* Toast Notification */}
+      {toastMessage && (
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] px-6 py-3 bg-[#34C759] text-white rounded-full shadow-lg animate-fade-in font-medium">
+          {toastMessage}
+        </div>
+      )}
+
       {/* Navigation */}
       <nav className={`sticky top-0 z-50 backdrop-blur-xl ${isDark ? 'bg-black/70' : 'bg-white/70'} border-b ${isDark ? 'border-white/10' : 'border-black/5'}`}>
         <div className="max-w-[980px] mx-auto px-6 h-12 flex items-center justify-between">
           <h1 className="text-sm font-semibold">BrandSlop</h1>
           <div className="flex items-center gap-4">
+            <Link 
+              href="/playground"
+              className={`text-sm font-medium px-3 py-1.5 rounded-full transition ${
+                isDark 
+                  ? 'hover:bg-white/10 text-white/70 hover:text-white' 
+                  : 'hover:bg-black/5 text-black/70 hover:text-black'
+              }`}
+            >
+              🧪 Playground
+            </Link>
             <span className="text-caption text-[--color-text-secondary]">
               {curatedBrands.length} design systems
             </span>
@@ -431,7 +480,7 @@ export default function Home() {
               </svg>
               <input
                 type="text"
-                placeholder="Search brands..."
+                placeholder={`Search all ${allBrands.length} brands...`}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className={`w-full h-12 pl-12 pr-4 rounded-xl text-[17px] ${
@@ -441,38 +490,20 @@ export default function Home() {
                 } border focus:outline-none focus:ring-2 focus:ring-[#0071E3]`}
               />
             </div>
+            {search && (
+              <p className="text-sm text-[--color-text-secondary] mt-2">
+                Showing {filteredBrands.length} results from all brands
+              </p>
+            )}
           </div>
         </div>
       </section>
 
-      {/* View Toggle & Filters */}
-      <section className={`py-6 border-b ${isDark ? 'border-white/10' : 'border-black/5'}`}>
-        <div className="max-w-[980px] mx-auto px-6">
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setViewMode('curated')}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition ${
-                  viewMode === 'curated'
-                    ? 'bg-[#0071E3] text-white'
-                    : `${isDark ? 'bg-white/10 text-white/70' : 'bg-black/5 text-black/70'} hover:opacity-80`
-                }`}
-              >
-                Full Systems ({curatedBrands.length})
-              </button>
-              <button
-                onClick={() => setViewMode('all')}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition ${
-                  viewMode === 'all'
-                    ? 'bg-[#0071E3] text-white'
-                    : `${isDark ? 'bg-white/10 text-white/70' : 'bg-black/5 text-black/70'} hover:opacity-80`
-                }`}
-              >
-                Colors Only ({colorOnlyBrands.length})
-              </button>
-            </div>
-            
-            {viewMode === 'curated' && (
+      {/* Category Filter (only when not searching) */}
+      {!search && (
+        <section className={`py-6 border-b ${isDark ? 'border-white/10' : 'border-black/5'}`}>
+          <div className="max-w-[980px] mx-auto px-6">
+            <div className="flex items-center justify-end gap-4">
               <select
                 value={categoryFilter}
                 onChange={(e) => setCategoryFilter(e.target.value)}
@@ -488,69 +519,92 @@ export default function Home() {
                   </option>
                 ))}
               </select>
-            )}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Brands Grid */}
       <section className="section">
         <div className="max-w-[980px] mx-auto px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {filteredBrands.map((brand: any, index: number) => (
-              <div
-                key={brand.id}
-                onClick={() => setSelectedBrand(brand)}
-                className={`group cursor-pointer rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.02] ${
-                  isDark ? 'bg-[#1C1C1E]' : 'bg-white'
-                } shadow-[var(--shadow-1)] hover:shadow-[var(--shadow-2)]`}
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                {/* Color Bar */}
-                <div className="flex h-16">
-                  {brand.colors.primary.slice(0, 5).map((color: any, i: number) => (
-                    <div 
-                      key={i} 
-                      className="flex-1" 
-                      style={{ backgroundColor: color.hex }}
-                    />
-                  ))}
-                </div>
-                
-                {/* Content */}
-                <div className="p-4 relative">
-                  <div className="flex items-start gap-3">
-                    {/* Logo */}
-                    <div className={`w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0 ${isDark ? 'bg-white/10' : 'bg-black/5'}`}>
-                      <img
-                        src={getLogo(brand)}
-                        alt=""
-                        className="w-8 h-8 object-contain"
-                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+            {filteredBrands.map((brand: any, index: number) => {
+              const isFullSystem = hasFullSystem(brand);
+              const isColorOnly = !isFullSystem;
+              
+              return (
+                <div
+                  key={brand.id}
+                  onClick={() => isFullSystem && setSelectedBrand(brand)}
+                  className={`group relative rounded-2xl overflow-hidden transition-all duration-300 ${
+                    isFullSystem ? 'cursor-pointer hover:scale-[1.02]' : 'cursor-default'
+                  } ${isDark ? 'bg-[#1C1C1E]' : 'bg-white'} shadow-[var(--shadow-1)] ${
+                    isFullSystem ? 'hover:shadow-[var(--shadow-2)]' : ''
+                  } ${isColorOnly ? 'opacity-50 grayscale' : ''}`}
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  {/* Color Bar */}
+                  <div className="flex h-16">
+                    {brand.colors.primary.slice(0, 5).map((color: any, i: number) => (
+                      <div 
+                        key={i} 
+                        className="flex-1" 
+                        style={{ backgroundColor: color.hex }}
                       />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-semibold text-sm truncate">{brand.name}</h3>
-                      {hasFullSystem(brand) && (
-                        <span className="text-[11px] text-[#0071E3]">Full System</span>
+                    ))}
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="p-4 relative">
+                    <div className="flex items-start gap-3">
+                      {/* Logo */}
+                      <div className={`w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0 ${isDark ? 'bg-white/10' : 'bg-black/5'}`}>
+                        <img
+                          src={getLogo(brand)}
+                          alt=""
+                          className="w-8 h-8 object-contain"
+                          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                        />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-semibold text-sm truncate">{brand.name}</h3>
+                        {isFullSystem ? (
+                          <span className="text-[11px] text-[#0071E3]">Full System</span>
+                        ) : (
+                          <span className="text-[11px] text-[--color-text-secondary]">Colors Only</span>
+                        )}
+                      </div>
+                      {isFullSystem && (
+                        <button
+                          onClick={(e) => toggleFavorite(brand.id, e)}
+                          className={`p-1 rounded transition flex-shrink-0 ${
+                            favorites.has(brand.id) 
+                              ? 'text-[#FF9500]' 
+                              : 'text-[--color-text-secondary] opacity-0 group-hover:opacity-100'
+                          }`}
+                        >
+                          <svg className="w-4 h-4" fill={favorites.has(brand.id) ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                          </svg>
+                        </button>
                       )}
                     </div>
-                    <button
-                      onClick={(e) => toggleFavorite(brand.id, e)}
-                      className={`p-1 rounded transition flex-shrink-0 ${
-                        favorites.has(brand.id) 
-                          ? 'text-[#FF9500]' 
-                          : 'text-[--color-text-secondary] opacity-0 group-hover:opacity-100'
-                      }`}
-                    >
-                      <svg className="w-4 h-4" fill={favorites.has(brand.id) ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                      </svg>
-                    </button>
                   </div>
+
+                  {/* Request Overlay for Color-Only Brands */}
+                  {isColorOnly && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <button
+                        onClick={(e) => handleRequestBrand(brand, e)}
+                        className="px-4 py-2 bg-[#0071E3] text-white rounded-full text-sm font-semibold hover:bg-[#0077ED] transition shadow-lg"
+                      >
+                        Request Full Specs
+                      </button>
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
           
           {filteredBrands.length === 0 && (
