@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
+import { jsPDF } from 'jspdf';
 import brandsData from '../data/brands.json';
 
 type ViewMode = 'curated' | 'all';
@@ -177,6 +178,210 @@ export default function Home() {
       case 'json': return JSON.stringify(brand, null, 2);
       default: return generatePrompt(brand);
     }
+  };
+
+  const downloadPDF = (brand: any) => {
+    const doc = new jsPDF({ unit: 'pt', format: 'letter' });
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+    const margin = 50;
+    const contentWidth = pageWidth - margin * 2;
+    let y = margin;
+
+    const addPage = () => {
+      doc.addPage();
+      y = margin;
+    };
+
+    const checkPageBreak = (neededHeight: number) => {
+      if (y + neededHeight > pageHeight - margin) {
+        addPage();
+      }
+    };
+
+    // Helper to draw a section header
+    const drawSectionHeader = (title: string) => {
+      checkPageBreak(40);
+      doc.setFontSize(11);
+      doc.setFont('helvetica', 'bold');
+      doc.setTextColor(100, 100, 100);
+      doc.text(title.toUpperCase(), margin, y);
+      y += 18;
+    };
+
+    // Helper to draw wrapped text
+    const drawText = (text: string, fontSize = 10, color = [30, 30, 30]) => {
+      doc.setFontSize(fontSize);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(color[0], color[1], color[2]);
+      const lines = doc.splitTextToSize(text, contentWidth);
+      checkPageBreak(lines.length * fontSize * 1.4);
+      doc.text(lines, margin, y);
+      y += lines.length * fontSize * 1.4 + 8;
+    };
+
+    // Title
+    doc.setFontSize(28);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(0, 0, 0);
+    doc.text(brand.name, margin, y);
+    y += 20;
+
+    // Subtitle
+    if (brand.category) {
+      doc.setFontSize(12);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(100, 100, 100);
+      doc.text(brand.category, margin, y);
+      y += 24;
+    }
+
+    // Color swatches
+    y += 10;
+    const allColors = [
+      ...(brand.colors.primary || []),
+      ...(brand.colors.secondary || []),
+      ...(brand.colors.neutral || [])
+    ].slice(0, 8);
+    
+    const swatchSize = 40;
+    const swatchGap = 8;
+    
+    allColors.forEach((color: any, i: number) => {
+      const x = margin + i * (swatchSize + swatchGap);
+      // Draw swatch
+      const hex = color.hex.replace('#', '');
+      const r = parseInt(hex.substring(0, 2), 16);
+      const g = parseInt(hex.substring(2, 4), 16);
+      const b = parseInt(hex.substring(4, 6), 16);
+      doc.setFillColor(r, g, b);
+      doc.roundedRect(x, y, swatchSize, swatchSize, 4, 4, 'F');
+      
+      // Draw hex below
+      doc.setFontSize(7);
+      doc.setTextColor(80, 80, 80);
+      doc.text(color.hex, x + swatchSize / 2, y + swatchSize + 10, { align: 'center' });
+    });
+    y += swatchSize + 30;
+
+    // Mood tags
+    if (brand.mood?.length > 0) {
+      doc.setFontSize(10);
+      doc.setTextColor(100, 100, 100);
+      doc.text(brand.mood.join(' • '), margin, y);
+      y += 24;
+    }
+
+    // Typography
+    if (brand.typography) {
+      drawSectionHeader('Typography');
+      drawText(`Headings: ${brand.typography.headings}`);
+      drawText(`Body: ${brand.typography.body}`);
+      if (brand.typographyScale) drawText(brand.typographyScale);
+    }
+
+    // Color Usage
+    if (brand.colorUsage) {
+      drawSectionHeader('Color Usage');
+      drawText(brand.colorUsage);
+    }
+
+    // Spacing
+    if (brand.spacing) {
+      drawSectionHeader('Spacing');
+      drawText(brand.spacing);
+    }
+
+    // Components
+    if (brand.components) {
+      drawSectionHeader('Component Patterns');
+      drawText(brand.components);
+    }
+
+    // Elevation
+    if (brand.elevation) {
+      drawSectionHeader('Elevation & Shadows');
+      drawText(brand.elevation);
+    }
+
+    // Motion
+    if (brand.motion) {
+      drawSectionHeader('Motion & Animation');
+      drawText(brand.motion);
+    }
+
+    // Layout
+    if (brand.layout) {
+      drawSectionHeader('Layout & Grid');
+      drawText(brand.layout);
+    }
+
+    // Responsive
+    if (brand.responsive) {
+      drawSectionHeader('Responsive Breakpoints');
+      drawText(brand.responsive);
+    }
+
+    // Icons
+    if (brand.iconStyle) {
+      drawSectionHeader('Icon Style');
+      drawText(brand.iconStyle);
+    }
+
+    // Interactive States
+    if (brand.interactiveStates) {
+      drawSectionHeader('Interactive States');
+      drawText(brand.interactiveStates);
+    }
+
+    // Media
+    if (brand.mediaPatterns) {
+      drawSectionHeader('Image & Media');
+      drawText(brand.mediaPatterns);
+    }
+
+    // Copy Voice
+    if (brand.copyVoice) {
+      drawSectionHeader('Copy Voice');
+      drawText(brand.copyVoice);
+    }
+
+    // Dark Mode
+    if (brand.colors?.dark?.length > 0) {
+      drawSectionHeader('Dark Mode Colors');
+      checkPageBreak(60);
+      brand.colors.dark.slice(0, 8).forEach((color: any, i: number) => {
+        const x = margin + i * (swatchSize + swatchGap);
+        const hex = color.hex.replace('#', '');
+        const r = parseInt(hex.substring(0, 2), 16);
+        const g = parseInt(hex.substring(2, 4), 16);
+        const b = parseInt(hex.substring(4, 6), 16);
+        doc.setFillColor(r, g, b);
+        doc.roundedRect(x, y, swatchSize, swatchSize, 4, 4, 'F');
+        doc.setFontSize(7);
+        doc.setTextColor(80, 80, 80);
+        doc.text(color.hex, x + swatchSize / 2, y + swatchSize + 10, { align: 'center' });
+      });
+      y += swatchSize + 30;
+    }
+
+    // Design Principles
+    if (brand.designPrinciples?.length > 0) {
+      drawSectionHeader('Design Principles');
+      brand.designPrinciples.forEach((p: string) => {
+        drawText(`• ${p}`);
+      });
+    }
+
+    // Footer
+    doc.setFontSize(8);
+    doc.setTextColor(150, 150, 150);
+    const footerText = `Generated by BrandSlop • ${new Date().toLocaleDateString()}`;
+    doc.text(footerText, pageWidth / 2, pageHeight - 30, { align: 'center' });
+
+    // Save
+    const filename = `brandslop-${brand.id}.pdf`;
+    doc.save(filename);
   };
 
   return (
@@ -573,16 +778,32 @@ export default function Home() {
                   </button>
                 ))}
               </div>
-              <button
-                onClick={() => copyToClipboard(getExportContent(selectedBrand, exportFormat), 'export')}
-                className={`w-full py-3 rounded-full font-semibold transition ${
-                  copiedField === 'export'
-                    ? 'bg-[#34C759] text-white'
-                    : 'bg-[#0071E3] hover:bg-[#0077ED] text-white'
-                }`}
-              >
-                {copiedField === 'export' ? 'Copied!' : `Copy ${exportFormat === 'prompt' ? 'AI Prompt' : exportFormat.toUpperCase()}`}
-              </button>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => copyToClipboard(getExportContent(selectedBrand, exportFormat), 'export')}
+                  className={`flex-1 py-3 rounded-full font-semibold transition ${
+                    copiedField === 'export'
+                      ? 'bg-[#34C759] text-white'
+                      : 'bg-[#0071E3] hover:bg-[#0077ED] text-white'
+                  }`}
+                >
+                  {copiedField === 'export' ? 'Copied!' : `Copy ${exportFormat === 'prompt' ? 'AI Prompt' : exportFormat.toUpperCase()}`}
+                </button>
+                <button
+                  onClick={() => downloadPDF(selectedBrand)}
+                  className={`px-6 py-3 rounded-full font-semibold transition flex items-center gap-2 ${
+                    isDark 
+                      ? 'bg-white/10 hover:bg-white/20 text-white' 
+                      : 'bg-black/5 hover:bg-black/10 text-black'
+                  }`}
+                  title="Download PDF"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  PDF
+                </button>
+              </div>
             </div>
           </div>
         </div>

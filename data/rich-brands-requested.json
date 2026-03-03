@@ -1,0 +1,1150 @@
+{
+  "brands": [
+    {
+      "id": "fidelity",
+      "name": "Fidelity Investments",
+      "category": "Financial",
+      "public": true,
+      "colors": {
+        "primary": [
+          {
+            "name": "Fidelity Green",
+            "hex": "#4B8B3B",
+            "usage": "Primary brand, CTAs, logo"
+          },
+          {
+            "name": "Fidelity Dark Green",
+            "hex": "#3A6F2E",
+            "usage": "Hover states, emphasis"
+          }
+        ],
+        "neutral": [
+          {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "usage": "Backgrounds"
+          },
+          {
+            "name": "Light Gray",
+            "hex": "#F5F5F5",
+            "usage": "Card backgrounds"
+          },
+          {
+            "name": "Gray 300",
+            "hex": "#D1D5DB",
+            "usage": "Borders, dividers"
+          },
+          {
+            "name": "Gray 600",
+            "hex": "#6B7280",
+            "usage": "Secondary text"
+          },
+          {
+            "name": "Gray 900",
+            "hex": "#1F2937",
+            "usage": "Primary text, headlines"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Teal",
+            "hex": "#0D7377",
+            "usage": "Info states, secondary CTAs"
+          },
+          {
+            "name": "Gold",
+            "hex": "#B8860B",
+            "usage": "Premium features, accents"
+          },
+          {
+            "name": "Red",
+            "hex": "#DC3545",
+            "usage": "Errors, losses, alerts"
+          },
+          {
+            "name": "Positive Green",
+            "hex": "#28A745",
+            "usage": "Gains, success states"
+          }
+        ],
+        "dark": [
+          {
+            "name": "Dark Background",
+            "hex": "#1A1D21",
+            "usage": "Page background"
+          },
+          {
+            "name": "Dark Surface",
+            "hex": "#252A31",
+            "usage": "Cards, panels"
+          },
+          {
+            "name": "Dark Border",
+            "hex": "#3A4049",
+            "usage": "Dividers"
+          },
+          {
+            "name": "Dark Text",
+            "hex": "#E8EAED",
+            "usage": "Primary text"
+          },
+          {
+            "name": "Dark Text Secondary",
+            "hex": "#9BA1A9",
+            "usage": "Secondary text"
+          }
+        ]
+      },
+      "colorUsage": "Fidelity Green (#4B8B3B) for primary CTAs and brand moments. Red/green for financial gains/losses (never reversed). Gold for premium/private client features. Conservative, trustworthy palette. White backgrounds for clarity. Dark mode uses muted green accents.",
+      "typography": {
+        "headings": "Fidelity Sans Bold",
+        "body": "Fidelity Sans Regular",
+        "mono": "Roboto Mono",
+        "fallback": "system-ui, Helvetica Neue, Arial, sans-serif",
+        "googleFonts": "Roboto:wght@400;500;700"
+      },
+      "typographyScale": "Display: 48px/1.1 • H1: 36px/1.2 • H2: 28px/1.25 • H3: 22px/1.3 • Body: 16px/1.5 • Small: 14px/1.4 • Caption: 12px/1.35 • Numbers: Tabular figures for alignment in tables.",
+      "spacing": "Base: 8px. Card padding: 24px. Section margins: 48-64px. Dashboard widgets: 16px gap. Max-width: 1440px. Dense data tables with 12px cell padding. Generous margins on marketing pages.",
+      "components": "• Account cards: Balance + change + percentage, rounded (8px)\n• Data tables: Sortable columns, zebra striping, sticky headers\n• Stock charts: Line/candlestick, green/red gains/losses\n• Order forms: Step indicators, validation states\n• Portfolio pie: Interactive donut charts\n• Buttons: Rounded (4px), 44px height, green primary\n• Alerts: Colored left border, icon + message",
+      "elevation": "• Level 0: No shadow (flat data tables)\n• Level 1: 0 1px 3px rgba(0,0,0,0.1) — Cards, widgets\n• Level 2: 0 4px 12px rgba(0,0,0,0.12) — Dropdowns, modals\n• Level 3: 0 8px 24px rgba(0,0,0,0.15) — Dialogs\n• Conservative shadows, financial credibility",
+      "motion": "Subtle, professional. No playful animations. Duration: 150-250ms. Ease: ease-out. Charts: Smooth data updates. Page transitions: Quick crossfade. Loading: Skeleton shimmer. Price updates: Subtle highlight flash.",
+      "layout": "Dashboard-centric: Widgets in grid, sidebar navigation. Marketing: Hero + feature sections. Account: Master-detail pattern. Mobile: Stacked cards, bottom tab bar.",
+      "responsive": "• Desktop (>1440px): Full dashboard, 1440px max-width\n• Laptop (1024-1440px): Collapsed sidebar option\n• Tablet (768-1024px): 2-column grids, hamburger nav\n• Mobile (<768px): Single column, bottom nav, simplified charts",
+      "iconStyle": "Simple line icons, 20-24px. Financial themed: Chart, wallet, settings. 1.5px stroke. Consistent weight. Filled for active states.",
+      "interactiveStates": "• Hover: Slight background darken, underline for links\n• Focus: Green outline ring (2px)\n• Active: Darker green fill\n• Disabled: 50% opacity\n• Loading: Green spinner\n• Success/Error: Green/red borders + icons",
+      "mediaPatterns": "• Charts: Responsive, touch-friendly on mobile, tooltips on hover\n• Tables: Horizontal scroll on mobile, sticky first column\n• Icons: 24px in navigation, 48px in feature sections\n• Hero images: Professional photography, diverse representation\n• Data visualization: Green for positive, red for negative, consistent scales",
+      "copyVoice": "Trustworthy, empowering, clear. 'Invest in your future.' Second-person, action-oriented. Avoids jargon or explains it. Confident but not aggressive. Educational content emphasis.",
+      "designPrinciples": [
+        "Trust through clarity",
+        "Data is primary content",
+        "Green = Fidelity, not success (use context)",
+        "Accessibility for all investors",
+        "Professional, not stuffy",
+        "Security feels visible"
+      ],
+      "mood": [
+        "trustworthy",
+        "professional",
+        "empowering",
+        "accessible",
+        "secure"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "category": "Technology",
+      "public": true,
+      "colors": {
+        "primary": [
+          {
+            "name": "OpenAI Black",
+            "hex": "#000000",
+            "usage": "Primary brand, text, logo"
+          },
+          {
+            "name": "OpenAI Green",
+            "hex": "#10A37F",
+            "usage": "Accents, success, ChatGPT brand"
+          }
+        ],
+        "neutral": [
+          {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "usage": "Backgrounds"
+          },
+          {
+            "name": "Gray 50",
+            "hex": "#F7F7F8",
+            "usage": "Subtle backgrounds"
+          },
+          {
+            "name": "Gray 100",
+            "hex": "#ECECF1",
+            "usage": "Borders, dividers"
+          },
+          {
+            "name": "Gray 300",
+            "hex": "#C5C5D2",
+            "usage": "Placeholder text"
+          },
+          {
+            "name": "Gray 500",
+            "hex": "#8E8EA0",
+            "usage": "Secondary text"
+          },
+          {
+            "name": "Gray 700",
+            "hex": "#565869",
+            "usage": "Body text"
+          },
+          {
+            "name": "Gray 900",
+            "hex": "#202123",
+            "usage": "Headlines"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Purple",
+            "hex": "#AB68FF",
+            "usage": "GPT-4, premium features"
+          },
+          {
+            "name": "Blue",
+            "hex": "#19C3EE",
+            "usage": "Info, links"
+          },
+          {
+            "name": "Red",
+            "hex": "#EF4444",
+            "usage": "Errors, warnings"
+          },
+          {
+            "name": "Orange",
+            "hex": "#F97316",
+            "usage": "Warnings"
+          }
+        ],
+        "dark": [
+          {
+            "name": "Dark Background",
+            "hex": "#212121",
+            "usage": "Page background (ChatGPT)"
+          },
+          {
+            "name": "Dark Surface",
+            "hex": "#2F2F2F",
+            "usage": "Sidebar, cards"
+          },
+          {
+            "name": "Dark Elevated",
+            "hex": "#3F3F3F",
+            "usage": "Input backgrounds, hovers"
+          },
+          {
+            "name": "Dark Border",
+            "hex": "#4E4E4E",
+            "usage": "Borders"
+          },
+          {
+            "name": "Dark Text",
+            "hex": "#ECECEC",
+            "usage": "Primary text"
+          },
+          {
+            "name": "Dark Text Secondary",
+            "hex": "#ACACB1",
+            "usage": "Secondary text"
+          }
+        ]
+      },
+      "colorUsage": "Black for brand, text, and primary presence. Green (#10A37F) for ChatGPT product, success states, and accent. Purple for GPT-4/premium features. Gray-900 (#202123) for dark backgrounds. Minimal color — content and conversation is the focus. Never green backgrounds.",
+      "typography": {
+        "headings": "Söhne Bold",
+        "body": "Söhne Regular",
+        "mono": "Söhne Mono",
+        "fallback": "system-ui, -apple-system, Helvetica Neue, sans-serif"
+      },
+      "typographyScale": "Display: 64px/1.1/−0.02em • H1: 48px/1.15 • H2: 36px/1.2 • H3: 24px/1.3 • Body: 16px/1.6 • Chat: 16px/1.75 (generous for reading) • Small: 14px/1.5 • Mono: 14px/1.6.",
+      "spacing": "Base: 8px. Chat message padding: 24px. Sidebar: 260px. Section margins: 80px. Input area: 16px padding. Max-width: 768px chat, 1280px docs. Dense API docs, spacious marketing.",
+      "components": "• Chat messages: Assistant (no bg light / dark bg dark), User (gray bg)\n• Sidebar: Conversation list, collapsible, dark\n• Input box: Rounded (24px), auto-growing textarea, send button\n• Code blocks: Syntax highlighted, dark bg, copy button\n• Model selector: Dropdown with model descriptions\n• API playground: Split pane, request/response\n• Buttons: Rounded (6px), 40px height, black fill primary",
+      "elevation": "• Level 0: No shadow (flat UI)\n• Level 1: 0 2px 8px rgba(0,0,0,0.08) — Cards\n• Level 2: 0 4px 16px rgba(0,0,0,0.12) — Modals\n• Level 3: 0 8px 32px rgba(0,0,0,0.16) — Dialogs\n• Subtle, refined shadows",
+      "motion": "Minimal, thoughtful. Typing indicator: Animated dots (3). Message appear: Fade up. Token streaming: Character-by-character. Duration: 200-300ms. Ease: ease-out. No flashy animations.",
+      "layout": "ChatGPT: Sidebar (260px) + Chat (centered, 768px max). API Docs: Sidebar nav + content + code examples. Marketing: Full-width sections, centered content. Research: Prose-focused, academic.",
+      "responsive": "• Desktop (>1024px): Full sidebar, 768px chat width\n• Laptop (768-1024px): Collapsible sidebar\n• Tablet (640-768px): Sidebar as overlay\n• Mobile (<640px): Full-width chat, hamburger for sidebar, sticky input",
+      "iconStyle": "Simple line icons, 20-24px. 1.5px stroke. OpenAI logo is distinctive hexagonal flower. Minimal, functional icons. Mono-weight.",
+      "interactiveStates": "• Hover: Subtle background change\n• Focus: Black outline ring (2px)\n• Active: Slight scale down\n• Disabled: 40% opacity\n• Loading: Animated dots or spinner\n• Regenerate: Refresh icon rotation",
+      "mediaPatterns": "• Logo: Hexagonal flower mark, wordmark separate\n• Code: Dark syntax highlighted blocks, language label top-right\n• Diagrams: Clean, minimal, grayscale with green accent\n• Research figures: Academic style, labeled axes\n• Chat avatars: Circle, 28-32px, logo or user initials",
+      "copyVoice": "Clear, technical, responsible. 'Building safe AGI.' Research-focused for papers, conversational for ChatGPT. Acknowledges limitations. 'I don't know' is acceptable. Helpful but not sycophantic.",
+      "designPrinciples": [
+        "Conversation is the interface",
+        "Black and white foundation",
+        "Green for ChatGPT product",
+        "Content over chrome",
+        "Research credibility",
+        "Safety-conscious design"
+      ],
+      "mood": [
+        "minimal",
+        "intelligent",
+        "futuristic",
+        "clean",
+        "conversational"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "category": "Technology",
+      "public": true,
+      "note": "Already exists with full rich entry - no changes needed",
+      "colors": {
+        "primary": [
+          {
+            "name": "Anthropic Tan",
+            "hex": "#CC9B7A",
+            "usage": "Primary brand accent"
+          },
+          {
+            "name": "Claude Orange",
+            "hex": "#DA7756",
+            "usage": "Claude product accent"
+          },
+          {
+            "name": "Anthropic Black",
+            "hex": "#1A1A1A",
+            "usage": "Text, logo"
+          }
+        ],
+        "neutral": [
+          {
+            "name": "Cream",
+            "hex": "#FCF9F4",
+            "usage": "Page background (signature)"
+          },
+          {
+            "name": "Light Cream",
+            "hex": "#FFFDF8",
+            "usage": "Card backgrounds"
+          },
+          {
+            "name": "Warm Gray 200",
+            "hex": "#E8E4DE",
+            "usage": "Subtle backgrounds"
+          },
+          {
+            "name": "Warm Gray 300",
+            "hex": "#D4CFC7",
+            "usage": "Borders"
+          },
+          {
+            "name": "Warm Gray 500",
+            "hex": "#8B8580",
+            "usage": "Secondary text"
+          },
+          {
+            "name": "Warm Gray 800",
+            "hex": "#3D3834",
+            "usage": "Body text"
+          },
+          {
+            "name": "Black",
+            "hex": "#1A1A1A",
+            "usage": "Headlines"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Rust",
+            "hex": "#B85C38",
+            "usage": "Accents, highlights"
+          },
+          {
+            "name": "Sage",
+            "hex": "#7A8B6E",
+            "usage": "Success, calm"
+          },
+          {
+            "name": "Blue",
+            "hex": "#4A6FA5",
+            "usage": "Links, info"
+          },
+          {
+            "name": "Red",
+            "hex": "#C45C4D",
+            "usage": "Errors"
+          }
+        ],
+        "dark": [
+          {
+            "name": "Dark Background",
+            "hex": "#1A1A1A",
+            "usage": "Dark sections"
+          },
+          {
+            "name": "Dark Surface",
+            "hex": "#2A2622",
+            "usage": "Cards on dark"
+          },
+          {
+            "name": "Dark Elevated",
+            "hex": "#3A352F",
+            "usage": "Elevated surfaces"
+          },
+          {
+            "name": "Dark Border",
+            "hex": "#4A453E",
+            "usage": "Borders"
+          },
+          {
+            "name": "Dark Text",
+            "hex": "#FCF9F4",
+            "usage": "Text on dark"
+          },
+          {
+            "name": "Dark Text Secondary",
+            "hex": "#B0A99F",
+            "usage": "Secondary text"
+          }
+        ]
+      },
+      "colorUsage": "Warm cream background (#FCF9F4) is THE signature — NOT white, NOT cold gray. Tan/rust accents for brand moments. Earthy, warm palette — deliberately NOT tech blue. Claude product is warmer than corporate. Minimalist, research-focused aesthetic. Orange (#DA7756) for Claude-specific UI.",
+      "typography": {
+        "headings": "Styrene A Bold / Inter Bold",
+        "body": "Styrene A Regular / Inter Regular",
+        "mono": "JetBrains Mono / SF Mono",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "Display: 56px/1.1/−0.02em • H1: 40px/1.15 • H2: 32px/1.2 • H3: 24px/1.25 • Body: 18px/1.7 • Small: 14px/1.5 • Prose: 20px/1.8 • Chat: 16px/1.6.",
+      "spacing": "Base: 8px. Section margins: 80-120px. Content padding: 40-80px. Prose max-width: 680px. Chat max-width: 768px. Page max-width: 1200px. Generous whitespace throughout.",
+      "components": "• Research cards: Title + abstract + date, minimal border\n• Claude chat: Message bubbles (assistant: tan/orange tint, user: gray)\n• Code blocks: Warm dark theme, syntax highlighted, copy button\n• Documentation: Sidebar nav, prose-focused content\n• Buttons: Rounded (6px), tan/orange primary, 44px height\n• Features: Icon + headline + description, grid layout\n• Artifacts: Side panel, tabs for different views",
+      "elevation": "• Level 0: No shadow (flat, warm surfaces)\n• Level 1: 0 1px 3px rgba(0,0,0,0.08) — Cards\n• Level 2: 0 4px 12px rgba(0,0,0,0.1) — Modals, dropdowns\n• Level 3: 0 8px 24px rgba(0,0,0,0.12) — Dialogs\n• Subtle, warm-toned shadows throughout",
+      "motion": "Subtle, thoughtful. Message appear: Fade in from bottom. Typing indicator: Animated warm dots. Page transitions: Crossfade. Duration: 200-300ms. Ease: ease-out. No flashy animations. Research-appropriate, human-centered.",
+      "layout": "Research-first: Prose-focused, centered content (680px). Documentation: Sidebar (240px) + content. Claude: Chat interface (768px centered). Company: Full-width sections, minimal chrome.",
+      "responsive": "• Desktop (>1200px): Full layout, generous margins (80px+)\n• Laptop (900-1200px): Reduced margins (48px), same structure\n• Tablet (600-900px): Single column, collapsed sidebar, 32px margins\n• Mobile (<600px): Full-width, hamburger nav, simplified, 16px margins",
+      "iconStyle": "Minimal line icons, 24px. Simple, clean. Warm, approachable feel. Research/AI themed where appropriate. No playful icons. Consistent 1.5-2px stroke weight.",
+      "interactiveStates": "• Hover: Subtle background warmth increase, cursor pointer\n• Focus: Tan/orange outline ring (2px offset)\n• Active: Slight darken\n• Selected: Tan/orange left border or background tint\n• Links: Underline on hover\n• Disabled: 50% opacity",
+      "mediaPatterns": "• Research papers: PDF previews, citation blocks, academic styling\n• Diagrams: Clean, labeled, warm color palette\n• Team photos: Professional, natural lighting, diverse\n• Code: Warm syntax theme (not cold blue)\n• Logos: Wordmark, subtle anthropic 'a' mark\n• Claude avatar: Circular, warm gradient or solid\n• Screenshots: Rounded corners (8px), subtle shadow",
+      "copyVoice": "Thoughtful, research-driven, human. 'AI safety research.' Academic tone for research, friendlier for Claude. Careful, considered language. 'Building reliable, interpretable, and steerable AI systems.' Intellectual but accessible. Claude is helpful, harmless, honest.",
+      "designPrinciples": [
+        "Warm, not cold tech",
+        "Research credibility",
+        "Cream background is signature",
+        "Thoughtful, not flashy",
+        "Safety-focused messaging",
+        "Human-centered AI"
+      ],
+      "mood": [
+        "thoughtful",
+        "warm",
+        "research",
+        "safety",
+        "minimal",
+        "human"
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "category": "Technology",
+      "public": true,
+      "stockSymbol": "GOOGL",
+      "note": "Enhanced with dark mode and additional fields",
+      "colors": {
+        "primary": [
+          {
+            "name": "Google Blue",
+            "hex": "#4285F4",
+            "usage": "Primary brand, links, CTAs"
+          },
+          {
+            "name": "Google Red",
+            "hex": "#EA4335",
+            "usage": "Errors, YouTube, accent"
+          },
+          {
+            "name": "Google Yellow",
+            "hex": "#FBBC05",
+            "usage": "Warnings, accent"
+          },
+          {
+            "name": "Google Green",
+            "hex": "#34A853",
+            "usage": "Success, accent"
+          }
+        ],
+        "neutral": [
+          {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "usage": "Backgrounds"
+          },
+          {
+            "name": "Gray 50",
+            "hex": "#F8F9FA",
+            "usage": "Subtle backgrounds"
+          },
+          {
+            "name": "Gray 100",
+            "hex": "#F1F3F4",
+            "usage": "Hover states, backgrounds"
+          },
+          {
+            "name": "Gray 300",
+            "hex": "#DADCE0",
+            "usage": "Borders"
+          },
+          {
+            "name": "Gray 500",
+            "hex": "#9AA0A6",
+            "usage": "Secondary text, icons"
+          },
+          {
+            "name": "Gray 700",
+            "hex": "#5F6368",
+            "usage": "Body text"
+          },
+          {
+            "name": "Gray 900",
+            "hex": "#202124",
+            "usage": "Headlines"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Teal",
+            "hex": "#00897B",
+            "usage": "Product accent (Meet)"
+          },
+          {
+            "name": "Purple",
+            "hex": "#7B1FA2",
+            "usage": "Calendar events"
+          },
+          {
+            "name": "Orange",
+            "hex": "#F4511E",
+            "usage": "Accent, Calendar"
+          }
+        ],
+        "dark": [
+          {
+            "name": "Dark Background",
+            "hex": "#202124",
+            "usage": "Page background"
+          },
+          {
+            "name": "Dark Surface",
+            "hex": "#292A2D",
+            "usage": "Cards, elevated surfaces"
+          },
+          {
+            "name": "Dark Elevated",
+            "hex": "#35363A",
+            "usage": "Dropdowns, popovers"
+          },
+          {
+            "name": "Dark Border",
+            "hex": "#3C4043",
+            "usage": "Dividers, borders"
+          },
+          {
+            "name": "Dark Text",
+            "hex": "#E8EAED",
+            "usage": "Primary text"
+          },
+          {
+            "name": "Dark Text Secondary",
+            "hex": "#9AA0A6",
+            "usage": "Secondary text"
+          }
+        ]
+      },
+      "colorUsage": "Blue (#4285F4) for primary actions and links. Four-color logo ONLY in logo contexts — never use all four as UI colors. One accent color per section, not multiple. Gray-700 (#5F6368) for body text (NOT pure black). Colored icons differentiate products (Gmail red, Calendar blue, etc.). Dark mode: Keep same color roles, adjust for contrast.",
+      "typography": {
+        "headings": "Google Sans Bold",
+        "body": "Roboto Regular",
+        "mono": "Roboto Mono",
+        "googleFonts": "Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700"
+      },
+      "typographyScale": "Display: 57px/64px • H1: 36px/44px • H2: 28px/36px • H3: 22px/28px • Body: 14px/20px • Body Large: 16px/24px • Caption: 12px/16px • Label: 11px/16px. Line-height in px for Material Design alignment.",
+      "spacing": "Base: 8px (Material Design 4px sub-grid). Cards: 24px padding. Section: 48px vertical. Grid gap: 24px. Dense lists: 48px row height. Max-width: 1280px. App bar: 64px height. Navigation rail: 72-80px width.",
+      "components": "• Cards: Rounded-lg (8px), elevation shadows, white bg\n• Buttons: Rounded-full (pill) or rounded (4px), 36-40px height, blue fill primary\n• FAB: 56px circle, colored, bottom-right position, 16px from edge\n• Chips: Rounded-full, 32px height, outline or filled variants\n• Text fields: Outlined or filled, floating labels, 56px height\n• Search bar: Rounded-full (24px radius), 44-48px height, shadow on focus\n• Bottom sheets: Rounded top corners (24px), drag handle",
+      "elevation": "• Level 0: No shadow (resting state)\n• Level 1: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px 1px rgba(0,0,0,0.15) — Cards\n• Level 2: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px 2px rgba(0,0,0,0.15) — App bars\n• Level 3: 0 4px 8px 3px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.3) — Modals\n• Level 4: 0 6px 10px 4px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.3) — Navigation drawer",
+      "motion": "Material Design motion. Duration: 150-300ms. Standard ease: cubic-bezier(0.4, 0, 0.2, 1). Emphasized: cubic-bezier(0.2, 0, 0, 1). Ripple effect on click (touch feedback). Shared axis transitions between screens. Elevation animates with content. FAB: Scale up from 0. Stagger reveals.",
+      "layout": "App bar top (64px), bottom navigation on mobile. Responsive grid: 4 columns (phone) / 8 (tablet) / 12 (desktop). Navigation rail on tablet (72px). Navigation drawer on desktop (256px). Cards in grids. Search-centric homepage.",
+      "responsive": "• Large Desktop (>1440px): Full layout, 12-column grid, 1280px content\n• Desktop (1024-1440px): Same structure, scaled\n• Tablet (600-1024px): 8-column grid, navigation rail (72px)\n• Mobile (<600px): 4-column grid, bottom navigation (80px), full-width cards",
+      "iconStyle": "Material Symbols (variable font). 24px default. Outlined (2px stroke) or filled variants. Rounded style preferred for consumer products. 5 sizes: 20/24/40/48px. Optical sizing enabled. FILL, wght, GRAD, opsz axes.",
+      "interactiveStates": "• Hover: Gray-100 background overlay, elevation increase\n• Focus: Blue outline ring (2px), or focus indicator per component\n• Active/Pressed: Ripple effect spreading from touch/click point (300ms)\n• Dragged: Elevated shadow, lifted appearance\n• Disabled: 38% opacity, no interaction\n• Selected: Color fill or check icon",
+      "mediaPatterns": "• Product icons: Rounded square (20% radius), consistent shadow style\n• App icons: 48x48 with 8px padding, colored backgrounds\n• Hero images: Full-bleed, 16:9 or custom aspect\n• Illustrations: Flat, friendly, Google 4-color palette accents\n• Photos: Natural, diverse, avoid stock feel\n• Video: 16:9, minimal controls, autoplay muted option\n• Avatar: Circle, 32/40px, initials or photo fallback",
+      "copyVoice": "Helpful, clear, conversational. 'Search for anything.' Short sentences. Action-oriented. Accessible to all education levels. Slightly playful in consumer products, more professional in Workspace. 'Do more with Google.'",
+      "designPrinciples": [
+        "Material Design system",
+        "Motion adds meaning",
+        "Elevation creates hierarchy",
+        "One primary action per screen",
+        "Accessibility first (WCAG 2.1 AA)",
+        "Consistent across products",
+        "Adaptive layouts"
+      ],
+      "mood": [
+        "friendly",
+        "accessible",
+        "colorful",
+        "helpful",
+        "modern",
+        "organized"
+      ]
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "category": "SaaS",
+      "public": true,
+      "colors": {
+        "primary": [
+          {
+            "name": "Aubergine",
+            "hex": "#4A154B",
+            "usage": "Sidebar background, brand primary"
+          },
+          {
+            "name": "Aubergine Dark",
+            "hex": "#3D0E3E",
+            "usage": "Sidebar hover, emphasis"
+          }
+        ],
+        "neutral": [
+          {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "usage": "Message area background"
+          },
+          {
+            "name": "Gray 50",
+            "hex": "#F8F8F8",
+            "usage": "Subtle backgrounds"
+          },
+          {
+            "name": "Gray 100",
+            "hex": "#EEEEEE",
+            "usage": "Dividers, thread backgrounds"
+          },
+          {
+            "name": "Gray 300",
+            "hex": "#CFCFCF",
+            "usage": "Borders"
+          },
+          {
+            "name": "Gray 600",
+            "hex": "#616061",
+            "usage": "Secondary text"
+          },
+          {
+            "name": "Gray 900",
+            "hex": "#1D1C1D",
+            "usage": "Primary text"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Blue",
+            "hex": "#1264A3",
+            "usage": "Links, mentions, buttons"
+          },
+          {
+            "name": "Green",
+            "hex": "#2BAC76",
+            "usage": "Online status, success"
+          },
+          {
+            "name": "Yellow",
+            "hex": "#ECB22E",
+            "usage": "Warnings, reactions"
+          },
+          {
+            "name": "Red",
+            "hex": "#E01E5A",
+            "usage": "Errors, urgent, DND"
+          },
+          {
+            "name": "Cyan",
+            "hex": "#36C5F0",
+            "usage": "Brand accent, logo"
+          }
+        ],
+        "dark": [
+          {
+            "name": "Dark Background",
+            "hex": "#1A1D21",
+            "usage": "Message area background"
+          },
+          {
+            "name": "Dark Surface",
+            "hex": "#222529",
+            "usage": "Input background, threads"
+          },
+          {
+            "name": "Dark Elevated",
+            "hex": "#2C2D30",
+            "usage": "Hovers, menus"
+          },
+          {
+            "name": "Dark Border",
+            "hex": "#3A3B3D",
+            "usage": "Dividers"
+          },
+          {
+            "name": "Dark Text",
+            "hex": "#D1D2D3",
+            "usage": "Primary text"
+          },
+          {
+            "name": "Dark Text Secondary",
+            "hex": "#9B9C9E",
+            "usage": "Secondary text"
+          },
+          {
+            "name": "Dark Sidebar",
+            "hex": "#19171D",
+            "usage": "Sidebar background"
+          }
+        ]
+      },
+      "colorUsage": "Aubergine (#4A154B) for sidebar — this IS Slack. Blue for links, buttons, mentions. Four brand colors (blue, green, yellow, red) for logo and accents, never all at once in UI. Status dots: Green (online), Yellow (away), Red (DND). Customizable sidebar themes but aubergine is default.",
+      "typography": {
+        "headings": "Slack Circular Bold / Lato Bold",
+        "body": "Slack Circular Regular / Lato Regular",
+        "mono": "Monaco, Consolas, monospace",
+        "googleFonts": "Lato:wght@400;700"
+      },
+      "typographyScale": "Channel Name: 18px/1.2 Bold • Message: 15px/1.46 • Timestamp: 12px/1.2 • Username: 15px/1.2 Bold • Caption: 13px/1.3 • Sidebar: 15px/1.2. Optimized for readability in dense message lists.",
+      "spacing": "Base: 4px. Message padding: 8px 20px. Channel gap: 2px. Sidebar padding: 12px. Thread indent: 36px (avatar + gap). Max message width: 100% (fills available). Compose: 20px padding.",
+      "components": "• Messages: Avatar (36px) + username + timestamp + content\n• Reactions: Emoji pills below message, +1 button\n• Threads: Right panel (400px) or inline expand\n• Channels: # prefix, hover shows actions\n• Compose: Multi-line input, markdown toolbar, @ mentions\n• Status: Avatar corner dot (8px), emoji status\n• Huddles: Floating audio UI, avatars in circle\n• Canvases: Rich doc editor, linked from messages",
+      "elevation": "• Level 0: No shadow (flat messages)\n• Level 1: 0 0 0 1px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.08) — Menus\n• Level 2: 0 4px 12px rgba(0,0,0,0.12) — Modals, popovers\n• Level 3: 0 8px 24px rgba(0,0,0,0.16) — Dialogs\n• Sidebar has no shadow, just color separation",
+      "motion": "Quick, functional. Message send: Instant appear. Reactions: Pop (scale 0.8→1.1→1, 150ms). Thread open: Slide from right. New message: Highlight flash. Duration: 100-200ms. Typing indicator: Animated dots.",
+      "layout": "3-panel: Sidebar (220px) + Channel list (optional, 220px) + Messages (flexible). Thread panel: 400px right. Search: Full-width overlay. Mobile: Single panel with swipe navigation.",
+      "responsive": "• Desktop (>1200px): Full 3-panel, thread panel visible\n• Laptop (900-1200px): Thread as overlay\n• Tablet (600-900px): Sidebar collapsible, single panel main\n• Mobile (<600px): Swipe between sidebar and messages, bottom compose",
+      "iconStyle": "Custom Slack icons, 20px default. 1.5px stroke for outline. Filled for active states. Status icons are colored. Emoji heavily integrated. Hashtag (#) for channels, @ for mentions.",
+      "interactiveStates": "• Hover: Light gray background on messages, show actions\n• Focus: Blue outline ring (2px)\n• Active: Darker background, scale 0.98\n• Unread: Bold channel name, white dot indicator\n• Mention: Yellow highlight background\n• Selected: Blue left border",
+      "mediaPatterns": "• Avatar: 36px in messages, 28px in sidebar, 72px in profile\n• Images: Inline with max 360px width, click to expand\n• Files: Card with icon + filename + actions\n• Code blocks: Gray background, syntax highlighting\n• Link previews: Card with title + description + image\n• Emoji: 20px inline, 28px in reactions, custom workspace emoji\n• GIFs: Inline with autoplay, pause on hover",
+      "copyVoice": "Friendly, efficient, teamwork-focused. 'Where work happens.' Casual but professional. Action-oriented. Emoji-friendly. 'Slack' as verb ('Slack me'). Short, scannable messages preferred.",
+      "designPrinciples": [
+        "Aubergine IS Slack",
+        "Messages are the product",
+        "Fast, keyboard-first",
+        "Customizable but recognizable",
+        "Threads reduce noise",
+        "Status matters"
+      ],
+      "mood": [
+        "productive",
+        "friendly",
+        "organized",
+        "team",
+        "efficient",
+        "colorful"
+      ]
+    },
+    {
+      "id": "twitter",
+      "name": "X (Twitter)",
+      "category": "Social",
+      "public": true,
+      "note": "Already exists with full rich entry - no changes needed",
+      "colors": {
+        "primary": [
+          {
+            "name": "X Black",
+            "hex": "#000000",
+            "usage": "Primary brand (X logo, current)"
+          },
+          {
+            "name": "X White",
+            "hex": "#FFFFFF",
+            "usage": "Logo on dark backgrounds"
+          }
+        ],
+        "neutral": [
+          {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "usage": "Background (light mode)"
+          },
+          {
+            "name": "Extra Light Gray",
+            "hex": "#EFF3F4",
+            "usage": "Subtle backgrounds, search"
+          },
+          {
+            "name": "Light Gray",
+            "hex": "#CFD9DE",
+            "usage": "Borders"
+          },
+          {
+            "name": "Gray",
+            "hex": "#536471",
+            "usage": "Secondary text, timestamps"
+          },
+          {
+            "name": "Dark Gray",
+            "hex": "#0F1419",
+            "usage": "Primary text"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Blue",
+            "hex": "#1D9BF0",
+            "usage": "Links, buttons, verified (legacy)"
+          },
+          {
+            "name": "Green",
+            "hex": "#00BA7C",
+            "usage": "Retweets, success"
+          },
+          {
+            "name": "Red",
+            "hex": "#F4212E",
+            "usage": "Likes, errors"
+          },
+          {
+            "name": "Yellow/Gold",
+            "hex": "#FFD400",
+            "usage": "Premium/Gold verified badge"
+          }
+        ],
+        "dark": [
+          {
+            "name": "Dark Background",
+            "hex": "#000000",
+            "usage": "Page background (Lights Out)"
+          },
+          {
+            "name": "Dim Background",
+            "hex": "#15202B",
+            "usage": "Page background (Dim mode)"
+          },
+          {
+            "name": "Dark Surface",
+            "hex": "#16181C",
+            "usage": "Cards, compose (Lights Out)"
+          },
+          {
+            "name": "Dark Border",
+            "hex": "#2F3336",
+            "usage": "Dividers"
+          },
+          {
+            "name": "Dark Text",
+            "hex": "#E7E9EA",
+            "usage": "Primary text"
+          },
+          {
+            "name": "Dark Text Secondary",
+            "hex": "#71767B",
+            "usage": "Metadata, timestamps"
+          }
+        ]
+      },
+      "colorUsage": "X rebrand emphasizes black/white. Blue (#1D9BF0) remains for interactive elements (legacy Twitter blue). Red for likes, green for retweets — semantic colors. Yellow/gold for premium verification. Dark mode (Lights Out or Dim) is popular default. Minimal color in feed — content is focus.",
+      "typography": {
+        "headings": "Chirp Bold",
+        "body": "Chirp Regular",
+        "extended": "Chirp Extended Bold (for logo)",
+        "fallback": "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif"
+      },
+      "typographyScale": "Display Name: 20px/1.2 Bold • Username: 15px/1.2 • Post: 15px/1.35 (17px on desktop) • Timestamp: 13px/1.2 • Count: 13px/1.2 Bold • Nav: 20px/1.2 Bold. Compact, scannable scale for timeline.",
+      "spacing": "Base: 4px. Post padding: 12px 16px. Avatar gap: 12px. Section dividers: 1px border. Timeline width: 598px (desktop), 100% mobile. Sidebar: 350px. Compose modal padding: 16px.",
+      "components": "• Post: Avatar (40px) + name/handle + timestamp + content + actions\n• Compose: Floating button (mobile) or inline textarea, char count\n• Avatar: Circle, 40px timeline / 48px profile / 134px header\n• Actions: Reply, Repost, Like, View, Share — icon + count\n• Trends: Category + topic name + post count\n• Who to follow: Avatar + name + handle + follow button\n• Premium badge: Checkmark (blue legacy, gold premium)",
+      "elevation": "• Level 0: No shadow (flat timeline)\n• Level 1: 0 0 15px rgba(0,0,0,0.1) — Compose modal (light)\n• Level 2: 0 8px 28px rgba(0,0,0,0.15) — Dialogs\n• Dark mode: rgba(255,255,255,0.1) for subtle glow effects",
+      "motion": "Minimal, instant feel. Like: Heart fill + scale pop (scale 1→1.3→1, 300ms). Repost: Green flash. New posts: 'Show X posts' button or count badge. Duration: 150-200ms. Loading: Skeleton shimmer. Pull to refresh: Spinner.",
+      "layout": "3-column: Left nav (275px icons+labels, 68px icons-only) + Timeline (598px) + Right sidebar (350px). Mobile: Bottom tab bar (5 items), single column. Infinite scroll. Sticky compose (mobile FAB).",
+      "responsive": "• Large Desktop (>1265px): Full 3-column, 275px nav + 598px timeline + 350px sidebar\n• Desktop (1005-1265px): Sidebar hidden, nav full\n• Tablet (500-1005px): Nav becomes icons only (68px), no sidebar\n• Mobile (<500px): Bottom tabs, full-width posts, floating compose FAB (56px)",
+      "iconStyle": "Custom X icons, 18-24px. 1.5px stroke outline, filled when active. Navigation: Home, Search, Notifications, Messages, Grok (AI), Communities, Premium. Post actions: Reply, Repost, Like, Bookmark, Share.",
+      "interactiveStates": "• Hover: Background rgba overlay on posts, icon color hints (red for like, green for repost)\n• Like hover: Pink/red tint, heart icon outlines red\n• Repost hover: Green tint, arrows icon\n• Focus: Blue outline ring (2px)\n• Active: Scale pop for like/repost (quick bounce)\n• Loading: Skeleton shimmer with gray blocks",
+      "mediaPatterns": "• Avatar: Circle, 40px timeline, 48px profile preview, 134px header, 400px profile page\n• Images: Up to 4 in grid (1-2-3-4 layouts), 16px radius, 16:9 or 1:1 crops\n• Video: 16:9, inline autoplay muted, tap/click for sound, controls on hover\n• Quote post: Nested card with 16px border radius\n• Link preview: Image + headline + domain, 16px radius card\n• Poll: Radio buttons, vote count, time remaining\n• Spaces: Live audio card with hosts avatars",
+      "copyVoice": "Brief, real-time, public discourse. 'What is happening?!' 280 characters default (longer for Premium). Hashtags and mentions. Conversational, newsy, hot takes. X emphasizes 'everything app' positioning.",
+      "designPrinciples": [
+        "Brevity and speed",
+        "Real-time public conversation",
+        "Timeline is center",
+        "Engagement actions visible",
+        "Minimal UI, content focus",
+        "Black/white with blue accents"
+      ],
+      "mood": [
+        "social",
+        "real-time",
+        "conversational",
+        "news",
+        "public",
+        "immediate"
+      ]
+    },
+    {
+      "id": "ea-sports",
+      "name": "EA Sports",
+      "category": "Gaming",
+      "public": true,
+      "colors": {
+        "primary": [
+          {
+            "name": "EA Red",
+            "hex": "#FF0000",
+            "usage": "Primary brand, CTAs, energy"
+          },
+          {
+            "name": "EA Dark Red",
+            "hex": "#CC0000",
+            "usage": "Hover states, emphasis"
+          }
+        ],
+        "neutral": [
+          {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "usage": "Text on dark, highlights"
+          },
+          {
+            "name": "Light Gray",
+            "hex": "#E5E5E5",
+            "usage": "Subtle backgrounds"
+          },
+          {
+            "name": "Gray",
+            "hex": "#888888",
+            "usage": "Secondary text"
+          },
+          {
+            "name": "Dark Gray",
+            "hex": "#333333",
+            "usage": "Surfaces, cards"
+          },
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "usage": "Primary background"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Gold",
+            "hex": "#FFD700",
+            "usage": "Rewards, premium, achievements"
+          },
+          {
+            "name": "Green",
+            "hex": "#00FF00",
+            "usage": "Success, online status"
+          },
+          {
+            "name": "Blue",
+            "hex": "#0066CC",
+            "usage": "Links, info"
+          },
+          {
+            "name": "Orange",
+            "hex": "#FF6600",
+            "usage": "Warnings, energy"
+          }
+        ],
+        "dark": [
+          {
+            "name": "Dark Background",
+            "hex": "#0A0A0A",
+            "usage": "Primary background"
+          },
+          {
+            "name": "Dark Surface",
+            "hex": "#1A1A1A",
+            "usage": "Cards, panels"
+          },
+          {
+            "name": "Dark Elevated",
+            "hex": "#2A2A2A",
+            "usage": "Hover states, elevated"
+          },
+          {
+            "name": "Dark Border",
+            "hex": "#3A3A3A",
+            "usage": "Dividers"
+          },
+          {
+            "name": "Dark Text",
+            "hex": "#FFFFFF",
+            "usage": "Primary text"
+          },
+          {
+            "name": "Dark Text Secondary",
+            "hex": "#AAAAAA",
+            "usage": "Secondary text"
+          }
+        ]
+      },
+      "colorUsage": "Red (#FF0000) is the signature — bold, energetic, sports. Black backgrounds create cinematic feel. Gold for premium/rewards. White text on dark. Each game franchise has sub-branding but EA Sports red unifies. Avoid using red for errors (use orange).",
+      "typography": {
+        "headings": "EA Sports Display Bold / Industry Bold",
+        "body": "EA Sports Text / Proxima Nova",
+        "condensed": "EA Sports Condensed / Industry Condensed",
+        "fallback": "Impact, Haettenschweiler, sans-serif",
+        "googleFonts": "Oswald:wght@400;700"
+      },
+      "typographyScale": "Hero: 72px/1.0/uppercase • H1: 48px/1.1 • H2: 36px/1.15 • H3: 24px/1.2 • Body: 16px/1.5 • UI: 14px/1.4 • Stats: 24px Bold tabular. Bold, condensed headlines for impact.",
+      "spacing": "Base: 8px. Card padding: 16-24px. Section margins: 64-80px. Hero: Full viewport. Grid gap: 16-24px. Dense stats layouts with 8px gaps. Max-width: 1440px.",
+      "components": "• Game cards: Full-bleed artwork, logo overlay, platform badges\n• Player cards (FIFA/FC): Dynamic backgrounds, stats grid, rarity border\n• Buttons: Skewed/angled edges, red fill, uppercase text\n• Leaderboards: Rank + avatar + name + stats columns\n• Achievement badges: Metallic finish, tier colors (bronze/silver/gold)\n• Progress bars: Red fill, percentage display\n• Video player: Cinematic, minimal controls, autoplay trailers",
+      "elevation": "• Level 0: No shadow (flat, game imagery dominant)\n• Level 1: 0 4px 16px rgba(0,0,0,0.5) — Cards on dark\n• Level 2: 0 8px 32px rgba(0,0,0,0.6) — Modals\n• Level 3: 0 16px 48px rgba(0,0,0,0.7) — Hero overlays\n• Glow effects: 0 0 20px rgba(255,0,0,0.4) for emphasis",
+      "motion": "Dynamic, energetic. Duration: 200-400ms. Ease: cubic-bezier(0.4, 0, 0.2, 1). Card hovers: Scale 1.02 + glow. Page transitions: Slide/fade combos. Loading: Animated EA logo. Reveal: Stagger with momentum. Particle effects for special moments.",
+      "layout": "Full-bleed imagery. Hero: Full viewport with gradient overlay. Game grids: Asymmetric, editorial. Stats: Dense tables, mobile-responsive. Dashboard: Cards grid. Video-heavy content.",
+      "responsive": "• Desktop (>1440px): Full cinematic experience, 1440px content\n• Laptop (1024-1440px): Scaled imagery, same structure\n• Tablet (768-1024px): 2-column grids, stacked heroes\n• Mobile (<768px): Single column, hamburger nav, sticky CTAs, vertical video",
+      "iconStyle": "Bold, filled icons, 24-32px. Platform icons (PlayStation, Xbox, PC, Switch). Game-specific icons. Sharp edges, sports-themed. White on dark backgrounds.",
+      "interactiveStates": "• Hover: Scale 1.02-1.05, red glow, brightness increase\n• Focus: Red outline ring (2px)\n• Active: Scale 0.98, darken\n• Loading: Animated spinner with EA logo\n• Success: Gold flash, checkmark\n• Disabled: 50% opacity, grayscale",
+      "mediaPatterns": "• Hero: Full-viewport game art, gradient overlay bottom (black→transparent)\n• Game covers: 3:4 aspect, rounded corners (8px)\n• Screenshots: 16:9, gallery with lightbox\n• Video trailers: 16:9 or 21:9, autoplay muted, cinematic\n• Player photos: Dynamic cutouts on colored backgrounds\n• Badges/icons: Metallic rendering, gloss effects\n• Backgrounds: Particle effects, motion blur, stadium atmospherics",
+      "copyVoice": "Energetic, competitive, authentic sports. 'It's in the game.' Hype language. Player names, team names, real terminology. Bold statements. 'The world's game.' Second-person for calls-to-action. Community-focused.",
+      "designPrinciples": [
+        "Red is energy",
+        "Black creates cinema",
+        "Game imagery is hero",
+        "Bold, not subtle",
+        "Sports authenticity",
+        "Platform-aware"
+      ],
+      "mood": [
+        "energetic",
+        "competitive",
+        "bold",
+        "cinematic",
+        "sports",
+        "premium"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "category": "Technology",
+      "public": true,
+      "colors": {
+        "primary": [
+          {
+            "name": "Perplexity Teal",
+            "hex": "#1FB8CD",
+            "usage": "Primary brand, CTAs, accents"
+          },
+          {
+            "name": "Perplexity Cyan",
+            "hex": "#22D3EE",
+            "usage": "Highlights, gradients"
+          }
+        ],
+        "neutral": [
+          {
+            "name": "White",
+            "hex": "#FFFFFF",
+            "usage": "Backgrounds (light)"
+          },
+          {
+            "name": "Gray 50",
+            "hex": "#F9FAFB",
+            "usage": "Subtle backgrounds"
+          },
+          {
+            "name": "Gray 100",
+            "hex": "#F3F4F6",
+            "usage": "Card backgrounds, inputs"
+          },
+          {
+            "name": "Gray 300",
+            "hex": "#D1D5DB",
+            "usage": "Borders"
+          },
+          {
+            "name": "Gray 500",
+            "hex": "#6B7280",
+            "usage": "Secondary text"
+          },
+          {
+            "name": "Gray 700",
+            "hex": "#374151",
+            "usage": "Body text"
+          },
+          {
+            "name": "Gray 900",
+            "hex": "#111827",
+            "usage": "Headlines"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Blue",
+            "hex": "#3B82F6",
+            "usage": "Links"
+          },
+          {
+            "name": "Green",
+            "hex": "#10B981",
+            "usage": "Success, verified sources"
+          },
+          {
+            "name": "Orange",
+            "hex": "#F97316",
+            "usage": "Warnings, Pro features"
+          },
+          {
+            "name": "Purple",
+            "hex": "#8B5CF6",
+            "usage": "Pro/premium features"
+          }
+        ],
+        "dark": [
+          {
+            "name": "Dark Background",
+            "hex": "#0F1419",
+            "usage": "Page background"
+          },
+          {
+            "name": "Dark Surface",
+            "hex": "#1C2128",
+            "usage": "Cards, answer panels"
+          },
+          {
+            "name": "Dark Elevated",
+            "hex": "#272D36",
+            "usage": "Inputs, hover states"
+          },
+          {
+            "name": "Dark Border",
+            "hex": "#3B424D",
+            "usage": "Dividers"
+          },
+          {
+            "name": "Dark Text",
+            "hex": "#E6EDF3",
+            "usage": "Primary text"
+          },
+          {
+            "name": "Dark Text Secondary",
+            "hex": "#8B949E",
+            "usage": "Secondary text, citations"
+          }
+        ]
+      },
+      "colorUsage": "Teal (#1FB8CD) for brand accents, CTAs, and the iconic logo. Cyan for gradients and highlights. Clean white/gray backgrounds for readability. Blue for source links. Green checkmarks for verified sources. Purple for Pro features. Dark mode is popular — clean and readable.",
+      "typography": {
+        "headings": "Inter Bold / SF Pro Bold",
+        "body": "Inter Regular / SF Pro Regular",
+        "mono": "JetBrains Mono / SF Mono",
+        "fallback": "system-ui, -apple-system, sans-serif",
+        "googleFonts": "Inter:wght@400;500;600;700"
+      },
+      "typographyScale": "H1: 32px/1.2 • H2: 24px/1.25 • H3: 20px/1.3 • Body: 16px/1.6 • Answer prose: 17px/1.7 (generous for reading) • Small: 14px/1.5 • Citation: 13px/1.4 • Source: 12px/1.3.",
+      "spacing": "Base: 8px. Answer padding: 24px. Source cards: 12px padding. Section gap: 32px. Max-width: 720px answers. Sidebar: 280px. Search bar: Centered, 600px max.",
+      "components": "• Search bar: Rounded-full (24px), centered, placeholder text, voice input\n• Answer panel: White/dark card, sources sidebar, copy button\n• Source cards: Favicon + title + snippet, numbered\n• Citations: Inline superscript numbers, hover for preview\n• Follow-up input: Rounded, attached to answer\n• Thread view: Q&A pairs, collapsible\n• Pro badge: Purple pill with lightning icon",
+      "elevation": "• Level 0: No shadow (flat answer cards)\n• Level 1: 0 1px 3px rgba(0,0,0,0.1) — Source cards\n• Level 2: 0 4px 12px rgba(0,0,0,0.1) — Modals, popovers\n• Level 3: 0 8px 24px rgba(0,0,0,0.12) — Dialogs\n• Subtle, clean shadows",
+      "motion": "Smooth, thoughtful. Answer streaming: Character by character. Sources: Fade in as found. Duration: 200-300ms. Ease: ease-out. Loading: Animated dots or progress. No flashy animations — trust through calm.",
+      "layout": "Search-centric: Centered search, answer below. Answer page: Main content (720px) + sources sidebar (280px). Collections: Card grid. Mobile: Full-width, sources below answer.",
+      "responsive": "• Desktop (>1024px): Full layout, centered search, answer + sidebar\n• Laptop (768-1024px): Sidebar collapsible or below\n• Tablet (640-768px): Single column, sources integrated\n• Mobile (<640px): Full-width search, stacked answer and sources, sticky input",
+      "iconStyle": "Simple line icons, 20-24px. 1.5px stroke. Search magnifier, sources list, copy, share. Perplexity logo is distinctive geometric 'P'. Clean, minimal icon style.",
+      "interactiveStates": "• Hover: Subtle teal tint, underline for source links\n• Focus: Teal outline ring (2px)\n• Active: Slight scale down\n• Loading: Animated teal dots\n• Citation hover: Preview popup with source snippet\n• Disabled: 40% opacity",
+      "mediaPatterns": "• Logo: Geometric 'P' mark, teal on white/white on dark\n• Source favicons: 16px, fallback to domain initial\n• Image results: Grid view, rounded corners (8px)\n• Video results: 16:9 thumbnail, play overlay\n• Charts/tables: Rendered from data, clean styling\n• Code blocks: Dark background, syntax highlighting, copy button\n• Profile avatars: Circle, 32-40px",
+      "copyVoice": "Clear, factual, curious. 'Ask anything.' Answer-first, sources visible. Academic but accessible. Acknowledges uncertainty. 'Based on X sources...' Second-person, helpful. Pro features emphasized for power users.",
+      "designPrinciples": [
+        "Search is the interface",
+        "Answers with sources",
+        "Teal is brand accent",
+        "Clean, readable prose",
+        "Trust through transparency",
+        "Citation is credibility"
+      ],
+      "mood": [
+        "intelligent",
+        "clean",
+        "trustworthy",
+        "curious",
+        "minimal",
+        "modern"
+      ]
+    }
+  ]
+}

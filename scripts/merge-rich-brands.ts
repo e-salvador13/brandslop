@@ -14,7 +14,9 @@ const richFiles = [
   'data/rich-brands-batch4.json',
   'data/rich-brands-batch5.json',
   'data/rich-brands-batch6.json',
-  'data/rich-brands-batch7.json'
+  'data/rich-brands-batch7.json',
+  'data/rich-brands-requested.json',
+  'data/rich-brands-social.json'
 ];
 
 const richBrandsMap = new Map();
@@ -32,6 +34,7 @@ console.log(`Loaded ${richBrandsMap.size} rich brands`);
 
 // Replace brands with rich versions where available
 let enrichedCount = 0;
+const existingIds = new Set(currentData.brands.map((b: any) => b.id));
 const updatedBrands = currentData.brands.map((brand: any) => {
   const richVersion = richBrandsMap.get(brand.id);
   if (richVersion) {
@@ -42,6 +45,16 @@ const updatedBrands = currentData.brands.map((brand: any) => {
   return brand;
 });
 
+// Add new brands that don't exist yet
+let addedCount = 0;
+for (const [id, brand] of richBrandsMap) {
+  if (!existingIds.has(id)) {
+    updatedBrands.push(brand);
+    addedCount++;
+    console.log(`+ ${(brand as any).name} (new)`);
+  }
+}
+
 // Save
 const output = {
   ...currentData,
@@ -51,3 +64,4 @@ const output = {
 fs.writeFileSync('data/brands.json', JSON.stringify(output, null, 2));
 console.log(`\nTotal brands: ${updatedBrands.length}`);
 console.log(`Enriched: ${enrichedCount}`);
+console.log(`Added new: ${addedCount}`);

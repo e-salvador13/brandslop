@@ -18,7 +18,7 @@ console.log(`New brands to add: ${newBrands.length}`);
 const merged = {
   brands: [...curatedData.brands, ...newBrands],
   aesthetics: curatedData.aesthetics,
-  categories: [...new Set([...curatedData.categories, 'Brand'])],
+  categories: Array.from(new Set([...curatedData.categories, 'Brand'])),
   moodTags: curatedData.moodTags
 };
 
