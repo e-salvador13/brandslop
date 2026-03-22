@@ -1,46 +1,33 @@
 # BrandSlop
 
-AI-ready brand design systems in one click.
+**Your brand. 60 seconds.**
 
-65 curated brands with full design system specs — typography, spacing, shadows, motion, responsive breakpoints, and more. Copy and paste into Claude/GPT/Cursor for instant brand-accurate UI generation.
+Describe your idea → get a complete brand identity. AI-powered brand generation with live preview.
 
-## Quick Start
+## Features
+
+- 🎨 Complete brand identity generation (colors, typography, voice, logo)
+- 📱 Mobile-first, dark-mode design
+- 🖼 Live previews: social posts, business cards, logo variations
+- ⚡ Works with mock data or OpenAI API
+- 🎯 Click-to-copy color codes, Google Fonts integration
+
+## Getting Started
 
 ```bash
 npm install
 npm run dev
-# Open http://localhost:3000
 ```
 
-## Data
+Open [http://localhost:3000](http://localhost:3000).
 
-- `data/brands.json` — All brands (merged)
-- `data/rich-brands-*.json` — Source files for curated brands
-- `data/scraped-brands.json` — Color-only brands from brandcolors.net
+## AI Generation
 
-## Scripts
+Copy `.env.local.example` to `.env.local` and add your OpenAI API key for real AI generation. Without it, the app uses realistic mock data.
 
-```bash
-# Merge all rich-brands-*.json into brands.json
-npx tsx scripts/merge-rich-brands.ts
+## Tech Stack
 
-# Scrape more colors from brandcolors.net
-npx tsx scripts/scrape-brandcolors.ts
-```
-
-## Contributing
-
-1. Add your brand to a `data/rich-brands-*.json` file
-2. Include all 13 required sections (see [ROADMAP.md](./ROADMAP.md) for the checklist)
-3. Run the merge script
-4. Submit a PR
-
-Quality bar: every field must have actual values, not just descriptions. "Blue for CTAs" isn't enough — include the hex code.
-
-## Roadmap
-
-See [ROADMAP.md](./ROADMAP.md) for planned features and the 13-section quality checklist.
-
-## License
-
-MIT
+- Next.js 14 (App Router)
+- Tailwind CSS
+- TypeScript
+- OpenAI GPT-4o-mini

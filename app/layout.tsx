@@ -1,12 +1,20 @@
-import './globals.css';
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
-  title: 'BrandSlop — AI-Ready Brand Design Systems',
-  description: 'Copy-paste brand design systems for AI tools. Full specifications including colors, typography, spacing, components, motion, and more.',
+  title: 'BrandSlop — Your brand. 60 seconds.',
+  description:
+    'Describe your idea. Get a complete brand identity. AI-powered brand generation in under a minute.',
   openGraph: {
-    title: 'BrandSlop — AI-Ready Brand Design Systems',
-    description: 'Copy-paste brand design systems for AI tools.',
+    title: 'BrandSlop — Your brand. 60 seconds.',
+    description: 'Describe your idea. Get a complete brand identity.',
     type: 'website',
   },
 };
@@ -17,11 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-      </head>
-      <body>{children}</body>
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans bg-black text-[#f5f5f7] min-h-screen">
+        {children}
+      </body>
     </html>
   );
 }
