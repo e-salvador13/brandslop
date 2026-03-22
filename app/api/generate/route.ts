@@ -4,7 +4,14 @@ import { generateBrand } from '@/lib/generateBrand';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { description, referenceUrl } = body;
+    const { brandName, description, referenceUrl } = body;
+
+    if (!brandName || typeof brandName !== 'string' || brandName.trim().length < 1) {
+      return NextResponse.json(
+        { error: 'Please provide a brand name.' },
+        { status: 400 }
+      );
+    }
 
     if (!description || typeof description !== 'string' || description.trim().length < 5) {
       return NextResponse.json(
@@ -13,7 +20,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const brand = await generateBrand(description.trim(), referenceUrl?.trim());
+    const brand = await generateBrand(brandName.trim(), description.trim(), referenceUrl?.trim());
 
     return NextResponse.json(brand);
   } catch (error) {

@@ -4,7 +4,7 @@ const steps = [
   {
     number: '01',
     title: 'Describe',
-    description: 'Tell us your vision in plain English',
+    description: 'Name your brand and pick your style, industry, and colors',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 20h9" />
@@ -15,7 +15,7 @@ const steps = [
   {
     number: '02',
     title: 'Generate',
-    description: 'AI creates a complete, coherent brand system',
+    description: 'AI creates 4 logo variations + complete brand identity',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
@@ -24,8 +24,8 @@ const steps = [
   },
   {
     number: '03',
-    title: 'Own it',
-    description: 'Download production-ready assets for $19',
+    title: 'Download',
+    description: 'Get your complete brand kit — logos, colors, typography, voice',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -52,10 +52,10 @@ export default function HowItWorks() {
         {steps.map((step) => (
           <div
             key={step.number}
-            className="glass-card p-8 sm:p-10 group cursor-default"
+            className="glass-card p-8 sm:p-10 group cursor-default hover:border-[#00D4AA]/20 transition-all duration-300"
           >
             <div className="flex items-center gap-4 mb-6">
-              <span className="text-[var(--accent)] opacity-70">
+              <span className="text-[#00D4AA] opacity-70">
                 {step.icon}
               </span>
               <span className="text-[12px] font-medium text-[var(--text-muted)] tracking-[0.1em]">

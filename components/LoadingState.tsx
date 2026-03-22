@@ -7,6 +7,7 @@ const stages = [
   'Crafting color palette',
   'Selecting typography',
   'Defining brand voice',
+  'Designing logo concept',
   'Assembling your brand',
 ];
 

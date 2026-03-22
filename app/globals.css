@@ -25,10 +25,10 @@
   --text-muted: #333;
 
   /* Accent */
-  --accent: #8B5CF6;
-  --accent-hover: #7C3AED;
-  --accent-muted: rgba(139, 92, 246, 0.15);
-  --accent-glow: rgba(139, 92, 246, 0.25);
+  --accent: #00D4AA;
+  --accent-hover: #00E4BA;
+  --accent-muted: rgba(0, 212, 170, 0.15);
+  --accent-glow: rgba(0, 212, 170, 0.25);
 
   /* Radius */
   --radius-sm: 10px;
@@ -111,7 +111,7 @@ body::before {
   height: 600px;
   top: -200px;
   left: -100px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 212, 170, 0.06) 0%, transparent 70%);
   animation-delay: 0s;
 }
 
@@ -120,7 +120,7 @@ body::before {
   height: 500px;
   bottom: -150px;
   right: -100px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 150, 200, 0.05) 0%, transparent 70%);
   animation-delay: -10s;
 }
 
@@ -133,7 +133,7 @@ body::before {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   filter: blur(100px);
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.04) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 212, 170, 0.03) 0%, transparent 70%);
   animation: meshFloat2 25s var(--ease) infinite alternate;
   pointer-events: none;
 }
@@ -167,11 +167,11 @@ body::before {
   padding: 1px;
   background: linear-gradient(
     var(--gradient-angle, 135deg),
-    rgba(139, 92, 246, 0.3),
-    rgba(59, 130, 246, 0.1),
-    rgba(139, 92, 246, 0.0),
-    rgba(236, 72, 153, 0.15),
-    rgba(139, 92, 246, 0.3)
+    rgba(0, 212, 170, 0.3),
+    rgba(0, 150, 200, 0.1),
+    rgba(0, 212, 170, 0.0),
+    rgba(0, 212, 170, 0.15),
+    rgba(0, 212, 170, 0.3)
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -316,7 +316,7 @@ body::before {
 }
 
 .progress-bar {
-  animation: progressPulse 8s var(--ease) forwards;
+  animation: progressPulse 20s var(--ease) forwards;
 }
 
 /* ═══════════════════════════════════════════════
@@ -335,6 +335,11 @@ body::before {
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes logoShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
 /* ═══════════════════════════════════════════════

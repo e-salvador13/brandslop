@@ -1,14 +1,15 @@
 import { BrandIdentity } from './types';
 import { getMockBrand } from './mockBrand';
 
-const SYSTEM_PROMPT = `You are an elite brand identity designer. Given a brand description, generate a complete, coherent brand identity. Return ONLY valid JSON with no additional text.
+const SYSTEM_PROMPT = `You are an elite brand identity designer. The user will provide their brand name and description. Generate a complete, coherent brand identity for THEIR brand. Return ONLY valid JSON with no additional text.
 
 The JSON must follow this exact structure:
 {
-  "brandName": "A short, memorable brand name (1-2 words)",
-  "tagline": "A punchy tagline (under 8 words)",
+  "brandName": "USE THE EXACT BRAND NAME THE USER PROVIDED — do NOT invent a new one",
+  "tagline": "A punchy tagline (under 8 words) that fits their brand",
+  "industry": "The brand's industry/category in 1-2 words (e.g. Fintech, Coffee, Fitness, SaaS)",
   "colors": {
-    "primary": "#hex (the main brand color)",
+    "primary": "#hex (the main brand color — must match the brand's industry and vibe)",
     "secondary": "#hex (supporting color)",
     "accent": "#hex (highlight/CTA color)",
     "background": "#hex (dark, near-black)",
@@ -36,15 +37,16 @@ The JSON must follow this exact structure:
   "logoIcon": "A single emoji or unicode symbol that represents the brand"
 }
 
-Rules:
-- Colors must work together harmoniously
+CRITICAL RULES:
+- USE THE BRAND NAME THE USER GIVES YOU. Do NOT rename it or invent a new name.
+- Colors must work together harmoniously and be appropriate for the industry
 - Background should be very dark (#0A-#15 range)
 - Text should be very light (#E0-#FF range)
 - Typography fonts must be REAL Google Fonts
-- Brand name should be unique and memorable
-- Everything should feel cohesive`;
+- Everything should feel cohesive and industry-appropriate`;
 
 export async function generateBrand(
+  brandName: string,
   description: string,
   referenceUrl?: string
 ): Promise<BrandIdentity> {
@@ -57,9 +59,10 @@ export async function generateBrand(
     return getMockBrand(description);
   }
 
-  const userPrompt = referenceUrl
-    ? `Brand description: ${description}\n\nReference URL for inspiration: ${referenceUrl}`
-    : `Brand description: ${description}`;
+  let userPrompt = `Brand name: ${brandName}\nBrand description: ${description}`;
+  if (referenceUrl) {
+    userPrompt += `\n\nReference URL for inspiration: ${referenceUrl}`;
+  }
 
   try {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {

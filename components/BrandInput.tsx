@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import LoadingState from './LoadingState';
 
 export default function BrandInput() {
+  const [brandName, setBrandName] = useState('');
   const [description, setDescription] = useState('');
   const [showUrl, setShowUrl] = useState(false);
   const [referenceUrl, setReferenceUrl] = useState('');
@@ -13,6 +14,10 @@ export default function BrandInput() {
   const router = useRouter();
 
   async function handleGenerate() {
+    if (!brandName.trim()) {
+      setError('Give your brand a name.');
+      return;
+    }
     if (description.trim().length < 5) {
       setError('Tell us a bit more about your brand idea.');
       return;
@@ -26,6 +31,7 @@ export default function BrandInput() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          brandName: brandName.trim(),
           description: description.trim(),
           referenceUrl: referenceUrl.trim() || undefined,
         }),
@@ -54,15 +60,25 @@ export default function BrandInput() {
       {/* Spotlight container */}
       <div className="relative rounded-[var(--radius-xl)] p-[1px] gradient-border">
         <div className="relative rounded-[var(--radius-xl)] bg-[var(--bg-spotlight)] overflow-hidden">
+          <input
+            type="text"
+            value={brandName}
+            onChange={(e) => {
+              setBrandName(e.target.value);
+              if (error) setError('');
+            }}
+            placeholder="Brand name"
+            className="w-full bg-transparent text-[var(--text-primary)] px-6 pt-5 pb-3 text-[22px] sm:text-[24px] font-bold tracking-[-0.02em] placeholder:text-[var(--text-quaternary)] focus:outline-none border-b border-[var(--border-subtle)]"
+          />
           <textarea
             value={description}
             onChange={(e) => {
               setDescription(e.target.value);
               if (error) setError('');
             }}
-            placeholder="A sustainable fashion brand that feels like Aesop meets Patagonia..."
-            className="w-full bg-transparent text-[var(--text-primary)] px-6 py-5 text-[16px] sm:text-[17px] leading-relaxed placeholder:text-[var(--text-quaternary)] resize-none focus:outline-none min-h-[140px]"
-            rows={4}
+            placeholder="AI personal finance assistant that helps you track spending and grow wealth..."
+            className="w-full bg-transparent text-[var(--text-primary)] px-6 py-4 text-[16px] sm:text-[17px] leading-relaxed placeholder:text-[var(--text-quaternary)] resize-none focus:outline-none min-h-[120px]"
+            rows={3}
             onKeyDown={(e) => {
               if (e.key === 'Enter' && e.metaKey) {
                 handleGenerate();
@@ -112,7 +128,7 @@ export default function BrandInput() {
       <div className="mt-8 flex justify-center">
         <button
           onClick={handleGenerate}
-          disabled={description.trim().length < 5}
+          disabled={!brandName.trim() || description.trim().length < 5}
           className="shimmer-btn group relative px-8 py-3.5 rounded-[var(--radius-full)] text-[15px] font-semibold text-white disabled:opacity-20 disabled:cursor-not-allowed disabled:hover:shadow-none disabled:hover:bg-[var(--accent)]"
         >
           <span className="relative z-10 flex items-center gap-3">
