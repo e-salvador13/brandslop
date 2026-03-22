@@ -37,10 +37,7 @@ export default function BrandInput() {
       }
 
       const brand = await res.json();
-
-      // Store brand data in sessionStorage for the result page
       sessionStorage.setItem(`brand-${brand.id}`, JSON.stringify(brand));
-
       router.push(`/brand/${brand.id}`);
     } catch (err: any) {
       setError(err.message || 'Something went wrong. Try again.');
@@ -53,51 +50,62 @@ export default function BrandInput() {
   }
 
   return (
-    <div className="w-full max-w-2xl mx-auto animate-fade-in-delay-2">
-      {/* Main text area */}
-      <div className="glow-border rounded-2xl">
-        <textarea
-          value={description}
-          onChange={(e) => {
-            setDescription(e.target.value);
-            if (error) setError('');
-          }}
-          placeholder="A modern fintech for Gen Z that feels like Cash App meets Notion..."
-          className="w-full bg-[#111113] text-[#f5f5f7] rounded-2xl px-6 py-5 text-[17px] leading-relaxed placeholder:text-[#555] resize-none focus:outline-none min-h-[140px] transition-colors"
-          rows={4}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' && e.metaKey) {
-              handleGenerate();
-            }
-          }}
-        />
-      </div>
+    <div className="w-full max-w-2xl mx-auto">
+      {/* Spotlight container */}
+      <div className="relative rounded-[var(--radius-xl)] p-[1px] gradient-border">
+        <div className="relative rounded-[var(--radius-xl)] bg-[var(--bg-spotlight)] overflow-hidden">
+          <textarea
+            value={description}
+            onChange={(e) => {
+              setDescription(e.target.value);
+              if (error) setError('');
+            }}
+            placeholder="A sustainable fashion brand that feels like Aesop meets Patagonia..."
+            className="w-full bg-transparent text-[var(--text-primary)] px-6 py-5 text-[16px] sm:text-[17px] leading-relaxed placeholder:text-[var(--text-quaternary)] resize-none focus:outline-none min-h-[140px]"
+            rows={4}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && e.metaKey) {
+                handleGenerate();
+              }
+            }}
+          />
 
-      {/* URL input toggle */}
-      <div className="mt-4">
-        {!showUrl ? (
-          <button
-            onClick={() => setShowUrl(true)}
-            className="text-[14px] text-[#86868B] hover:text-[#f5f5f7] transition-colors duration-300"
-          >
-            Or drop a URL for inspiration →
-          </button>
-        ) : (
-          <div className="animate-fade-in">
-            <input
-              type="url"
-              value={referenceUrl}
-              onChange={(e) => setReferenceUrl(e.target.value)}
-              placeholder="https://example.com"
-              className="w-full bg-[#111113] text-[#f5f5f7] rounded-xl px-5 py-3 text-[15px] placeholder:text-[#444] focus:outline-none border border-[#222] focus:border-[#444] transition-colors"
-            />
+          {/* URL toggle — inline at bottom of textarea area */}
+          <div className="px-6 pb-5">
+            {!showUrl ? (
+              <button
+                onClick={() => setShowUrl(true)}
+                className="text-[13px] text-[var(--text-quaternary)] hover:text-[var(--text-secondary)] transition-colors duration-[var(--duration)]"
+              >
+                + Add a reference URL
+              </button>
+            ) : (
+              <div className="flex items-center gap-3">
+                <input
+                  type="url"
+                  value={referenceUrl}
+                  onChange={(e) => setReferenceUrl(e.target.value)}
+                  placeholder="https://example.com"
+                  className="flex-1 bg-transparent text-[var(--text-primary)] text-[14px] placeholder:text-[var(--text-muted)] focus:outline-none border-b border-[var(--border-subtle)] focus:border-[var(--border-hover)] pb-1 transition-colors duration-[var(--duration)]"
+                />
+                <button
+                  onClick={() => {
+                    setShowUrl(false);
+                    setReferenceUrl('');
+                  }}
+                  className="text-[12px] text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
+                >
+                  ✕
+                </button>
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
 
       {/* Error */}
       {error && (
-        <p className="mt-4 text-[14px] text-red-400 animate-fade-in">{error}</p>
+        <p className="mt-4 text-[14px] text-red-400/80 animate-in animate-in-1">{error}</p>
       )}
 
       {/* Generate button */}
@@ -105,24 +113,16 @@ export default function BrandInput() {
         <button
           onClick={handleGenerate}
           disabled={description.trim().length < 5}
-          className="group relative px-8 py-3.5 rounded-full text-[17px] font-medium text-white transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed hover:scale-[1.02] active:scale-[0.98]"
-          style={{
-            background:
-              'linear-gradient(135deg, #4F46E5 0%, #6366F1 50%, #818CF8 100%)',
-          }}
+          className="shimmer-btn group relative px-8 py-3.5 rounded-[var(--radius-full)] text-[15px] font-semibold text-white disabled:opacity-20 disabled:cursor-not-allowed disabled:hover:shadow-none disabled:hover:bg-[var(--accent)]"
         >
-          <span className="relative z-10">Generate Brand</span>
-          <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            style={{
-              background: 'linear-gradient(135deg, #5B52F0 0%, #7175F5 50%, #8D96FA 100%)',
-            }}
-          />
+          <span className="relative z-10 flex items-center gap-3">
+            Generate Brand
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/10 text-[11px] font-medium text-white/60">
+              ⌘ Enter
+            </span>
+          </span>
         </button>
       </div>
-
-      <p className="mt-4 text-center text-[12px] text-[#555]">
-        ⌘ + Enter to generate
-      </p>
     </div>
   );
 }

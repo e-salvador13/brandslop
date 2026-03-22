@@ -13,11 +13,9 @@ import BrandVoice from '@/components/BrandVoice';
 function Section({
   children,
   title,
-  bg = 'black',
 }: {
   children: React.ReactNode;
   title?: string;
-  bg?: 'black' | 'dark';
 }) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -31,7 +29,7 @@ function Section({
           el.classList.add('visible');
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
     );
 
     observer.observe(el);
@@ -41,13 +39,11 @@ function Section({
   return (
     <section
       ref={ref}
-      className={`reveal py-16 sm:py-24 px-6 md:px-12 ${
-        bg === 'dark' ? 'bg-[#0a0a0a]' : 'bg-black'
-      }`}
+      className="reveal py-16 sm:py-24 px-6 md:px-12"
     >
       <div className="max-w-4xl mx-auto">
         {title && (
-          <p className="text-[12px] uppercase tracking-[0.15em] text-[#86868B] mb-8">
+          <p className="text-[11px] uppercase tracking-[0.2em] text-[var(--text-quaternary)] mb-10 font-medium">
             {title}
           </p>
         )}
@@ -122,10 +118,10 @@ export default function BrandPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <p className="text-[20px] text-[#86868B] mb-4">Brand not found</p>
+          <p className="text-[18px] text-[var(--text-secondary)] mb-6">Brand not found</p>
           <button
             onClick={() => router.push('/')}
-            className="text-[15px] text-[#0071E3] hover:underline"
+            className="text-[14px] text-[var(--accent)] hover:underline underline-offset-4 transition-all"
           >
             ← Back to generator
           </button>
@@ -137,24 +133,50 @@ export default function BrandPage() {
   return (
     <main className="min-h-screen">
       {/* Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/70 border-b border-white/5">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl border-b border-[var(--border-subtle)]" style={{ backgroundColor: 'rgba(8, 8, 10, 0.8)' }}>
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <button
             onClick={() => router.push('/')}
-            className="text-[14px] text-[#86868B] hover:text-white transition-colors"
+            className="text-[13px] text-[var(--text-quaternary)] hover:text-[var(--text-primary)] transition-colors duration-[var(--duration)] font-medium"
           >
             ← BrandSlop
           </button>
-          <p className="text-[14px] text-[#555]">{brand.brandName}</p>
+          <p className="text-[13px] text-[var(--text-muted)] font-medium tracking-[-0.01em]">{brand.brandName}</p>
         </div>
       </nav>
 
       {/* Brand Header */}
-      <section className="pt-32 pb-20 px-6 text-center">
-        <div className="animate-fade-in">
-          <span className="text-6xl mb-6 block">{brand.logoIcon}</span>
+      <section className="relative pt-32 pb-20 px-6 text-center overflow-hidden">
+        {/* Gradient mesh behind header */}
+        <div className="gradient-mesh" aria-hidden="true">
+          <div className="gradient-mesh-extra" />
+        </div>
+
+        <div className="relative z-10 animate-in animate-in-1">
+          {/* Generated lettermark/initial */}
+          <div
+            className="inline-flex items-center justify-center w-20 h-20 rounded-[var(--radius-lg)] mb-8 border border-[var(--border-subtle)]"
+            style={{
+              background: `linear-gradient(135deg, ${brand.colors.primary}15, ${brand.colors.secondary}10)`,
+            }}
+          >
+            <span
+              className="text-[36px] font-bold tracking-[-0.03em]"
+              style={{
+                fontFamily: `"${brand.typography.heading.family}", sans-serif`,
+                fontWeight: brand.typography.heading.weight,
+                background: `linear-gradient(135deg, ${brand.colors.primary}, ${brand.colors.secondary})`,
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              {brand.brandName.charAt(0).toUpperCase()}
+            </span>
+          </div>
+
           <h1
-            className="text-[56px] sm:text-[72px] md:text-[96px] font-bold leading-[1.0] tracking-[-0.03em] mb-4"
+            className="text-[48px] sm:text-[64px] md:text-[80px] font-bold leading-[1.0] tracking-[-0.03em] mb-4"
             style={{
               fontFamily: `"${brand.typography.heading.family}", sans-serif`,
               fontWeight: brand.typography.heading.weight,
@@ -163,7 +185,7 @@ export default function BrandPage() {
             {brand.brandName}
           </h1>
           <p
-            className="text-[20px] sm:text-[24px] text-[#86868B]"
+            className="text-[18px] sm:text-[22px] text-[var(--text-secondary)] max-w-md mx-auto"
             style={{
               fontFamily: `"${brand.typography.body.family}", sans-serif`,
             }}
@@ -173,8 +195,13 @@ export default function BrandPage() {
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="h-px bg-[var(--border-subtle)]" />
+      </div>
+
       {/* Color Palette */}
-      <Section title="Color Palette" bg="dark">
+      <Section title="Color Palette">
         <ColorPalette colors={brand.colors} />
       </Section>
 
@@ -184,7 +211,7 @@ export default function BrandPage() {
       </Section>
 
       {/* Logo Mark */}
-      <Section title="Logo Mark" bg="dark">
+      <Section title="Logo">
         <LogoPreview brand={brand} />
       </Section>
 
@@ -194,7 +221,7 @@ export default function BrandPage() {
       </Section>
 
       {/* Business Card */}
-      <Section title="Business Card" bg="dark">
+      <Section title="Business Card">
         <BusinessCard brand={brand} />
       </Section>
 
@@ -204,7 +231,7 @@ export default function BrandPage() {
       </Section>
 
       {/* Actions */}
-      <section className="py-24 px-6 bg-[#0a0a0a] border-t border-[#1a1a1a]">
+      <section className="py-24 px-6 border-t border-[var(--border-subtle)]">
         <div className="max-w-2xl mx-auto text-center space-y-8">
           {/* Download */}
           <button
@@ -213,45 +240,43 @@ export default function BrandPage() {
                 'Brand Kit downloads are coming soon. For now, enjoy the preview!'
               )
             }
-            className="w-full sm:w-auto px-10 py-4 rounded-full text-[17px] font-medium text-white transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
-            style={{
-              background:
-                'linear-gradient(135deg, #4F46E5 0%, #6366F1 50%, #818CF8 100%)',
-            }}
+            className="shimmer-btn w-full sm:w-auto px-10 py-4 rounded-[var(--radius-full)] text-[16px] font-semibold text-white"
           >
-            Download Brand Kit — $19
+            <span className="relative z-10">Download Brand Kit — $19</span>
           </button>
 
-          {/* Regenerate */}
+          {/* Start over */}
           <div>
             <button
               onClick={() => router.push('/')}
-              className="text-[15px] text-[#86868B] hover:text-white transition-colors"
+              className="text-[14px] text-[var(--text-quaternary)] hover:text-[var(--text-primary)] transition-colors duration-[var(--duration)]"
             >
               ← Start over
             </button>
           </div>
 
           {/* Refine */}
-          <div className="pt-8 border-t border-[#1a1a1a]">
-            <p className="text-[14px] text-[#86868B] mb-4">
+          <div className="pt-8 border-t border-[var(--border-subtle)]">
+            <p className="text-[13px] text-[var(--text-quaternary)] mb-5">
               Want to tweak something?
             </p>
             <div className="flex gap-3">
-              <input
-                type="text"
-                value={refineText}
-                onChange={(e) => setRefineText(e.target.value)}
-                placeholder="Make the colors warmer..."
-                className="flex-1 bg-[#111] text-[#f5f5f7] rounded-full px-5 py-3 text-[15px] placeholder:text-[#444] focus:outline-none border border-[#222] focus:border-[#444] transition-colors"
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') handleRefine();
-                }}
-              />
+              <div className="flex-1 gradient-border rounded-[var(--radius-full)]">
+                <input
+                  type="text"
+                  value={refineText}
+                  onChange={(e) => setRefineText(e.target.value)}
+                  placeholder="Make the colors warmer..."
+                  className="w-full bg-transparent text-[var(--text-primary)] rounded-[var(--radius-full)] px-5 py-3 text-[14px] placeholder:text-[var(--text-muted)] focus:outline-none"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') handleRefine();
+                  }}
+                />
+              </div>
               <button
                 onClick={handleRefine}
                 disabled={refining || !refineText.trim()}
-                className="px-6 py-3 rounded-full bg-[#1a1a1a] text-[15px] text-[#f5f5f7] hover:bg-[#222] transition-colors disabled:opacity-30"
+                className="px-6 py-3 rounded-[var(--radius-full)] bg-[var(--bg-elevated)] border border-[var(--border-subtle)] text-[14px] text-[var(--text-primary)] hover:bg-[var(--bg-elevated-hover)] hover:border-[var(--border-hover)] transition-all duration-[var(--duration)] disabled:opacity-20 font-medium"
               >
                 {refining ? '...' : 'Refine'}
               </button>

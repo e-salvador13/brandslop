@@ -25,41 +25,37 @@ export default function LoadingState() {
   }, []);
 
   return (
-    <div className="w-full max-w-lg mx-auto flex flex-col items-center py-20 animate-fade-in">
-      {/* Minimal animated mark */}
+    <div className="w-full max-w-lg mx-auto flex flex-col items-center py-20 animate-in animate-in-1">
+      {/* Minimal orbital animation */}
       <div className="relative w-16 h-16 mb-12">
         <div
-          className="absolute inset-0 rounded-full border border-[#333]"
-          style={{
-            animation: 'spin 3s linear infinite',
-          }}
+          className="absolute inset-0 rounded-full border border-[var(--border-hover)]"
+          style={{ animation: 'spin 3s linear infinite' }}
         />
         <div
-          className="absolute inset-2 rounded-full border border-[#555]"
-          style={{
-            animation: 'spin 2s linear infinite reverse',
-          }}
+          className="absolute inset-2 rounded-full border border-[var(--border-active)]"
+          style={{ animation: 'spin 2s linear infinite reverse' }}
         />
-        <div className="absolute inset-0 flex items-center justify-center text-2xl">
-          ✦
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-2 h-2 rounded-full bg-[var(--accent)]" />
         </div>
       </div>
 
       {/* Stage text */}
       <div className="text-center">
-        <p className="text-[20px] font-medium text-[#f5f5f7] mb-3">
+        <p className="text-[18px] font-semibold text-[var(--text-primary)] tracking-[-0.02em] mb-3">
           {stages[currentStage]}
         </p>
         <div className="flex gap-1 justify-center">
-          <span className="loading-dot text-[#86868B] text-2xl">.</span>
-          <span className="loading-dot text-[#86868B] text-2xl">.</span>
-          <span className="loading-dot text-[#86868B] text-2xl">.</span>
+          <span className="loading-dot text-[var(--text-secondary)] text-2xl">.</span>
+          <span className="loading-dot text-[var(--text-secondary)] text-2xl">.</span>
+          <span className="loading-dot text-[var(--text-secondary)] text-2xl">.</span>
         </div>
       </div>
 
       {/* Progress bar */}
-      <div className="w-full mt-12 h-[2px] bg-[#1a1a1a] rounded-full overflow-hidden">
-        <div className="progress-bar h-full bg-gradient-to-r from-[#4F46E5] to-[#818CF8] rounded-full" />
+      <div className="w-full mt-12 h-[2px] bg-[var(--border-subtle)] rounded-full overflow-hidden">
+        <div className="progress-bar h-full rounded-full" style={{ background: `linear-gradient(90deg, var(--accent), rgba(139, 92, 246, 0.4))` }} />
       </div>
 
       {/* Stage indicators */}
@@ -69,18 +65,11 @@ export default function LoadingState() {
             key={i}
             className="w-1.5 h-1.5 rounded-full transition-colors duration-500"
             style={{
-              backgroundColor: i <= currentStage ? '#6366F1' : '#333',
+              backgroundColor: i <= currentStage ? 'var(--accent)' : 'var(--text-muted)',
             }}
           />
         ))}
       </div>
-
-      <style jsx>{`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-      `}</style>
     </div>
   );
 }

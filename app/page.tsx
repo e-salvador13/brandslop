@@ -1,47 +1,104 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
 import BrandInput from '@/components/BrandInput';
 import ExampleBrands from '@/components/ExampleBrands';
+import HowItWorks from '@/components/HowItWorks';
+
+function useScrollReveal() {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const children = el.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
+    );
+
+    children.forEach((child) => observer.observe(child));
+    return () => observer.disconnect();
+  }, []);
+
+  return ref;
+}
 
 export default function Home() {
+  const scrollRef = useScrollReveal();
+
   return (
-    <main className="min-h-screen">
-      {/* Hero */}
-      <section className="min-h-screen flex flex-col justify-center px-6 md:px-12">
-        <div className="max-w-4xl mx-auto w-full text-center">
+    <main className="min-h-screen" ref={scrollRef}>
+      {/* ═══ HERO ═══ */}
+      <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12">
+        {/* Gradient Mesh Background */}
+        <div className="gradient-mesh" aria-hidden="true">
+          <div className="gradient-mesh-extra" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
           {/* Headline */}
-          <h1 className="text-[48px] sm:text-[64px] md:text-[80px] font-semibold leading-[1.0] tracking-[-0.03em] text-white mb-4 animate-fade-in">
-            Your brand.
-            <br />
-            <span className="text-[#86868B]">60 seconds.</span>
+          <h1 className="animate-in animate-in-1">
+            <span className="block text-[44px] sm:text-[64px] md:text-[80px] lg:text-[96px] font-bold leading-[1.0] tracking-[-0.03em] text-[var(--text-primary)]">
+              Your brand.
+            </span>
+            <span className="block text-[44px] sm:text-[64px] md:text-[80px] lg:text-[96px] font-bold leading-[1.0] tracking-[-0.03em] text-[var(--text-tertiary)]">
+              60 seconds.
+            </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-[17px] sm:text-[19px] text-[#86868B] leading-[1.47] max-w-md mx-auto mb-12 animate-fade-in-delay-1">
-            Describe your idea. Get a complete brand identity.
+          <p className="mt-6 text-[16px] sm:text-[17px] text-[var(--text-tertiary)] leading-relaxed max-w-md mx-auto animate-in animate-in-2">
+            Describe your vision. Get a complete identity.
           </p>
 
           {/* Input */}
-          <BrandInput />
+          <div className="mt-12 animate-in animate-in-3">
+            <BrandInput />
+          </div>
         </div>
       </section>
 
-      {/* Examples */}
-      <section className="pb-32 px-6 md:px-12">
+      {/* ═══ HOW IT WORKS ═══ */}
+      <section className="py-24 sm:py-32 px-6 md:px-12">
+        <div className="max-w-5xl mx-auto reveal">
+          <HowItWorks />
+        </div>
+      </section>
+
+      {/* ═══ EXAMPLES ═══ */}
+      <section className="py-24 sm:py-32 px-6 md:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[28px] sm:text-[36px] font-semibold tracking-tight text-center mb-4">
-            See what&apos;s possible
-          </h2>
-          <p className="text-[17px] text-[#86868B] text-center mb-16 max-w-md mx-auto">
-            Real brand identities, generated in seconds.
-          </p>
-          <ExampleBrands />
+          <div className="text-center mb-16 reveal">
+            <p className="text-[12px] uppercase tracking-[0.2em] text-[var(--text-quaternary)] mb-4">
+              Examples
+            </p>
+            <h2 className="text-[28px] sm:text-[40px] font-bold tracking-[-0.03em] text-[var(--text-primary)]">
+              See what&apos;s possible
+            </h2>
+          </div>
+          <div className="reveal">
+            <ExampleBrands />
+          </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-[#1a1a1a] py-8 px-6">
+      {/* ═══ FOOTER ═══ */}
+      <footer className="border-t border-[var(--border-subtle)] py-8 px-6">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <p className="text-[12px] text-[#555]">BrandSlop</p>
-          <p className="text-[12px] text-[#555]">Built with obsessive care.</p>
+          <p className="text-[13px] font-medium text-[var(--text-quaternary)] tracking-[-0.01em]">
+            BrandSlop
+          </p>
+          <div className="flex gap-6">
+            <span className="text-[12px] text-[var(--text-muted)]">Built with obsessive care</span>
+          </div>
         </div>
       </footer>
     </main>
